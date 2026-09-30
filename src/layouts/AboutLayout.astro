@@ -1,0 +1,134 @@
+---
+import '../config/theme.css';
+import pages from '../data/pages.json';
+
+const { lang = 'en' } = Astro.props;
+const p = pages.about;
+const ui = {
+  en: { maps:'Maps', metraveler:'Metraveler', about:'About us', contact:'Contact us', langLabel:'English', timeline:'Timeline' },
+  zh: { maps:'地圖', metraveler:'Metraveler', about:'關於我們', contact:'聯絡我們', langLabel:'繁體中文', timeline:'時間軸' }
+}[lang];
+const base = lang === 'en' ? '/english' : '/zh';
+---
+<!DOCTYPE html>
+<html lang={lang === 'zh' ? 'zh-Hant' : 'en'}>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{p.title[lang]} | Metliner</title>
+  <meta name="description" content={p.lead[lang]} />
+  <link rel="canonical" href={`https://www.metliner.com${base}/about-us`} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href={base} class="brand"><img src="/img/logo.png" alt="Metliner logo" />metliner</a>
+    <div class="navlinks">
+      <a href={`${base}/maps`}>{ui.maps}</a>
+      <a href={`${base}/metraveler`}>{ui.metraveler}</a>
+      <a href={`${base}/about-us`}>{ui.about}</a>
+      <a href={`${base}/contact-us`}>{ui.contact}</a>
+      <span class="lang">{ui.langLabel} ▾</span>
+    </div>
+  </div>
+</nav>
+<div class="brand-bar"><i></i><i></i><i></i><i></i><i></i></div>
+
+<header class="page-hero">
+  <div class="wrap">
+    <h1>{p.title[lang]}</h1>
+  </div>
+</header>
+
+<main class="wrap page-body">
+  <p class="lead">{p.lead[lang]}</p>
+  <p class="para">{p.body[lang]}</p>
+
+  <div class="tl-head"><span class="kdot"></span>{ui.timeline}</div>
+  <div class="timeline">
+    {p.milestones.map(m => (
+      <div class="tl-row">
+        <span class="tl-rail"><span class="tl-node"></span></span>
+        <div class="tl-content">
+          <span class="tl-date">{m.date}</span>
+          <span class="tl-text">{m[lang]}</span>
+        </div>
+      </div>
+    ))}
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <h3>{lang==='zh'?'聯絡我們':'Contact Us'}</h3>
+  <p>{lang==='zh'?'有任何建議或問題嗎？透過電子郵件與我們聯絡：':'Any suggestions or concerns? Contact us through our email:'}<br /><a href="mailto:metliner64@gmail.com">metliner64@gmail.com</a></p>
+  <div class="social"><a href="#">Instagram</a><a href="#">X</a><a href="#">Pinterest</a><a href="#">Threads</a></div>
+</div></footer>
+
+<style>
+  /* global five-colour brand bar under the nav */
+  .brand-bar{display:flex;height:6px;width:100%}
+  .brand-bar i{flex:1;display:block}
+  .brand-bar i:nth-child(1){background:#e0483a}
+  .brand-bar i:nth-child(2){background:#f5a623}
+  .brand-bar i:nth-child(3){background:#3aa06a}
+  .brand-bar i:nth-child(4){background:#2f7fd1}
+  .brand-bar i:nth-child(5){background:#8e44c9}
+
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--font);color:var(--text);background:#fff;line-height:1.6}
+  img{display:block;max-width:100%}
+  .wrap{max-width:840px;margin:0 auto;padding:0 24px}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(10,19,46,.97);backdrop-filter:blur(8px)}
+  nav .wrap{max-width:1180px;display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:400;font-size:20px;text-decoration:none}
+  .brand img{height:38px;width:auto}
+  .navlinks{display:flex;gap:22px;align-items:center}
+  .navlinks a{color:#fff;text-decoration:none;font-size:15px;font-weight:400}
+  .navlinks a:hover{color:var(--yellow)}
+  .lang{color:#fff;border:1px solid rgba(255,255,255,.4);padding:5px 12px;border-radius:20px;font-size:14px}
+
+  .page-hero{background:#fff;padding:64px 0 36px;border-bottom:1px solid #eee}
+  .page-hero .lines{display:flex;gap:6px;margin-bottom:16px}
+  .page-hero .lines i{width:30px;height:8px;border-radius:4px;display:block}
+  .page-hero .lines i:nth-child(1){background:#e0483a}
+  .page-hero .lines i:nth-child(2){background:#f5a623}
+  .page-hero .lines i:nth-child(3){background:#3aa06a}
+  .page-hero .lines i:nth-child(4){background:#2f7fd1}
+  .page-hero .lines i:nth-child(5){background:#8e44c9}
+  .page-hero h1{color:var(--navy);font-size:56px;font-weight:800;line-height:1;letter-spacing:-.02em}
+
+  .page-body{padding:48px 24px 88px}
+  .lead{font-size:23px;line-height:1.55;color:var(--navy);font-weight:600;max-width:60ch}
+  .para{font-size:17px;line-height:1.75;color:#41454d;margin-top:24px;max-width:64ch}
+
+  .tl-head{display:inline-flex;align-items:center;gap:9px;margin-top:56px;margin-bottom:8px;
+    color:#8a8f9c;font-size:12.5px;font-weight:700;letter-spacing:.2em}
+  .tl-head .kdot{width:8px;height:8px;border-radius:50%;background:var(--yellow)}
+  .timeline{position:relative}
+  .tl-row{display:flex;gap:20px;padding:20px 0}
+  .tl-rail{position:relative;width:3px;background:#e6e6e6;flex-shrink:0;border-radius:2px}
+  .tl-node{position:absolute;left:50%;top:8px;width:13px;height:13px;border-radius:50%;
+    background:#fff;border:3px solid var(--yellow);transform:translateX(-50%)}
+  .tl-content{padding-bottom:4px}
+  .tl-date{display:block;font-variant-numeric:tabular-nums;color:var(--navy);font-weight:800;font-size:16px;letter-spacing:.02em}
+  .tl-text{display:block;color:#555;font-size:15.5px;margin-top:4px;line-height:1.6}
+
+  footer{background:var(--navy);color:#dfe4ef;padding:56px 0 72px}
+  footer .wrap{max-width:840px}
+  footer h3{color:#fff;font-size:28px;font-weight:800;margin-bottom:18px}
+  footer a{color:var(--yellow);text-decoration:none}
+  footer .social{display:flex;gap:16px;margin-top:14px;font-size:16px;font-weight:700}
+
+  @media(max-width:680px){
+    .page-hero h1{font-size:42px}
+    .lead{font-size:20px}
+    .navlinks{display:none}
+  }
+</style>
+</body>
+</html>

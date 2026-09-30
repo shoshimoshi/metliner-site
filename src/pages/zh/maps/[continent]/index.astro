@@ -1,0 +1,13 @@
+---
+import ContinentLayout from '../../../../layouts/ContinentLayout.astro';
+import geo from '../../../../data/geo.json';
+
+export function getStaticPaths() {
+  return Object.entries(geo).map(([key, cont]) => ({
+    params: { continent: key },
+    props: { continent: cont, contKey: key }
+  }));
+}
+const { continent, contKey } = Astro.props;
+---
+<ContinentLayout continent={continent} contKey={contKey} lang="zh" />

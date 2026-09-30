@@ -1,0 +1,15 @@
+---
+import CityLayout from '../../../../../layouts/CityLayout.astro';
+import cities from '../../../../../data/cities.json';
+
+// Generate one page per city automatically from cities.json
+export function getStaticPaths() {
+  return Object.values(cities).map((c) => ({
+    params: { continent: c.continent, country: c.country, city: c.slug },
+    props: { city: c }
+  }));
+}
+
+const { city } = Astro.props;
+---
+<CityLayout city={city} lang="en" />

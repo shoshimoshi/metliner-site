@@ -1,0 +1,19 @@
+---
+import CountryLayout from '../../../../../layouts/CountryLayout.astro';
+import geo from '../../../../../data/geo.json';
+
+export function getStaticPaths() {
+  const paths = [];
+  for (const [contKey, cont] of Object.entries(geo)) {
+    for (const [ckey, country] of Object.entries(cont.countries)) {
+      paths.push({
+        params: { continent: contKey, country: ckey },
+        props: { continent: cont, contKey, country, countryKey: ckey }
+      });
+    }
+  }
+  return paths;
+}
+const { continent, contKey, country, countryKey } = Astro.props;
+---
+<CountryLayout continent={continent} contKey={contKey} country={country} countryKey={countryKey} lang="zh" />

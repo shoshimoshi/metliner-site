@@ -1,0 +1,30 @@
+/* ============================================================
+   Metliner design variables  —  THIS is the file Sho edits.
+   Change a value here and it applies across every city page.
+   Colors, font sizes, spacing, radius — all in one place.
+   ============================================================ */
+:root{
+  /* ---- Brand colors (exact Metliner values) ---- */
+  --yellow:   #FFC816;   /* signal yellow */
+  --navy:     #0A132E;   /* deep navy */
+  --ink:      #0d0f16;   /* near-black hero bg */
+  --cream:    #FAF9F6;   /* off-white section bg */
+  --text:     #000000;   /* body text (pure black) */
+  --white:    #ffffff;
+
+  /* ---- Type sizes ---- */
+  --h1-hero:      76px;   /* city name in hero */
+  --h2-section:   48px;   /* section headings (city intro) */
+  --h2-banner:    44px;   /* yellow banner headings */
+  --h2-explore:   60px;   /* "Explore More" heading */
+  --body-size:    20px;   /* intro paragraph + map caption */
+  --card-name:    24px;   /* Explore More city names */
+
+  /* ---- Layout ---- */
+  --page-max:     1180px; /* main content width */
+  --viewer-max:   1000px; /* zoomable map width (inset) */
+  --radius:       6px;
+
+  /* ---- Font ---- */
+  --font: 'Montserrat', -apple-system, Arial, 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+}

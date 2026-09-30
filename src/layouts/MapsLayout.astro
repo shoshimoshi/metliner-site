@@ -1,0 +1,152 @@
+---
+import '../config/theme.css';
+import geo from '../data/geo.json';
+
+const { lang = 'en' } = Astro.props;
+const ui = {
+  en: { maps:'Maps', metraveler:'Metraveler', about:'About us', contact:'Contact us', langLabel:'English',
+        title:'Maps', kicker:'ROUTE NETWORK', sub:'Pick a continent and follow the lines to explore each city' },
+  zh: { maps:'地圖', metraveler:'Metraveler', about:'關於我們', contact:'聯絡我們', langLabel:'繁體中文',
+        title:'地圖', kicker:'路線網絡', sub:'選擇一個大洲，沿著路線探索每座城市' }
+}[lang];
+const base = lang === 'en' ? '/english' : '/zh';
+
+// representative cities per continent + a soft tint derived from the line colour
+const meta = {
+  asia:    { cities:['Tokyo','Taipei','Seoul','Singapore'],  tint:'#FEF6E6' },
+  europe:  { cities:['Paris','London','Berlin','Madrid'],    tint:'#EAF2FB' },
+  america: { cities:['New York','Toronto','São Paulo'],      tint:'#FCECEA' },
+  oceania: { cities:['Sydney','Melbourne','Auckland'],       tint:'#F4EBFB' },
+  africa:  { cities:['Port Louis'],                          tint:'#EAF5EF' }
+};
+const order = ['asia','europe','america','oceania','africa'];
+const conts = order.filter(k=>geo[k]).map((k,i) => ({
+  key:k, name:geo[k].name[lang], color:geo[k].color, idx:String(i+1).padStart(2,'0'), ...meta[k]
+}));
+---
+<!DOCTYPE html>
+<html lang={lang === 'zh' ? 'zh-Hant' : 'en'}>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{lang==='zh'?'地圖':'Maps'} | Metliner</title>
+  <meta name="description" content="Browse Metliner's unified metro and rail maps by continent — Asia, Europe, America, Oceania and Africa." />
+  <link rel="canonical" href={`https://www.metliner.com${base}/maps`} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href={base} class="brand"><img src="/img/logo.png" alt="Metliner logo" />metliner</a>
+    <div class="navlinks">
+      <a href={`${base}/maps`}>{ui.maps}</a>
+      <a href={`${base}/metraveler`}>{ui.metraveler}</a>
+      <a href={`${base}/about-us`}>{ui.about}</a>
+      <a href={`${base}/contact-us`}>{ui.contact}</a>
+      <span class="lang">{ui.langLabel} ▾</span>
+    </div>
+  </div>
+</nav>
+<div class="brand-bar"><i></i><i></i><i></i><i></i><i></i></div>
+
+<header class="maps-hero">
+  <div class="wrap">
+    <div class="kicker"><span class="kdot"></span>{ui.kicker}</div>
+    <h1>{ui.title}</h1>
+    <p>{ui.sub}</p>
+  </div>
+</header>
+
+<main class="wrap maps-body">
+  <div class="cont-grid">
+    {conts.map(c => (
+      <a class="ccard" href={`${base}/maps/${c.key}`} style={`--c:${c.color};--tint:${c.tint}`}>
+        <span class="bar"></span>
+        <span class="inner">
+          <span class="top">
+            <span class="idx">{c.idx}</span>
+            <span class="node"></span>
+          </span>
+          <span class="name">{c.name}</span>
+          <span class="tags">
+            {c.cities.map(city => <span class="tag">{city}</span>)}
+          </span>
+          <img class="arrow" src="/arrows/right.png" alt="" />
+        </span>
+      </a>
+    ))}
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <h3>{lang==='zh'?'聯絡我們':'Contact Us'}</h3>
+  <p>{lang==='zh'?'有任何建議或問題嗎？透過電子郵件與我們聯絡：':'Any suggestions or concerns? Contact us through our email:'}<br /><a href="mailto:metliner64@gmail.com">metliner64@gmail.com</a></p>
+  <div class="social"><a href="#">Instagram</a><a href="#">X</a><a href="#">Pinterest</a><a href="#">Threads</a></div>
+</div></footer>
+
+<style>
+  /* global five-colour brand bar under the nav */
+  .brand-bar{display:flex;height:6px;width:100%}
+  .brand-bar i{flex:1;display:block}
+  .brand-bar i:nth-child(1){background:#e0483a}
+  .brand-bar i:nth-child(2){background:#f5a623}
+  .brand-bar i:nth-child(3){background:#3aa06a}
+  .brand-bar i:nth-child(4){background:#2f7fd1}
+  .brand-bar i:nth-child(5){background:#8e44c9}
+
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--font);color:var(--text);background:#fff;line-height:1.6}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(10,19,46,.97);backdrop-filter:blur(8px)}
+  nav .wrap{max-width:1180px;display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:400;font-size:20px;text-decoration:none}
+  .brand img{height:38px;width:auto}
+  .navlinks{display:flex;gap:22px;align-items:center}
+  .navlinks a{color:#fff;text-decoration:none;font-size:15px;font-weight:400}
+  .navlinks a:hover{color:var(--yellow)}
+  .lang{color:#fff;border:1px solid rgba(255,255,255,.4);padding:5px 12px;border-radius:20px;font-size:14px}
+
+  .maps-hero{background:#fff;padding:64px 0 40px}
+  .kicker{display:inline-flex;align-items:center;gap:9px;color:#8a8f9c;font-size:12.5px;font-weight:700;letter-spacing:.22em}
+  .kicker .kdot{width:8px;height:8px;border-radius:50%;background:var(--yellow)}
+  .maps-hero h1{color:var(--navy);font-size:58px;font-weight:700;line-height:1;letter-spacing:-.02em;margin:16px 0 0}
+  .maps-hero p{color:#6a6f7a;font-size:17px;margin-top:14px;font-weight:400}
+
+  /* name-card grid, each tinted in its continent colour */
+  .maps-body{padding:20px 24px 96px}
+  .cont-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .ccard{position:relative;display:flex;text-decoration:none;background:var(--tint);
+    border-radius:12px;overflow:hidden;transition:transform .15s,box-shadow .15s}
+  .ccard:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(10,19,46,.14)}
+  .ccard .bar{width:12px;background:var(--c);flex-shrink:0}
+  .ccard .inner{position:relative;flex:1;padding:26px 28px 24px}
+  .top{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+  .idx{font-variant-numeric:tabular-nums;color:var(--c);font-size:15px;font-weight:800;letter-spacing:.04em}
+  .node{width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid var(--c)}
+  .name{display:block;color:var(--navy);font-size:40px;font-weight:800;line-height:1;letter-spacing:-.01em}
+  .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+  .tag{font-size:12.5px;font-weight:600;color:var(--navy);background:rgba(255,255,255,.75);
+    border:1px solid rgba(10,19,46,.08);padding:3px 11px;border-radius:5px}
+  .arrow{position:absolute;right:24px;bottom:22px;width:38px;height:38px;opacity:.4;transition:opacity .15s,transform .15s}
+  .ccard:hover .arrow{opacity:1;transform:translateX(4px)}
+
+  footer{background:var(--navy);color:#dfe4ef;padding:56px 0 72px}
+  footer .wrap{max-width:1100px}
+  footer h3{color:#fff;font-size:28px;font-weight:800;margin-bottom:18px}
+  footer a{color:var(--yellow);text-decoration:none}
+  footer .social{display:flex;gap:16px;margin-top:14px;font-size:16px;font-weight:700}
+
+  @media(max-width:760px){
+    .maps-hero h1{font-size:44px}
+    .cont-grid{grid-template-columns:1fr;gap:16px}
+    .name{font-size:34px}
+    .navlinks{display:none}
+  }
+</style>
+</body>
+</html>

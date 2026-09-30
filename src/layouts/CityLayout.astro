@@ -1,0 +1,194 @@
+---
+import '../config/theme.css';
+import MapViewer from '../components/MapViewer.astro';
+import cities from '../data/cities.json';
+
+// props: city object + current language ("en" | "zh")
+const { city, lang = 'en' } = Astro.props;
+
+// UI strings per language
+const ui = {
+  en: { maps:'Maps', metraveler:'Metraveler', about:'About us', contact:'Contact us',
+        bannerMap:'Metliner Designed Map', bannerMapSub:"Navigate the city's railways effortlessly",
+        explore:'Explore More', contactUs:'Contact Us',
+        contactLine:'Any suggestions or concerns? Contact us through our email:',
+        followLine:'Follow our social accounts for the latest news!', langLabel:'English' },
+  zh: { maps:'地圖', metraveler:'Metraveler', about:'關於我們', contact:'聯絡我們',
+        bannerMap:'Metliner 設計地圖', bannerMapSub:'輕鬆穿梭城市的軌道路網',
+        explore:'探索更多', contactUs:'聯絡我們',
+        contactLine:'有任何建議或問題嗎？透過電子郵件與我們聯絡：',
+        followLine:'追蹤我們的社群，掌握最新消息！', langLabel:'繁體中文' }
+}[lang];
+
+const base = lang === 'en' ? '/english' : '/zh';
+
+// resolve exploreMore slugs into city objects
+const related = (city.exploreMore || [])
+  .map(slug => cities[slug])
+  .filter(Boolean);
+---
+<!DOCTYPE html>
+<html lang={lang === 'zh' ? 'zh-Hant' : 'en'}>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{city.seoTitle[lang]}</title>
+  <meta name="description" content={city.seoDescription[lang]} />
+  <link rel="canonical" href={`https://www.metliner.com${base}/maps/${city.continent}/${city.country}/${city.slug}`} />
+  <meta property="og:title" content={city.seoTitle[lang]} />
+  <meta property="og:description" content={city.seoDescription[lang]} />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content={`https://www.metliner.com${city.map.src}`} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context":"https://schema.org","@type":"ImageObject",
+    "name": city.map.title[lang],
+    "description": city.seoDescription[lang],
+    "contentUrl": `https://www.metliner.com${city.map.src}`,
+    "creator": {"@type":"Organization","name":"Metliner"},
+    "about": `${city.name[lang]} metro / rail network map`
+  })} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href={base} class="brand"><img src="/img/logo.png" alt="Metliner logo" />metliner</a>
+    <div class="navlinks">
+      <a href={`${base}/maps`}>{ui.maps}</a>
+      <a href={`${base}/metraveler`}>{ui.metraveler}</a>
+      <a href={`${base}/about-us`}>{ui.about}</a>
+      <a href={`${base}/contact-us`}>{ui.contact}</a>
+      <span class="lang">{ui.langLabel} ▾</span>
+    </div>
+  </div>
+</nav>
+<div class="brand-bar"><i></i><i></i><i></i><i></i><i></i></div>
+
+<header class="hero">
+  <div class="bg" style={`background-image:url('${city.map.src}')`}></div>
+  <div class="wrap inner">
+    <h1>{city.name[lang]}</h1>
+    <div class="country">{city.countryName[lang]}</div>
+  </div>
+</header>
+
+<section class="intro"><div class="wrap grid">
+  <div class="photo"><img src={city.photo} alt={city.photoAlt[lang]} /></div>
+  <div>
+    <h2>{city.name[lang]}</h2>
+    <p>{city.intro[lang]}</p>
+  </div>
+</div></section>
+
+<section class="banner"><div class="wrap">
+  <img class="arrow" src="/arrows/down-left.png" alt="" />
+  <div><h2>{ui.bannerMap}</h2><p>{ui.bannerMapSub}</p></div>
+</div></section>
+
+<MapViewer src={city.map.src} alt={`${city.name[lang]} metro map by Metliner`}
+           title={city.map.title[lang]} updated={city.map.updated[lang]} />
+
+<section class="explore">
+  <div class="banner"><div class="wrap">
+    <img class="arrow" src="/arrows/right.png" alt="" />
+    <h2 class="big">{ui.explore}</h2>
+  </div></div>
+  <div class="wrap cards">
+    {related.map(r => (
+      <a class="ecard" href={`${base}/maps/${r.continent}/${r.country}/${r.slug}`}>
+        <div class="thumb"><img src={r.map.src} alt={`${r.name[lang]} metro map`} /></div>
+        <div class="name">{r.name[lang]}</div>
+      </a>
+    ))}
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <h3>{ui.contactUs}</h3>
+  <p>{ui.contactLine}<br /><a href="mailto:metliner64@gmail.com">metliner64@gmail.com</a></p>
+  <p style="margin-top:18px">{ui.followLine}</p>
+  <div class="social"><a href="#">Instagram</a><a href="#">X</a><a href="#">Pinterest</a><a href="#">Threads</a></div>
+</div></footer>
+
+<style>
+  /* global five-colour brand bar under the nav */
+  .brand-bar{display:flex;height:6px;width:100%}
+  .brand-bar i{flex:1;display:block}
+  .brand-bar i:nth-child(1){background:#e0483a}
+  .brand-bar i:nth-child(2){background:#f5a623}
+  .brand-bar i:nth-child(3){background:#3aa06a}
+  .brand-bar i:nth-child(4){background:#2f7fd1}
+  .brand-bar i:nth-child(5){background:#8e44c9}
+
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--font);color:var(--text);background:#fff;line-height:1.6}
+  img{display:block;max-width:100%}
+  .wrap{max-width:var(--page-max);margin:0 auto;padding:0 24px}
+
+  nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .3s,box-shadow .3s;background:transparent}
+  nav.scrolled{background:rgba(10,19,46,.97);backdrop-filter:blur(8px);box-shadow:0 2px 18px rgba(0,0,0,.2)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:20px;text-decoration:none}
+  .brand img{height:38px;width:auto}
+  .navlinks{display:flex;gap:22px;align-items:center}
+  .navlinks a{color:#fff;text-decoration:none;font-size:15px;font-weight:600;text-shadow:0 1px 3px rgba(0,0,0,.35)}
+  nav.scrolled .navlinks a{text-shadow:none}
+  .navlinks a:hover{color:var(--yellow)}
+  .lang{color:#fff;border:1px solid rgba(255,255,255,.4);padding:5px 12px;border-radius:20px;font-size:14px}
+
+  .hero{position:relative;height:400px;overflow:hidden;background:var(--ink)}
+  .hero .bg{position:absolute;inset:0;background-size:cover;background-position:center 40%;opacity:.92;filter:saturate(1.1)}
+  .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,12,24,.9),rgba(8,12,24,.45) 55%,rgba(8,12,24,.12))}
+  .hero .inner{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;padding-top:44px}
+  .hero h1{color:#fff;font-size:var(--h1-hero);font-weight:700;line-height:1;letter-spacing:-.005em}
+  .hero .country{color:#fff;font-weight:600;font-size:22px;margin-top:8px;letter-spacing:.05em}
+
+  .intro{background:var(--cream)}
+  .intro .grid{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:center;padding:72px 0}
+  .intro .photo{border-radius:4px;overflow:hidden;aspect-ratio:4/3}
+  .intro .photo img{width:100%;height:100%;object-fit:cover}
+  .intro h2{font-size:var(--h2-section);font-weight:800;margin-bottom:22px;color:#000}
+  .intro p{color:var(--text);font-size:var(--body-size);line-height:1.7;max-width:56ch}
+
+  .banner{background:var(--yellow);padding:44px 0}
+  .banner .wrap{display:flex;align-items:center;gap:24px}
+  .banner .arrow{width:82px;height:82px;flex-shrink:0}
+  .banner h2{font-size:var(--h2-banner);font-weight:800;letter-spacing:-.01em;color:var(--navy);line-height:1.05}
+  .banner p{font-size:18px;font-weight:600;margin-top:6px;color:var(--navy)}
+
+  .explore h2.big{font-size:var(--h2-explore);font-weight:700;color:var(--navy)}
+  .explore .banner .arrow{width:76px;height:76px}
+  .explore .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:48px 0 76px}
+  .ecard{text-decoration:none;color:inherit;display:block;transition:transform .15s}
+  .ecard:hover{transform:translateY(-4px)}
+  .ecard .thumb{aspect-ratio:16/11;border-radius:4px;overflow:hidden;background:#111;border:1px solid #e4e2dc}
+  .ecard .thumb img{width:100%;height:100%;object-fit:cover}
+  .ecard .name{text-align:center;font-weight:700;font-size:var(--card-name);margin-top:14px}
+
+  footer{background:var(--navy);color:#dfe4ef;padding:56px 0 72px}
+  footer h3{color:#fff;font-size:28px;font-weight:800;margin-bottom:18px}
+  footer a{color:var(--yellow);text-decoration:none}
+  footer .social{display:flex;gap:16px;margin-top:14px;font-size:16px;font-weight:700}
+
+  @media(max-width:760px){
+    .hero h1{font-size:48px}.hero{height:300px}
+    .intro .grid{grid-template-columns:1fr;gap:30px;padding:48px 0}
+    .intro h2{font-size:36px}.intro p{font-size:18px}
+    .banner h2{font-size:30px}.banner .arrow{width:56px;height:56px}
+    .explore h2.big{font-size:42px}.explore .cards{grid-template-columns:1fr;gap:26px}
+    .navlinks{display:none}
+  }
+</style>
+
+<script>
+  const nav=document.getElementById('nav');
+  const onScroll=()=>{ if(window.scrollY>60) nav.classList.add('scrolled'); else nav.classList.remove('scrolled'); };
+  window.addEventListener('scroll',onScroll); onScroll();
+</script>
+</body>
+</html>

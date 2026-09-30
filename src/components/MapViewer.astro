@@ -1,0 +1,90 @@
+---
+// Zoomable map viewer. Pass the image src, title and updated text.
+const { src, alt, title, updated } = Astro.props;
+---
+<section class="viewer-section">
+  <div class="viewer-inner">
+    <div class="viewer" data-viewer>
+      <img data-mapimg src={src} alt={alt} draggable="false" />
+      <div class="zoom-controls">
+        <button data-zin aria-label="Zoom in">+</button>
+        <button data-zout aria-label="Zoom out">−</button>
+        <button data-zreset aria-label="Reset zoom">↺</button>
+      </div>
+    </div>
+  </div>
+  <div class="map-caption">
+    <div class="title">{title}</div>
+    <div class="updated">{updated}</div>
+  </div>
+</section>
+
+<style>
+  .viewer-section{ background:var(--navy); padding:40px 0 64px; }
+  .viewer-inner{ max-width:var(--viewer-max); margin:0 auto; padding:0 24px; }
+  .viewer{ position:relative; width:100%; height:70vh; min-height:460px; overflow:hidden;
+    cursor:grab; background:#0d0d10; border-radius:var(--radius); touch-action:none; }
+  .viewer.grabbing{ cursor:grabbing; }
+  .viewer img{ position:absolute; top:0; left:0; transform-origin:0 0;
+    user-select:none; -webkit-user-drag:none; max-width:none; }
+  .zoom-controls{ position:absolute; bottom:16px; right:16px; display:flex;
+    flex-direction:column; gap:6px; z-index:5; }
+  .zoom-controls button{ width:42px; height:42px; border:none; background:rgba(255,255,255,.94);
+    border-radius:6px; font-size:22px; font-weight:700; cursor:pointer; color:#111; }
+  .zoom-controls button:hover{ background:#fff; }
+  .map-caption{ max-width:var(--viewer-max); margin:22px auto 0; padding:0 24px; }
+  .map-caption .title{ font-size:var(--body-size); font-weight:400; color:#fff; }
+  .map-caption .updated{ font-size:var(--body-size); font-weight:400; color:#fff; }
+  @media(max-width:760px){ .viewer{ height:56vh; } }
+</style>
+
+<script>
+  document.querySelectorAll('[data-viewer]').forEach((viewer) => {
+    const img = viewer.querySelector('[data-mapimg]');
+    let scale=1, minScale=1, tx=0, ty=0, natW=0, natH=0;
+    function fit(){
+      const vw=viewer.clientWidth, vh=viewer.clientHeight;
+      natW=img.naturalWidth; natH=img.naturalHeight;
+      minScale=Math.max(vw/natW, vh/natH); scale=minScale;
+      tx=(vw-natW*scale)/2; ty=(vh-natH*scale)/2; apply();
+    }
+    function apply(){
+      const vw=viewer.clientWidth, vh=viewer.clientHeight, w=natW*scale, h=natH*scale;
+      if(w>=vw){ if(tx>0)tx=0; if(tx<vw-w)tx=vw-w; } else tx=(vw-w)/2;
+      if(h>=vh){ if(ty>0)ty=0; if(ty<vh-h)ty=vh-h; } else ty=(vh-h)/2;
+      img.style.transform=`translate(${tx}px,${ty}px) scale(${scale})`;
+    }
+    function zoomAt(cx,cy,f){
+      const ns=Math.min(Math.max(scale*f,minScale),minScale*12), r=ns/scale;
+      tx=cx-(cx-tx)*r; ty=cy-(cy-ty)*r; scale=ns; apply();
+    }
+    if(img.complete && img.naturalWidth) fit(); else img.onload=fit;
+    window.addEventListener('resize',fit);
+    viewer.addEventListener('wheel',(e)=>{ e.preventDefault();
+      const r=viewer.getBoundingClientRect();
+      zoomAt(e.clientX-r.left,e.clientY-r.top, e.deltaY<0?1.15:1/1.15); },{passive:false});
+    let dragging=false,lx=0,ly=0;
+    viewer.addEventListener('mousedown',(e)=>{dragging=true;lx=e.clientX;ly=e.clientY;viewer.classList.add('grabbing');});
+    window.addEventListener('mouseup',()=>{dragging=false;viewer.classList.remove('grabbing');});
+    window.addEventListener('mousemove',(e)=>{if(!dragging)return;tx+=e.clientX-lx;ty+=e.clientY-ly;lx=e.clientX;ly=e.clientY;apply();});
+    viewer.addEventListener('dblclick',(e)=>{const r=viewer.getBoundingClientRect();zoomAt(e.clientX-r.left,e.clientY-r.top,1.8);});
+    let lastDist=null,lastMid=null;
+    viewer.addEventListener('touchmove',(e)=>{ e.preventDefault();
+      const r=viewer.getBoundingClientRect();
+      if(e.touches.length===2){
+        const dx=e.touches[0].clientX-e.touches[1].clientX, dy=e.touches[0].clientY-e.touches[1].clientY;
+        const d=Math.hypot(dx,dy);
+        const mx=(e.touches[0].clientX+e.touches[1].clientX)/2-r.left, my=(e.touches[0].clientY+e.touches[1].clientY)/2-r.top;
+        if(lastDist) zoomAt(mx,my,d/lastDist); lastDist=d;
+      } else if(e.touches.length===1 && lastMid){
+        tx+=e.touches[0].clientX-lastMid.x; ty+=e.touches[0].clientY-lastMid.y; apply();
+        lastMid={x:e.touches[0].clientX,y:e.touches[0].clientY};
+      }
+      if(e.touches.length===1 && !lastMid) lastMid={x:e.touches[0].clientX,y:e.touches[0].clientY};
+    },{passive:false});
+    viewer.addEventListener('touchend',(e)=>{if(e.touches.length===0){lastDist=null;lastMid=null;}});
+    viewer.querySelector('[data-zin]').onclick=()=>zoomAt(viewer.clientWidth/2,viewer.clientHeight/2,1.4);
+    viewer.querySelector('[data-zout]').onclick=()=>zoomAt(viewer.clientWidth/2,viewer.clientHeight/2,1/1.4);
+    viewer.querySelector('[data-zreset]').onclick=fit;
+  });
+</script>

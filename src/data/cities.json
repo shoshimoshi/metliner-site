@@ -1,0 +1,71 @@
+{
+  "taipei": {
+    "slug": "taipei",
+    "continent": "asia",
+    "country": "taiwan",
+    "name": { "en": "Taipei", "zh": "台北" },
+    "countryName": { "en": "Taiwan", "zh": "台灣" },
+    "seoTitle": {
+      "en": "Taipei Metro Map 2026 | Metliner — Taipei MRT Rail Map",
+      "zh": "台北捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Taipei Metro (MRT) map for 2026 by Metliner. Explore every line and station across Taipei, New Taipei, Taoyuan and Keelung in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放台北捷運路線圖 2026。涵蓋台北、新北、桃園、基隆的完整軌道路網。"
+    },
+    "intro": {
+      "en": "Taipei, the vibrant capital of Taiwan, boasts a modern and efficient public transportation system, with its railway network playing a central role. From the bustling Taipei Main Station to the sleek high-speed rail, Taipei's railways connect the city and the island, offering convenient and comfortable travel experiences.",
+      "zh": "台北是台灣充滿活力的首都，擁有現代且高效的大眾運輸系統，軌道路網在其中扮演核心角色。從繁忙的台北車站到便捷的高速鐵路，台北的鐵道連結著城市與整座島嶼，帶來便利舒適的旅行體驗。"
+    },
+    "photo": "/img/taipei-city.jpg",
+    "photoAlt": {
+      "en": "Taipei cityscape at night with Taipei 101",
+      "zh": "台北夜景與台北101"
+    },
+    "map": {
+      "src": "/maps/taipei_2026.jpg",
+      "title": { "en": "Taipei 2026", "zh": "台北 2026" },
+      "updated": { "en": "Last updated: Sep 2025", "zh": "最後更新：2025 年 9 月" }
+    },
+    "exploreMore": ["taichung", "kaohsiung", "tokyo"]
+  },
+
+  "taichung": {
+    "slug": "taichung", "continent": "asia", "country": "taiwan",
+    "name": { "en": "Taichung", "zh": "台中" },
+    "countryName": { "en": "Taiwan", "zh": "台灣" },
+    "seoTitle": { "en": "Taichung Metro Map | Metliner", "zh": "台中捷運路線圖 | Metliner" },
+    "seoDescription": { "en": "Zoomable Taichung metro map by Metliner.", "zh": "Metliner 設計的可縮放台中捷運路線圖。" },
+    "intro": { "en": "Taichung placeholder intro.", "zh": "台中介紹（佔位）。" },
+    "photo": "/img/taipei-city.jpg",
+    "photoAlt": { "en": "Taichung", "zh": "台中" },
+    "map": { "src": "/maps/taipei_2026.jpg", "title": { "en": "Taichung", "zh": "台中" }, "updated": { "en": "Last updated: Sep 2025", "zh": "最後更新：2025 年 9 月" } },
+    "exploreMore": ["taipei", "kaohsiung", "tokyo"]
+  },
+
+  "kaohsiung": {
+    "slug": "kaohsiung", "continent": "asia", "country": "taiwan",
+    "name": { "en": "Kaohsiung", "zh": "高雄" },
+    "countryName": { "en": "Taiwan", "zh": "台灣" },
+    "seoTitle": { "en": "Kaohsiung Metro Map | Metliner", "zh": "高雄捷運路線圖 | Metliner" },
+    "seoDescription": { "en": "Zoomable Kaohsiung metro map by Metliner.", "zh": "Metliner 設計的可縮放高雄捷運路線圖。" },
+    "intro": { "en": "Kaohsiung placeholder intro.", "zh": "高雄介紹（佔位）。" },
+    "photo": "/img/taipei-city.jpg",
+    "photoAlt": { "en": "Kaohsiung", "zh": "高雄" },
+    "map": { "src": "/maps/taipei_2026.jpg", "title": { "en": "Kaohsiung", "zh": "高雄" }, "updated": { "en": "Last updated: Sep 2025", "zh": "最後更新：2025 年 9 月" } },
+    "exploreMore": ["taipei", "taichung", "tokyo"]
+  },
+
+  "tokyo": {
+    "slug": "tokyo", "continent": "asia", "country": "japan",
+    "name": { "en": "Tokyo", "zh": "東京" },
+    "countryName": { "en": "Japan", "zh": "日本" },
+    "seoTitle": { "en": "Tokyo Metro Map | Metliner", "zh": "東京地鐵路線圖 | Metliner" },
+    "seoDescription": { "en": "Zoomable Tokyo metro map by Metliner.", "zh": "Metliner 設計的可縮放東京地鐵路線圖。" },
+    "intro": { "en": "Tokyo placeholder intro.", "zh": "東京介紹（佔位）。" },
+    "photo": "/img/taipei-city.jpg",
+    "photoAlt": { "en": "Tokyo", "zh": "東京" },
+    "map": { "src": "/maps/taipei_2026.jpg", "title": { "en": "Tokyo", "zh": "東京" }, "updated": { "en": "Last updated: Sep 2025", "zh": "最後更新：2025 年 9 月" } },
+    "exploreMore": ["taipei", "taichung", "kaohsiung"]
+  }
+}

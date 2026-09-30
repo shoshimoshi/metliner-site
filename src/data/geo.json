@@ -1,0 +1,61 @@
+{
+  "asia": {
+    "name": { "en": "Asia", "zh": "亞洲" },
+    "color": "#f5a623",
+    "countries": {
+      "china":       { "name": {"en":"China","zh":"中國"},        "native":"中国",          "cities": ["beijing","chongqing","dongguan","guangzhou","harbin","hong-kong","macau","shenzhen","xiamen"] },
+      "indonesia":   { "name": {"en":"Indonesia","zh":"印尼"},     "native":"Indonesia",     "cities": ["palembang"] },
+      "japan":       { "name": {"en":"Japan","zh":"日本"},         "native":"日本",          "cities": ["fukuoka","hakodate","hiroshima","kagoshima","nagano","nagasaki","nagoya","naha","niigata","okayama","osaka","sapporo","sendai","tokyo"] },
+      "malaysia":    { "name": {"en":"Malaysia","zh":"馬來西亞"},   "native":"Malaysia",      "cities": ["kuala-lumpur"] },
+      "philippines": { "name": {"en":"Philippines","zh":"菲律賓"},  "native":"Pilipinas",     "cities": ["manila"] },
+      "qatar":       { "name": {"en":"Qatar","zh":"卡達"},         "native":"قطر",           "cities": ["doha"] },
+      "singapore":   { "name": {"en":"Singapore","zh":"新加坡"},    "native":"Singapore",     "cities": ["singapore"] },
+      "south-korea": { "name": {"en":"South Korea","zh":"南韓"},    "native":"한국",          "cities": ["busan","daegu","daejeon","gwangju","seoul"] },
+      "taiwan":      { "name": {"en":"Taiwan","zh":"台灣"},         "native":"臺灣",          "cities": ["kaohsiung","taichung","taipei"] },
+      "thailand":    { "name": {"en":"Thailand","zh":"泰國"},       "native":"ประเทศไทย",     "cities": ["bangkok"] },
+      "uae":         { "name": {"en":"UAE","zh":"阿聯"},           "native":"الإمارات",      "cities": ["dubai"] },
+      "vietnam":     { "name": {"en":"Vietnam","zh":"越南"},        "native":"Việt Nam",      "cities": ["hanoi","ho-chi-minh-city"] }
+    }
+  },
+  "oceania": {
+    "name": { "en": "Oceania", "zh": "大洋洲" },
+    "color": "#8e44c9",
+    "countries": {
+      "australia":   { "name": {"en":"Australia","zh":"澳洲"},     "native":"Australia",     "cities": ["sydney","melbourne"] },
+      "new-zealand": { "name": {"en":"New Zealand","zh":"紐西蘭"},  "native":"New Zealand",   "cities": ["auckland","wellington"] }
+    }
+  },
+  "europe": {
+    "name": { "en": "Europe", "zh": "歐洲" },
+    "color": "#2f7fd1",
+    "countries": {
+      "austria":  { "name": {"en":"Austria","zh":"奧地利"},   "native":"Österreich",  "cities": ["vienna"] },
+      "denmark":  { "name": {"en":"Denmark","zh":"丹麥"},     "native":"Danmark",     "cities": ["copenhagen"] },
+      "france":   { "name": {"en":"France","zh":"法國"},      "native":"France",      "cities": ["lille","paris"] },
+      "germany":  { "name": {"en":"Germany","zh":"德國"},     "native":"Deutschland", "cities": ["berlin"] },
+      "portugal": { "name": {"en":"Portugal","zh":"葡萄牙"},   "native":"Portugal",    "cities": ["lisbon"] },
+      "russia":   { "name": {"en":"Russia","zh":"俄羅斯"},     "native":"Россия",      "cities": ["moscow"] },
+      "slovakia": { "name": {"en":"Slovakia","zh":"斯洛伐克"}, "native":"Slovensko",   "cities": ["bratislava"] },
+      "spain":    { "name": {"en":"Spain","zh":"西班牙"},     "native":"España",      "cities": ["madrid"] },
+      "turkey":   { "name": {"en":"Turkey","zh":"土耳其"},     "native":"Türkiye",     "cities": ["istanbul"] },
+      "uk":       { "name": {"en":"United Kingdom","zh":"英國"}, "native":"United Kingdom", "cities": ["london"] }
+    }
+  },
+  "africa": {
+    "name": { "en": "Africa", "zh": "非洲" },
+    "color": "#3aa06a",
+    "countries": {
+      "mauritius": { "name": {"en":"Mauritius","zh":"模里西斯"}, "native":"Maurice", "cities": ["port-louis"] }
+    }
+  },
+  "america": {
+    "name": { "en": "America", "zh": "美洲" },
+    "color": "#e0483a",
+    "countries": {
+      "brazil": { "name": {"en":"Brazil","zh":"巴西"},   "native":"Brasil",           "cities": ["sao-paulo"] },
+      "canada": { "name": {"en":"Canada","zh":"加拿大"}, "native":"Canada",           "cities": ["edmonton","calgary","montreal","ottawa","toronto","vancouver"] },
+      "mexico": { "name": {"en":"Mexico","zh":"墨西哥"}, "native":"México",           "cities": ["mexico-city"] },
+      "us":     { "name": {"en":"USA","zh":"美國"},      "native":"United States",    "cities": ["albuquerque","atlanta","austin","boston","buffalo","charlotte","cincinnati","cleveland","dallas","denver","detroit","el-paso","honolulu","jacksonville","kansas-city","las-vegas","little-rock","los-angeles","miami","nashville","norfolk","oklahoma-city","orlando","phoenix","pittsburgh","salt-lake-city","san-francisco","seattle","st-louis","tampa","tucson"] }
+    }
+  }
+}

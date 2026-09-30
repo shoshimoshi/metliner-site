@@ -1,0 +1,44 @@
+{
+  "title": {
+    "en": "Ride the world.",
+    "zh": "搭上世界。"
+  },
+  "slogan": {
+    "en": "Connecting Cities, Simplifying Journeys",
+    "zh": "連結城市，簡化旅程"
+  },
+  "tagline": {
+    "en": "Metliner is your ultimate destination for exploring cities across the globe through their intricate railway networks. Whether you're a passionate rail enthusiast or a curious traveler, this platform offers unified rail maps, insightful stories, and practical tips to make your journey seamless and unforgettable.",
+    "zh": "Metliner 是你探索全球城市軌道路網的最佳去處。無論你是熱愛鐵道的旅人，還是充滿好奇的旅行者，這個平台都以統一的路線圖、深入的故事與實用的提示，讓你的旅程順暢而難忘。"
+  },
+  "sections": {
+    "latestStops": { "en": "Latest Stops", "zh": "最新加入" },
+    "latestStopsSub": { "en": "Step into the newest stops added to our global network", "zh": "探索我們全球路網中最新加入的城市" },
+    "transferHubs": { "en": "Transfer Hubs", "zh": "轉運樞紐" },
+    "transferHubsSub": { "en": "Our featured cities — central stations worth your journey", "zh": "精選城市，值得專程一訪的中央車站" },
+    "routeMap": { "en": "Route Map", "zh": "路線地圖" },
+    "routeMapSub": { "en": "Pick a continent and follow the lines to explore each city", "zh": "選擇一個洲，沿著路線探索每座城市" }
+  },
+  "latestStops": ["xiamen", "los-angeles", "seattle", "dallas"],
+  "transferHubs": ["montreal", "osaka", "san-francisco", "copenhagen", "hiroshima", "busan", "paris", "beijing", "new-york", "taipei", "singapore"],
+  "continents": [
+    { "slug": "asia",    "en": "Asia",    "zh": "亞洲" },
+    { "slug": "america", "en": "America", "zh": "美洲" },
+    { "slug": "europe",  "en": "Europe",  "zh": "歐洲" },
+    { "slug": "oceania", "en": "Oceania", "zh": "大洋洲" },
+    { "slug": "africa",  "en": "Africa",  "zh": "非洲" }
+  ],
+  "spotlight": {
+    "label": { "en": "Metraveler", "zh": "Metraveler" },
+    "city": { "en": "Doha", "zh": "杜哈" },
+    "country": { "en": "Qatar", "zh": "卡達" },
+    "body": {
+      "en": "Welcome to Doha, Qatar — a city where rich heritage meets cutting-edge architecture. From bustling souqs and elegant museums to a skyline that sparkles over the Gulf, Doha is full of surprises. With its modern and efficient metro system, getting around is a breeze! Whether you're exploring the vibrant alleys of Souq Waqif, taking in the beauty of the Museum of Islamic Art, or watching the city light up from West Bay, Metraveler is here to guide you through Doha's must-visit spots — all just a few metro stops away.",
+      "zh": "歡迎來到卡達的杜哈，一座豐厚歷史與尖端建築交會的城市。從熱鬧的傳統市集、典雅的博物館，到在波斯灣上閃耀的天際線，杜哈處處是驚喜。搭配現代高效的地鐵系統，穿梭城市輕而易舉！無論是探索 Souq Waqif 的巷弄、細賞伊斯蘭藝術博物館，還是在 West Bay 欣賞城市燈火，Metraveler 都將帶你走訪杜哈必訪的景點，全都只在幾站地鐵之遙。"
+    },
+    "cta1": { "en": "Go to our Works!", "zh": "查看我們的作品！" },
+    "cta1sub": { "en": "Browse all the maps we have designed!", "zh": "瀏覽我們設計的所有地圖！" },
+    "cta2": { "en": "Information Center", "zh": "資訊中心" },
+    "cta2sub": { "en": "Click the button to access the clearest view of the map!", "zh": "點擊按鈕，取得最清晰的地圖檢視！" }
+  }
+}

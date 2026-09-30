@@ -1,0 +1,83 @@
+{
+  "about": {
+    "title": {
+      "en": "About us",
+      "zh": "關於我們"
+    },
+    "kicker": {
+      "en": "OUR STORY",
+      "zh": "我們的故事"
+    },
+    "lead": {
+      "en": "Metliner is a website dedicated to showing you railway maps around the world, using a simple and unified legend and drawing system to give visitors an intuitive, consistent way to read any city's network.",
+      "zh": "Metliner 致力於呈現全球各地的軌道路線圖，採用簡潔且統一的圖例與繪製系統，讓來訪者能以直覺、一致的方式讀懂任何城市的路網。"
+    },
+    "body": {
+      "en": "Whether you're a passionate rail enthusiast or a curious traveler, Metliner brings together unified rail maps, insightful stories, and practical tips to make your journey seamless and unforgettable. Every map is redrawn by hand in the same visual language, so a line in Tokyo reads the same way as a line in Paris.",
+      "zh": "無論你是熱愛鐵道的旅人，還是充滿好奇的旅行者，Metliner 都以統一的路線圖、深入的故事與實用的提示，讓你的旅程順暢而難忘。每一張地圖都以相同的視覺語言重新手繪，因此東京的一條路線，讀起來就跟巴黎的一樣清楚。"
+    },
+    "milestones": [
+      {
+        "date": "2025.03.19",
+        "en": "First cities added, including Beijing, Doha, Dubai, Osaka, Sydney, Taichung and Taipei.",
+        "zh": "首批城市加入，包括北京、杜哈、杜拜、大阪、雪梨、台中與台北等。"
+      },
+      {
+        "date": "2025.04.18",
+        "en": "A brand new interface introduced, along with Berlin, Hong Kong, Seoul, Tokyo, Vienna and more.",
+        "zh": "全新介面推出，並新增柏林、香港、首爾、東京、維也納等城市。"
+      },
+      {
+        "date": "2025.05.31",
+        "en": "Bangkok, Busan, Copenhagen, Paris and São Paulo added to the collection.",
+        "zh": "曼谷、釜山、哥本哈根、巴黎與聖保羅加入收藏。"
+      }
+    ]
+  },
+  "contact": {
+    "title": {
+      "en": "Contact us",
+      "zh": "聯絡我們"
+    },
+    "kicker": {
+      "en": "GET IN TOUCH",
+      "zh": "與我們聯繫"
+    },
+    "lead": {
+      "en": "Suggestions, corrections, or a city you'd love to see on Metliner? We read every message.",
+      "zh": "有任何建議、修正，或想在 Metliner 上看到的城市嗎？我們會閱讀每一則訊息。"
+    },
+    "email": "metliner64@gmail.com",
+    "socials": [
+      {
+        "name": "Instagram",
+        "handle": "@metliner.transit",
+        "url": "https://www.instagram.com/metliner.transit/"
+      },
+      {
+        "name": "X",
+        "handle": "@metliner",
+        "url": "https://x.com/metliner"
+      },
+      {
+        "name": "Pinterest",
+        "handle": "metlinertransit",
+        "url": "http://www.pinterest.com/metlinertransit"
+      },
+      {
+        "name": "Threads",
+        "handle": "@metlinermandarin",
+        "url": "https://www.threads.com/@metlinermandarin"
+      }
+    ],
+    "formUrl": "https://forms.gle/yXgh2pHnQRBxDBMP9",
+    "formCta": {
+      "en": "Open the contact form",
+      "zh": "開啟聯絡表單"
+    },
+    "formSub": {
+      "en": "Tell us about a city, a correction, or anything else",
+      "zh": "告訴我們你想看的城市、需要的修正，或任何想說的話"
+    }
+  }
+}
