@@ -1,0 +1,17 @@
+---
+// Root redirect: send visitors to the English homepage.
+// Uses a meta-refresh + JS so it works on static hosting (Cloudflare Pages / GitHub Pages).
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="0; url=/english/" />
+  <link rel="canonical" href="https://www.metliner.com/english/" />
+  <title>Metliner</title>
+  <script>window.location.replace('/english/');</script>
+</head>
+<body>
+  <p>Redirecting to <a href="/english/">Metliner</a>…</p>
+</body>
+</html>

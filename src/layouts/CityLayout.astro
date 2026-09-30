@@ -1,6 +1,6 @@
 ---
 import '../config/theme.css';
-import MapViewer from '../components/MapViewer.astro';
+import TiledMapViewer from '../components/TiledMapViewer.astro';
 import cities from '../data/cities.json';
 
 // props: city object + current language ("en" | "zh")
@@ -89,7 +89,7 @@ const related = (city.exploreMore || [])
   <div><h2>{ui.bannerMap}</h2><p>{ui.bannerMapSub}</p></div>
 </div></section>
 
-<MapViewer src={city.map.src} alt={`${city.name[lang]} metro map by Metliner`}
+<TiledMapViewer dzi={city.map.dzi} src={city.map.src} alt={`${city.name[lang]} metro map by Metliner`}
            title={city.map.title[lang]} updated={city.map.updated[lang]} />
 
 <section class="explore">

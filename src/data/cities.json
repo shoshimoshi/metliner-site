@@ -3,8 +3,14 @@
     "slug": "taipei",
     "continent": "asia",
     "country": "taiwan",
-    "name": { "en": "Taipei", "zh": "台北" },
-    "countryName": { "en": "Taiwan", "zh": "台灣" },
+    "name": {
+      "en": "Taipei",
+      "zh": "台北"
+    },
+    "countryName": {
+      "en": "Taiwan",
+      "zh": "台灣"
+    },
     "seoTitle": {
       "en": "Taipei Metro Map 2026 | Metliner — Taipei MRT Rail Map",
       "zh": "台北捷運路線圖 2026 | Metliner"
@@ -24,48 +30,159 @@
     },
     "map": {
       "src": "/maps/taipei_2026.jpg",
-      "title": { "en": "Taipei 2026", "zh": "台北 2026" },
-      "updated": { "en": "Last updated: Sep 2025", "zh": "最後更新：2025 年 9 月" }
+      "title": {
+        "en": "Taipei 2026",
+        "zh": "台北 2026"
+      },
+      "updated": {
+        "en": "Last updated: Sep 2025",
+        "zh": "最後更新：2025 年 9 月"
+      },
+      "dzi": "/maps-tiles/asia/taiwan/taipei.dzi",
+      "thumb": "/maps-tiles/thumbs/taipei.jpg"
     },
-    "exploreMore": ["taichung", "kaohsiung", "tokyo"]
+    "exploreMore": [
+      "taichung",
+      "kaohsiung",
+      "tokyo"
+    ]
   },
-
   "taichung": {
-    "slug": "taichung", "continent": "asia", "country": "taiwan",
-    "name": { "en": "Taichung", "zh": "台中" },
-    "countryName": { "en": "Taiwan", "zh": "台灣" },
-    "seoTitle": { "en": "Taichung Metro Map | Metliner", "zh": "台中捷運路線圖 | Metliner" },
-    "seoDescription": { "en": "Zoomable Taichung metro map by Metliner.", "zh": "Metliner 設計的可縮放台中捷運路線圖。" },
-    "intro": { "en": "Taichung placeholder intro.", "zh": "台中介紹（佔位）。" },
+    "slug": "taichung",
+    "continent": "asia",
+    "country": "taiwan",
+    "name": {
+      "en": "Taichung",
+      "zh": "台中"
+    },
+    "countryName": {
+      "en": "Taiwan",
+      "zh": "台灣"
+    },
+    "seoTitle": {
+      "en": "Taichung Metro Map | Metliner",
+      "zh": "台中捷運路線圖 | Metliner"
+    },
+    "seoDescription": {
+      "en": "Zoomable Taichung metro map by Metliner.",
+      "zh": "Metliner 設計的可縮放台中捷運路線圖。"
+    },
+    "intro": {
+      "en": "Taichung placeholder intro.",
+      "zh": "台中介紹（佔位）。"
+    },
     "photo": "/img/taipei-city.jpg",
-    "photoAlt": { "en": "Taichung", "zh": "台中" },
-    "map": { "src": "/maps/taipei_2026.jpg", "title": { "en": "Taichung", "zh": "台中" }, "updated": { "en": "Last updated: Sep 2025", "zh": "最後更新：2025 年 9 月" } },
-    "exploreMore": ["taipei", "kaohsiung", "tokyo"]
+    "photoAlt": {
+      "en": "Taichung",
+      "zh": "台中"
+    },
+    "map": {
+      "src": "/maps/taipei_2026.jpg",
+      "title": {
+        "en": "Taichung",
+        "zh": "台中"
+      },
+      "updated": {
+        "en": "Last updated: Sep 2025",
+        "zh": "最後更新：2025 年 9 月"
+      }
+    },
+    "exploreMore": [
+      "taipei",
+      "kaohsiung",
+      "tokyo"
+    ]
   },
-
   "kaohsiung": {
-    "slug": "kaohsiung", "continent": "asia", "country": "taiwan",
-    "name": { "en": "Kaohsiung", "zh": "高雄" },
-    "countryName": { "en": "Taiwan", "zh": "台灣" },
-    "seoTitle": { "en": "Kaohsiung Metro Map | Metliner", "zh": "高雄捷運路線圖 | Metliner" },
-    "seoDescription": { "en": "Zoomable Kaohsiung metro map by Metliner.", "zh": "Metliner 設計的可縮放高雄捷運路線圖。" },
-    "intro": { "en": "Kaohsiung placeholder intro.", "zh": "高雄介紹（佔位）。" },
+    "slug": "kaohsiung",
+    "continent": "asia",
+    "country": "taiwan",
+    "name": {
+      "en": "Kaohsiung",
+      "zh": "高雄"
+    },
+    "countryName": {
+      "en": "Taiwan",
+      "zh": "台灣"
+    },
+    "seoTitle": {
+      "en": "Kaohsiung Metro Map | Metliner",
+      "zh": "高雄捷運路線圖 | Metliner"
+    },
+    "seoDescription": {
+      "en": "Zoomable Kaohsiung metro map by Metliner.",
+      "zh": "Metliner 設計的可縮放高雄捷運路線圖。"
+    },
+    "intro": {
+      "en": "Kaohsiung placeholder intro.",
+      "zh": "高雄介紹（佔位）。"
+    },
     "photo": "/img/taipei-city.jpg",
-    "photoAlt": { "en": "Kaohsiung", "zh": "高雄" },
-    "map": { "src": "/maps/taipei_2026.jpg", "title": { "en": "Kaohsiung", "zh": "高雄" }, "updated": { "en": "Last updated: Sep 2025", "zh": "最後更新：2025 年 9 月" } },
-    "exploreMore": ["taipei", "taichung", "tokyo"]
+    "photoAlt": {
+      "en": "Kaohsiung",
+      "zh": "高雄"
+    },
+    "map": {
+      "src": "/maps/taipei_2026.jpg",
+      "title": {
+        "en": "Kaohsiung",
+        "zh": "高雄"
+      },
+      "updated": {
+        "en": "Last updated: Sep 2025",
+        "zh": "最後更新：2025 年 9 月"
+      }
+    },
+    "exploreMore": [
+      "taipei",
+      "taichung",
+      "tokyo"
+    ]
   },
-
   "tokyo": {
-    "slug": "tokyo", "continent": "asia", "country": "japan",
-    "name": { "en": "Tokyo", "zh": "東京" },
-    "countryName": { "en": "Japan", "zh": "日本" },
-    "seoTitle": { "en": "Tokyo Metro Map | Metliner", "zh": "東京地鐵路線圖 | Metliner" },
-    "seoDescription": { "en": "Zoomable Tokyo metro map by Metliner.", "zh": "Metliner 設計的可縮放東京地鐵路線圖。" },
-    "intro": { "en": "Tokyo placeholder intro.", "zh": "東京介紹（佔位）。" },
+    "slug": "tokyo",
+    "continent": "asia",
+    "country": "japan",
+    "name": {
+      "en": "Tokyo",
+      "zh": "東京"
+    },
+    "countryName": {
+      "en": "Japan",
+      "zh": "日本"
+    },
+    "seoTitle": {
+      "en": "Tokyo Metro Map | Metliner",
+      "zh": "東京地鐵路線圖 | Metliner"
+    },
+    "seoDescription": {
+      "en": "Zoomable Tokyo metro map by Metliner.",
+      "zh": "Metliner 設計的可縮放東京地鐵路線圖。"
+    },
+    "intro": {
+      "en": "Tokyo placeholder intro.",
+      "zh": "東京介紹（佔位）。"
+    },
     "photo": "/img/taipei-city.jpg",
-    "photoAlt": { "en": "Tokyo", "zh": "東京" },
-    "map": { "src": "/maps/taipei_2026.jpg", "title": { "en": "Tokyo", "zh": "東京" }, "updated": { "en": "Last updated: Sep 2025", "zh": "最後更新：2025 年 9 月" } },
-    "exploreMore": ["taipei", "taichung", "kaohsiung"]
+    "photoAlt": {
+      "en": "Tokyo",
+      "zh": "東京"
+    },
+    "map": {
+      "src": "/maps/taipei_2026.jpg",
+      "title": {
+        "en": "Tokyo",
+        "zh": "東京"
+      },
+      "updated": {
+        "en": "Last updated: Sep 2025",
+        "zh": "最後更新：2025 年 9 月"
+      }
+    },
+    "exploreMore": [
+      "taipei",
+      "taichung",
+      "kaohsiung"
+    ]
   }
 }
