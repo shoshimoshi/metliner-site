@@ -60,37 +60,37 @@
       "zh": "台灣"
     },
     "seoTitle": {
-      "en": "Taichung Metro Map | Metliner",
-      "zh": "台中捷運路線圖 | Metliner"
+      "en": "Taichung Metro Map 2026 | Metliner — Taichung Rail & Transit Map",
+      "zh": "台中捷運路線圖 2026 | Metliner"
     },
     "seoDescription": {
-      "en": "Zoomable Taichung metro map by Metliner.",
-      "zh": "Metliner 設計的可縮放台中捷運路線圖。"
+      "en": "High-resolution, zoomable Taichung metro and rail map for 2026 by Metliner. Explore every line and station across Taichung in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放台中軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
     },
     "intro": {
-      "en": "Taichung placeholder intro.",
-      "zh": "台中介紹（佔位）。"
+      "en": "Taichung is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Taichung so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "台中的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現台中的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
     },
-    "photo": "/img/taipei-city.jpg",
+    "photo": "/maps-tiles/thumbs/taichung.jpg",
     "photoAlt": {
-      "en": "Taichung",
-      "zh": "台中"
+      "en": "Taichung metro map by Metliner",
+      "zh": "Metliner 的台中路線圖"
     },
     "map": {
-      "src": "/maps/taipei_2026.jpg",
+      "dzi": "/maps-tiles/asia/taiwan/taichung.dzi",
+      "thumb": "/maps-tiles/thumbs/taichung.jpg",
+      "src": "/maps-tiles/thumbs/taichung.jpg",
       "title": {
         "en": "Taichung",
         "zh": "台中"
       },
       "updated": {
-        "en": "Last updated: Sep 2025",
-        "zh": "最後更新：2025 年 9 月"
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
       }
     },
     "exploreMore": [
-      "taipei",
-      "kaohsiung",
-      "tokyo"
+      "kaohsiung"
     ]
   },
   "kaohsiung": {
@@ -106,37 +106,37 @@
       "zh": "台灣"
     },
     "seoTitle": {
-      "en": "Kaohsiung Metro Map | Metliner",
-      "zh": "高雄捷運路線圖 | Metliner"
+      "en": "Kaohsiung Metro Map 2026 | Metliner — Kaohsiung Rail & Transit Map",
+      "zh": "高雄捷運路線圖 2026 | Metliner"
     },
     "seoDescription": {
-      "en": "Zoomable Kaohsiung metro map by Metliner.",
-      "zh": "Metliner 設計的可縮放高雄捷運路線圖。"
+      "en": "High-resolution, zoomable Kaohsiung metro and rail map for 2026 by Metliner. Explore every line and station across Kaohsiung in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放高雄軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
     },
     "intro": {
-      "en": "Kaohsiung placeholder intro.",
-      "zh": "高雄介紹（佔位）。"
+      "en": "Kaohsiung is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Kaohsiung so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "高雄的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現高雄的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
     },
-    "photo": "/img/taipei-city.jpg",
+    "photo": "/maps-tiles/thumbs/kaohsiung.jpg",
     "photoAlt": {
-      "en": "Kaohsiung",
-      "zh": "高雄"
+      "en": "Kaohsiung metro map by Metliner",
+      "zh": "Metliner 的高雄路線圖"
     },
     "map": {
-      "src": "/maps/taipei_2026.jpg",
+      "dzi": "/maps-tiles/asia/taiwan/kaohsiung.dzi",
+      "thumb": "/maps-tiles/thumbs/kaohsiung.jpg",
+      "src": "/maps-tiles/thumbs/kaohsiung.jpg",
       "title": {
         "en": "Kaohsiung",
         "zh": "高雄"
       },
       "updated": {
-        "en": "Last updated: Sep 2025",
-        "zh": "最後更新：2025 年 9 月"
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
       }
     },
     "exploreMore": [
-      "taipei",
-      "taichung",
-      "tokyo"
+      "taichung"
     ]
   },
   "tokyo": {
@@ -1241,6 +1241,246 @@
       "fukuoka",
       "hakodate",
       "hiroshima"
+    ]
+  },
+  "seoul": {
+    "slug": "seoul",
+    "continent": "asia",
+    "country": "south-korea",
+    "name": {
+      "en": "Seoul",
+      "zh": "首爾"
+    },
+    "countryName": {
+      "en": "South Korea",
+      "zh": "南韓"
+    },
+    "seoTitle": {
+      "en": "Seoul Metro Map 2026 | Metliner — Seoul Rail & Transit Map",
+      "zh": "首爾捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Seoul metro and rail map for 2026 by Metliner. Explore every line and station across Seoul in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放首爾軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Seoul is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Seoul so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "首爾的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現首爾的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/seoul.jpg",
+    "photoAlt": {
+      "en": "Seoul metro map by Metliner",
+      "zh": "Metliner 的首爾路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/south-korea/seoul.dzi",
+      "thumb": "/maps-tiles/thumbs/seoul.jpg",
+      "src": "/maps-tiles/thumbs/seoul.jpg",
+      "title": {
+        "en": "Seoul",
+        "zh": "首爾"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      }
+    },
+    "exploreMore": [
+      "busan",
+      "daegu",
+      "daejeon"
+    ]
+  },
+  "busan": {
+    "slug": "busan",
+    "continent": "asia",
+    "country": "south-korea",
+    "name": {
+      "en": "Busan",
+      "zh": "釜山"
+    },
+    "countryName": {
+      "en": "South Korea",
+      "zh": "南韓"
+    },
+    "seoTitle": {
+      "en": "Busan Metro Map 2026 | Metliner — Busan Rail & Transit Map",
+      "zh": "釜山捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Busan metro and rail map for 2026 by Metliner. Explore every line and station across Busan in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放釜山軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Busan is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Busan so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "釜山的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現釜山的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/busan.jpg",
+    "photoAlt": {
+      "en": "Busan metro map by Metliner",
+      "zh": "Metliner 的釜山路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/south-korea/busan.dzi",
+      "thumb": "/maps-tiles/thumbs/busan.jpg",
+      "src": "/maps-tiles/thumbs/busan.jpg",
+      "title": {
+        "en": "Busan",
+        "zh": "釜山"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      }
+    },
+    "exploreMore": [
+      "seoul",
+      "daegu",
+      "daejeon"
+    ]
+  },
+  "daegu": {
+    "slug": "daegu",
+    "continent": "asia",
+    "country": "south-korea",
+    "name": {
+      "en": "Daegu",
+      "zh": "大邱"
+    },
+    "countryName": {
+      "en": "South Korea",
+      "zh": "南韓"
+    },
+    "seoTitle": {
+      "en": "Daegu Metro Map 2026 | Metliner — Daegu Rail & Transit Map",
+      "zh": "大邱捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Daegu metro and rail map for 2026 by Metliner. Explore every line and station across Daegu in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放大邱軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Daegu is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Daegu so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "大邱的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現大邱的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/daegu.jpg",
+    "photoAlt": {
+      "en": "Daegu metro map by Metliner",
+      "zh": "Metliner 的大邱路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/south-korea/daegu.dzi",
+      "thumb": "/maps-tiles/thumbs/daegu.jpg",
+      "src": "/maps-tiles/thumbs/daegu.jpg",
+      "title": {
+        "en": "Daegu",
+        "zh": "大邱"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      }
+    },
+    "exploreMore": [
+      "seoul",
+      "busan",
+      "daejeon"
+    ]
+  },
+  "daejeon": {
+    "slug": "daejeon",
+    "continent": "asia",
+    "country": "south-korea",
+    "name": {
+      "en": "Daejeon",
+      "zh": "大田"
+    },
+    "countryName": {
+      "en": "South Korea",
+      "zh": "南韓"
+    },
+    "seoTitle": {
+      "en": "Daejeon Metro Map 2026 | Metliner — Daejeon Rail & Transit Map",
+      "zh": "大田捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Daejeon metro and rail map for 2026 by Metliner. Explore every line and station across Daejeon in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放大田軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Daejeon is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Daejeon so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "大田的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現大田的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/daejeon.jpg",
+    "photoAlt": {
+      "en": "Daejeon metro map by Metliner",
+      "zh": "Metliner 的大田路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/south-korea/daejeon.dzi",
+      "thumb": "/maps-tiles/thumbs/daejeon.jpg",
+      "src": "/maps-tiles/thumbs/daejeon.jpg",
+      "title": {
+        "en": "Daejeon",
+        "zh": "大田"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      }
+    },
+    "exploreMore": [
+      "seoul",
+      "busan",
+      "daegu"
+    ]
+  },
+  "gwangju": {
+    "slug": "gwangju",
+    "continent": "asia",
+    "country": "south-korea",
+    "name": {
+      "en": "Gwangju",
+      "zh": "光州"
+    },
+    "countryName": {
+      "en": "South Korea",
+      "zh": "南韓"
+    },
+    "seoTitle": {
+      "en": "Gwangju Metro Map 2026 | Metliner — Gwangju Rail & Transit Map",
+      "zh": "光州捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Gwangju metro and rail map for 2026 by Metliner. Explore every line and station across Gwangju in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放光州軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Gwangju is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Gwangju so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "光州的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現光州的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/gwangju.jpg",
+    "photoAlt": {
+      "en": "Gwangju metro map by Metliner",
+      "zh": "Metliner 的光州路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/south-korea/gwangju.dzi",
+      "thumb": "/maps-tiles/thumbs/gwangju.jpg",
+      "src": "/maps-tiles/thumbs/gwangju.jpg",
+      "title": {
+        "en": "Gwangju",
+        "zh": "光州"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      }
+    },
+    "exploreMore": [
+      "seoul",
+      "busan",
+      "daegu"
     ]
   }
 }
