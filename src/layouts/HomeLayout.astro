@@ -4,6 +4,7 @@ import '../config/theme.css';
 import cities from '../data/cities.json';
 import home from '../data/home.json';
 import geo from '../data/geo.json';
+import cityNames from '../data/city-names.json';
 
 const { lang = 'en' } = Astro.props;
 const ui = {
@@ -34,6 +35,11 @@ function card(slug){
 const latest = home.latestStops.map(card);
 const hubs = home.transferHubs.map(card);
 const sp = home.spotlight;
+
+// Chinese names for the world map (used on /zh/ only)
+const zhCountries = Object.fromEntries(Object.values(geo).flatMap(c => Object.entries(c.countries||{}).map(([k,v]) => [k, v.name.zh])));
+const zhContinents = Object.fromEntries(Object.entries(geo).map(([k,v]) => [k, v.name.zh]));
+const zhCities = Object.fromEntries(Object.entries(cityNames).map(([k,v]) => [k, v.zh]));
 ---
 <!DOCTYPE html>
 <html lang={lang === 'zh' ? 'zh-Hant' : 'en'}>
@@ -314,6 +320,35 @@ const sp = home.spotlight;
   })();
 </script>
 <script is:inline src="/worldmap/mapdata.js"></script>
+{lang === 'zh' && (
+  <script is:inline define:vars={{ zhCountries, zhCities, zhContinents }}>
+    // Chinese pages: point the world map at /zh/ pages and show Chinese names
+    (function(){
+      var d = window.simplemaps_worldmap_mapdata; if(!d) return;
+      var fix = function(u){ return u ? u.replace(/^\/english\//, '/zh/') : u; };
+      Object.keys(d.state_specific||{}).forEach(function(k){
+        var s = d.state_specific[k];
+        var m = s.url && s.url.match(/\/maps\/[^/]+\/([^/]+)\/?$/);
+        if(m && zhCountries[m[1]]) s.name = zhCountries[m[1]];
+        if(s.description) s.description = s.description.replace(/^(\d+) cit(y|ies)$/, '$1 座城市');
+        s.url = fix(s.url);
+      });
+      Object.keys(d.locations||{}).forEach(function(k){
+        var l = d.locations[k];
+        var m = l.url && l.url.match(/\/maps\/[^/]+\/([^/]+)\/([^/]+)\/?$/);
+        if(m){
+          var city = zhCities[m[2]], ctry = zhCountries[m[1]];
+          if(city){ l.name = city; l.description = ctry ? city + '，' + ctry : city; }
+        }
+        l.url = fix(l.url);
+      });
+      Object.keys(d.regions||{}).forEach(function(k){
+        var r = d.regions[k]; var z = zhContinents[(r.name||'').toLowerCase()];
+        if(z) r.name = z; r.url = fix(r.url);
+      });
+    })();
+  </script>
+)}
 <script is:inline src="/worldmap/worldmap.js"></script>
 </body>
 </html>
