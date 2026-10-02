@@ -1,50 +1,390 @@
 {
-  "beijing": {"en":"Beijing","zh":"北京"}, "chongqing": {"en":"Chongqing","zh":"重慶"},
-  "dongguan": {"en":"Dongguan","zh":"東莞"}, "guangzhou": {"en":"Guangzhou","zh":"廣州"},
-  "harbin": {"en":"Harbin","zh":"哈爾濱"}, "hong-kong": {"en":"Hong Kong","zh":"香港"},
-  "macau": {"en":"Macau","zh":"澳門"}, "shenzhen": {"en":"Shenzhen","zh":"深圳"},
-  "xiamen": {"en":"Xiamen","zh":"廈門"}, "palembang": {"en":"Palembang","zh":"巨港"},
-  "fukuoka": {"en":"Fukuoka","zh":"福岡"}, "hakodate": {"en":"Hakodate","zh":"函館"},
-  "hiroshima": {"en":"Hiroshima","zh":"廣島"}, "kagoshima": {"en":"Kagoshima","zh":"鹿兒島"},
-  "nagano": {"en":"Nagano","zh":"長野"}, "nagasaki": {"en":"Nagasaki","zh":"長崎"},
-  "nagoya": {"en":"Nagoya","zh":"名古屋"}, "naha": {"en":"Naha","zh":"那霸"},
-  "niigata": {"en":"Niigata","zh":"新潟"}, "okayama": {"en":"Okayama","zh":"岡山"},
-  "osaka": {"en":"Osaka","zh":"大阪"}, "sapporo": {"en":"Sapporo","zh":"札幌"},
-  "sendai": {"en":"Sendai","zh":"仙台"}, "tokyo": {"en":"Tokyo","zh":"東京"},
-  "kuala-lumpur": {"en":"Kuala Lumpur","zh":"吉隆坡"}, "manila": {"en":"Manila","zh":"馬尼拉"},
-  "doha": {"en":"Doha","zh":"杜哈"}, "singapore": {"en":"Singapore","zh":"新加坡"},
-  "busan": {"en":"Busan","zh":"釜山"}, "daegu": {"en":"Daegu","zh":"大邱"},
-  "daejeon": {"en":"Daejeon","zh":"大田"}, "gwangju": {"en":"Gwangju","zh":"光州"},
-  "seoul": {"en":"Seoul","zh":"首爾"}, "kaohsiung": {"en":"Kaohsiung","zh":"高雄"},
-  "taichung": {"en":"Taichung","zh":"台中"}, "taipei": {"en":"Taipei","zh":"台北"},
-  "bangkok": {"en":"Bangkok","zh":"曼谷"}, "dubai": {"en":"Dubai","zh":"杜拜"},
-  "hanoi": {"en":"Hanoi","zh":"河內"}, "ho-chi-minh-city": {"en":"Ho Chi Minh City","zh":"胡志明市"},
-  "sydney": {"en":"Sydney","zh":"雪梨"}, "melbourne": {"en":"Melbourne","zh":"墨爾本"},
-  "auckland": {"en":"Auckland","zh":"奧克蘭"}, "wellington": {"en":"Wellington","zh":"威靈頓"},
-  "vienna": {"en":"Vienna","zh":"維也納"}, "copenhagen": {"en":"Copenhagen","zh":"哥本哈根"},
-  "lille": {"en":"Lille","zh":"里爾"}, "paris": {"en":"Paris","zh":"巴黎"},
-  "berlin": {"en":"Berlin","zh":"柏林"}, "lisbon": {"en":"Lisbon","zh":"里斯本"},
-  "moscow": {"en":"Moscow","zh":"莫斯科"}, "bratislava": {"en":"Bratislava","zh":"布拉提斯拉瓦"},
-  "madrid": {"en":"Madrid","zh":"馬德里"}, "istanbul": {"en":"Istanbul","zh":"伊斯坦堡"},
-  "london": {"en":"London","zh":"倫敦"}, "port-louis": {"en":"Port Louis","zh":"路易港"},
-  "sao-paulo": {"en":"São Paulo","zh":"聖保羅"}, "edmonton": {"en":"Edmonton","zh":"愛民頓"},
-  "calgary": {"en":"Calgary","zh":"卡加利"}, "montreal": {"en":"Montreal","zh":"蒙特婁"},
-  "ottawa": {"en":"Ottawa","zh":"渥太華"}, "toronto": {"en":"Toronto","zh":"多倫多"},
-  "vancouver": {"en":"Vancouver","zh":"溫哥華"}, "mexico-city": {"en":"Mexico City","zh":"墨西哥城"},
-  "albuquerque": {"en":"Albuquerque","zh":"阿布奎基"}, "atlanta": {"en":"Atlanta","zh":"亞特蘭大"},
-  "austin": {"en":"Austin","zh":"奧斯汀"}, "boston": {"en":"Boston","zh":"波士頓"},
-  "buffalo": {"en":"Buffalo","zh":"水牛城"}, "charlotte": {"en":"Charlotte","zh":"夏洛特"},
-  "cincinnati": {"en":"Cincinnati","zh":"辛辛那提"}, "cleveland": {"en":"Cleveland","zh":"克里夫蘭"},
-  "dallas": {"en":"Dallas","zh":"達拉斯"}, "denver": {"en":"Denver","zh":"丹佛"},
-  "detroit": {"en":"Detroit","zh":"底特律"}, "el-paso": {"en":"El Paso","zh":"艾爾帕索"},
-  "honolulu": {"en":"Honolulu","zh":"檀香山"}, "jacksonville": {"en":"Jacksonville","zh":"傑克遜維爾"},
-  "kansas-city": {"en":"Kansas City","zh":"堪薩斯城"}, "las-vegas": {"en":"Las Vegas","zh":"拉斯維加斯"},
-  "little-rock": {"en":"Little Rock","zh":"小岩城"}, "los-angeles": {"en":"Los Angeles","zh":"洛杉磯"},
-  "miami": {"en":"Miami","zh":"邁阿密"}, "nashville": {"en":"Nashville","zh":"納許維爾"},
-  "norfolk": {"en":"Norfolk","zh":"諾福克"}, "oklahoma-city": {"en":"Oklahoma City","zh":"奧克拉荷馬城"},
-  "orlando": {"en":"Orlando","zh":"奧蘭多"}, "phoenix": {"en":"Phoenix","zh":"鳳凰城"},
-  "pittsburgh": {"en":"Pittsburgh","zh":"匹茲堡"}, "salt-lake-city": {"en":"Salt Lake City","zh":"鹽湖城"},
-  "san-francisco": {"en":"San Francisco","zh":"舊金山"}, "seattle": {"en":"Seattle","zh":"西雅圖"},
-  "st-louis": {"en":"St. Louis","zh":"聖路易"}, "tampa": {"en":"Tampa","zh":"坦帕"},
-  "tucson": {"en":"Tucson","zh":"土桑"}, "new-york": {"en":"New York","zh":"紐約"}
+  "beijing": {
+    "en": "Beijing",
+    "zh": "北京"
+  },
+  "chongqing": {
+    "en": "Chongqing",
+    "zh": "重慶"
+  },
+  "dongguan": {
+    "en": "Dongguan",
+    "zh": "東莞"
+  },
+  "guangzhou": {
+    "en": "Guangzhou",
+    "zh": "廣州"
+  },
+  "harbin": {
+    "en": "Harbin",
+    "zh": "哈爾濱"
+  },
+  "hong-kong": {
+    "en": "Hong Kong",
+    "zh": "香港"
+  },
+  "macau": {
+    "en": "Macau",
+    "zh": "澳門"
+  },
+  "shenzhen": {
+    "en": "Shenzhen",
+    "zh": "深圳"
+  },
+  "xiamen": {
+    "en": "Xiamen",
+    "zh": "廈門"
+  },
+  "palembang": {
+    "en": "Palembang",
+    "zh": "巨港"
+  },
+  "fukuoka": {
+    "en": "Fukuoka",
+    "zh": "福岡"
+  },
+  "hakodate": {
+    "en": "Hakodate",
+    "zh": "函館"
+  },
+  "hiroshima": {
+    "en": "Hiroshima",
+    "zh": "廣島"
+  },
+  "kagoshima": {
+    "en": "Kagoshima",
+    "zh": "鹿兒島"
+  },
+  "nagano": {
+    "en": "Nagano",
+    "zh": "長野"
+  },
+  "nagasaki": {
+    "en": "Nagasaki",
+    "zh": "長崎"
+  },
+  "nagoya": {
+    "en": "Nagoya",
+    "zh": "名古屋"
+  },
+  "naha": {
+    "en": "Naha",
+    "zh": "那霸"
+  },
+  "niigata": {
+    "en": "Niigata",
+    "zh": "新潟"
+  },
+  "okayama": {
+    "en": "Okayama",
+    "zh": "岡山"
+  },
+  "osaka": {
+    "en": "Osaka",
+    "zh": "大阪"
+  },
+  "sapporo": {
+    "en": "Sapporo",
+    "zh": "札幌"
+  },
+  "sendai": {
+    "en": "Sendai",
+    "zh": "仙台"
+  },
+  "tokyo": {
+    "en": "Tokyo",
+    "zh": "東京"
+  },
+  "kuala-lumpur": {
+    "en": "Kuala Lumpur",
+    "zh": "吉隆坡"
+  },
+  "manila": {
+    "en": "Manila",
+    "zh": "馬尼拉"
+  },
+  "doha": {
+    "en": "Doha",
+    "zh": "杜哈"
+  },
+  "singapore": {
+    "en": "Singapore",
+    "zh": "新加坡"
+  },
+  "busan": {
+    "en": "Busan",
+    "zh": "釜山"
+  },
+  "daegu": {
+    "en": "Daegu",
+    "zh": "大邱"
+  },
+  "daejeon": {
+    "en": "Daejeon",
+    "zh": "大田"
+  },
+  "gwangju": {
+    "en": "Gwangju",
+    "zh": "光州"
+  },
+  "seoul": {
+    "en": "Seoul",
+    "zh": "首爾"
+  },
+  "kaohsiung": {
+    "en": "Kaohsiung",
+    "zh": "高雄"
+  },
+  "taichung": {
+    "en": "Taichung",
+    "zh": "台中"
+  },
+  "taipei": {
+    "en": "Taipei",
+    "zh": "台北"
+  },
+  "bangkok": {
+    "en": "Bangkok",
+    "zh": "曼谷"
+  },
+  "dubai": {
+    "en": "Dubai",
+    "zh": "杜拜"
+  },
+  "hanoi": {
+    "en": "Hanoi",
+    "zh": "河內"
+  },
+  "ho-chi-minh-city": {
+    "en": "Ho Chi Minh City",
+    "zh": "胡志明市"
+  },
+  "sydney": {
+    "en": "Sydney",
+    "zh": "雪梨"
+  },
+  "melbourne": {
+    "en": "Melbourne",
+    "zh": "墨爾本"
+  },
+  "auckland": {
+    "en": "Auckland",
+    "zh": "奧克蘭"
+  },
+  "wellington": {
+    "en": "Wellington",
+    "zh": "威靈頓"
+  },
+  "vienna": {
+    "en": "Vienna",
+    "zh": "維也納"
+  },
+  "copenhagen": {
+    "en": "Copenhagen",
+    "zh": "哥本哈根"
+  },
+  "lille": {
+    "en": "Lille",
+    "zh": "里爾"
+  },
+  "paris": {
+    "en": "Paris",
+    "zh": "巴黎"
+  },
+  "berlin": {
+    "en": "Berlin",
+    "zh": "柏林"
+  },
+  "lisbon": {
+    "en": "Lisbon",
+    "zh": "里斯本"
+  },
+  "moscow": {
+    "en": "Moscow",
+    "zh": "莫斯科"
+  },
+  "bratislava": {
+    "en": "Bratislava",
+    "zh": "布拉提斯拉瓦"
+  },
+  "madrid": {
+    "en": "Madrid",
+    "zh": "馬德里"
+  },
+  "istanbul": {
+    "en": "Istanbul",
+    "zh": "伊斯坦堡"
+  },
+  "london": {
+    "en": "London",
+    "zh": "倫敦"
+  },
+  "port-louis": {
+    "en": "Port Louis",
+    "zh": "路易港"
+  },
+  "sao-paulo": {
+    "en": "São Paulo",
+    "zh": "聖保羅"
+  },
+  "edmonton": {
+    "en": "Edmonton",
+    "zh": "愛民頓"
+  },
+  "calgary": {
+    "en": "Calgary",
+    "zh": "卡加利"
+  },
+  "montreal": {
+    "en": "Montreal",
+    "zh": "蒙特婁"
+  },
+  "ottawa": {
+    "en": "Ottawa",
+    "zh": "渥太華"
+  },
+  "toronto": {
+    "en": "Toronto",
+    "zh": "多倫多"
+  },
+  "vancouver": {
+    "en": "Vancouver",
+    "zh": "溫哥華"
+  },
+  "mexico-city": {
+    "en": "Mexico City",
+    "zh": "墨西哥城"
+  },
+  "albuquerque": {
+    "en": "Albuquerque",
+    "zh": "阿布奎基"
+  },
+  "atlanta": {
+    "en": "Atlanta",
+    "zh": "亞特蘭大"
+  },
+  "austin": {
+    "en": "Austin",
+    "zh": "奧斯汀"
+  },
+  "boston": {
+    "en": "Boston",
+    "zh": "波士頓"
+  },
+  "buffalo": {
+    "en": "Buffalo",
+    "zh": "水牛城"
+  },
+  "charlotte": {
+    "en": "Charlotte",
+    "zh": "夏洛特"
+  },
+  "cincinnati": {
+    "en": "Cincinnati",
+    "zh": "辛辛那提"
+  },
+  "cleveland": {
+    "en": "Cleveland",
+    "zh": "克里夫蘭"
+  },
+  "dallas": {
+    "en": "Dallas",
+    "zh": "達拉斯"
+  },
+  "denver": {
+    "en": "Denver",
+    "zh": "丹佛"
+  },
+  "detroit": {
+    "en": "Detroit",
+    "zh": "底特律"
+  },
+  "el-paso": {
+    "en": "El Paso",
+    "zh": "艾爾帕索"
+  },
+  "honolulu": {
+    "en": "Honolulu",
+    "zh": "檀香山"
+  },
+  "jacksonville": {
+    "en": "Jacksonville",
+    "zh": "傑克遜維爾"
+  },
+  "kansas-city": {
+    "en": "Kansas City",
+    "zh": "堪薩斯城"
+  },
+  "las-vegas": {
+    "en": "Las Vegas",
+    "zh": "拉斯維加斯"
+  },
+  "little-rock": {
+    "en": "Little Rock",
+    "zh": "小岩城"
+  },
+  "los-angeles": {
+    "en": "Los Angeles",
+    "zh": "洛杉磯"
+  },
+  "miami": {
+    "en": "Miami",
+    "zh": "邁阿密"
+  },
+  "nashville": {
+    "en": "Nashville",
+    "zh": "納許維爾"
+  },
+  "norfolk": {
+    "en": "Norfolk",
+    "zh": "諾福克"
+  },
+  "oklahoma-city": {
+    "en": "Oklahoma City",
+    "zh": "奧克拉荷馬城"
+  },
+  "orlando": {
+    "en": "Orlando",
+    "zh": "奧蘭多"
+  },
+  "phoenix": {
+    "en": "Phoenix",
+    "zh": "鳳凰城"
+  },
+  "pittsburgh": {
+    "en": "Pittsburgh",
+    "zh": "匹茲堡"
+  },
+  "salt-lake-city": {
+    "en": "Salt Lake City",
+    "zh": "鹽湖城"
+  },
+  "san-francisco": {
+    "en": "San Francisco",
+    "zh": "舊金山"
+  },
+  "seattle": {
+    "en": "Seattle",
+    "zh": "西雅圖"
+  },
+  "st-louis": {
+    "en": "St. Louis",
+    "zh": "聖路易"
+  },
+  "tampa": {
+    "en": "Tampa",
+    "zh": "坦帕"
+  },
+  "tucson": {
+    "en": "Tucson",
+    "zh": "土桑"
+  },
+  "new-york": {
+    "en": "New York",
+    "zh": "紐約"
+  },
+  "houston": {
+    "en": "Houston",
+    "zh": "休士頓"
+  }
 }
