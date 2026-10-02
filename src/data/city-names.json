@@ -386,5 +386,41 @@
   "houston": {
     "en": "Houston",
     "zh": "休士頓"
+  },
+  "san-juan": {
+    "en": "San Juan",
+    "zh": "聖胡安"
+  },
+  "hamburg": {
+    "en": "Hamburg",
+    "zh": "漢堡"
+  },
+  "dublin": {
+    "en": "Dublin",
+    "zh": "都柏林"
+  },
+  "canberra": {
+    "en": "Canberra",
+    "zh": "坎培拉"
+  },
+  "perth": {
+    "en": "Perth",
+    "zh": "伯斯"
+  },
+  "brisbane": {
+    "en": "Brisbane",
+    "zh": "布里斯本"
+  },
+  "adelaide": {
+    "en": "Adelaide",
+    "zh": "阿得雷德"
+  },
+  "takamatsu": {
+    "en": "Takamatsu",
+    "zh": "高松"
+  },
+  "hangzhou": {
+    "en": "Hangzhou",
+    "zh": "杭州"
   }
 }

@@ -2150,7 +2150,9 @@
       },
       "hero": "/maps-tiles/hero/berlin.jpg"
     },
-    "exploreMore": []
+    "exploreMore": [
+      "hamburg"
+    ]
   },
   "lisbon": {
     "slug": "lisbon",
@@ -4661,6 +4663,441 @@
         "zh": "最後更新：2025"
       },
       "hero": "/maps-tiles/hero/port-louis.jpg"
+    },
+    "exploreMore": []
+  },
+  "takamatsu": {
+    "slug": "takamatsu",
+    "continent": "asia",
+    "country": "japan",
+    "name": {
+      "en": "Takamatsu",
+      "zh": "高松"
+    },
+    "countryName": {
+      "en": "Japan",
+      "zh": "日本"
+    },
+    "seoTitle": {
+      "en": "Takamatsu Metro Map 2026 | Metliner — Takamatsu Rail & Transit Map",
+      "zh": "高松捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Takamatsu metro and rail map for 2026 by Metliner. Explore every line and station across Takamatsu in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放高松軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Takamatsu is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Takamatsu so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "高松的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現高松的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/takamatsu.jpg",
+    "photoAlt": {
+      "en": "Takamatsu metro map by Metliner",
+      "zh": "Metliner 的高松路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/japan/takamatsu.dzi",
+      "thumb": "/maps-tiles/thumbs/takamatsu.jpg",
+      "src": "/maps-tiles/thumbs/takamatsu.jpg",
+      "title": {
+        "en": "Takamatsu",
+        "zh": "高松"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      },
+      "hero": "/maps-tiles/hero/takamatsu.jpg"
+    },
+    "exploreMore": [
+      "fukuoka",
+      "hakodate",
+      "hiroshima"
+    ]
+  },
+  "hangzhou": {
+    "slug": "hangzhou",
+    "continent": "asia",
+    "country": "china",
+    "name": {
+      "en": "Hangzhou",
+      "zh": "杭州"
+    },
+    "countryName": {
+      "en": "China",
+      "zh": "中國"
+    },
+    "seoTitle": {
+      "en": "Hangzhou Metro Map 2026 | Metliner — Hangzhou Rail & Transit Map",
+      "zh": "杭州捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Hangzhou metro and rail map for 2026 by Metliner. Explore every line and station across Hangzhou in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放杭州軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Hangzhou is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Hangzhou so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "杭州的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現杭州的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/hangzhou.jpg",
+    "photoAlt": {
+      "en": "Hangzhou metro map by Metliner",
+      "zh": "Metliner 的杭州路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/china/hangzhou.dzi",
+      "thumb": "/maps-tiles/thumbs/hangzhou.jpg",
+      "src": "/maps-tiles/thumbs/hangzhou.jpg",
+      "title": {
+        "en": "Hangzhou",
+        "zh": "杭州"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      },
+      "hero": "/maps-tiles/hero/hangzhou.jpg"
+    },
+    "exploreMore": [
+      "beijing",
+      "chongqing",
+      "dongguan"
+    ]
+  },
+  "canberra": {
+    "slug": "canberra",
+    "continent": "oceania",
+    "country": "australia",
+    "name": {
+      "en": "Canberra",
+      "zh": "坎培拉"
+    },
+    "countryName": {
+      "en": "Australia",
+      "zh": "澳洲"
+    },
+    "seoTitle": {
+      "en": "Canberra Metro Map 2026 | Metliner — Canberra Rail & Transit Map",
+      "zh": "坎培拉捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Canberra metro and rail map for 2026 by Metliner. Explore every line and station across Canberra in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放坎培拉軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Canberra is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Canberra so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "坎培拉的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現坎培拉的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/canberra.jpg",
+    "photoAlt": {
+      "en": "Canberra metro map by Metliner",
+      "zh": "Metliner 的坎培拉路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/oceania/australia/canberra.dzi",
+      "thumb": "/maps-tiles/thumbs/canberra.jpg",
+      "src": "/maps-tiles/thumbs/canberra.jpg",
+      "title": {
+        "en": "Canberra",
+        "zh": "坎培拉"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      },
+      "hero": "/maps-tiles/hero/canberra.jpg"
+    },
+    "exploreMore": [
+      "adelaide",
+      "brisbane",
+      "melbourne"
+    ]
+  },
+  "perth": {
+    "slug": "perth",
+    "continent": "oceania",
+    "country": "australia",
+    "name": {
+      "en": "Perth",
+      "zh": "伯斯"
+    },
+    "countryName": {
+      "en": "Australia",
+      "zh": "澳洲"
+    },
+    "seoTitle": {
+      "en": "Perth Metro Map 2026 | Metliner — Perth Rail & Transit Map",
+      "zh": "伯斯捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Perth metro and rail map for 2026 by Metliner. Explore every line and station across Perth in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放伯斯軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Perth is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Perth so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "伯斯的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現伯斯的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/perth.jpg",
+    "photoAlt": {
+      "en": "Perth metro map by Metliner",
+      "zh": "Metliner 的伯斯路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/oceania/australia/perth.dzi",
+      "thumb": "/maps-tiles/thumbs/perth.jpg",
+      "src": "/maps-tiles/thumbs/perth.jpg",
+      "title": {
+        "en": "Perth",
+        "zh": "伯斯"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      },
+      "hero": "/maps-tiles/hero/perth.jpg"
+    },
+    "exploreMore": [
+      "adelaide",
+      "brisbane",
+      "canberra"
+    ]
+  },
+  "brisbane": {
+    "slug": "brisbane",
+    "continent": "oceania",
+    "country": "australia",
+    "name": {
+      "en": "Brisbane",
+      "zh": "布里斯本"
+    },
+    "countryName": {
+      "en": "Australia",
+      "zh": "澳洲"
+    },
+    "seoTitle": {
+      "en": "Brisbane Metro Map 2026 | Metliner — Brisbane Rail & Transit Map",
+      "zh": "布里斯本捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Brisbane metro and rail map for 2026 by Metliner. Explore every line and station across Brisbane in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放布里斯本軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Brisbane is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Brisbane so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "布里斯本的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現布里斯本的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/brisbane.jpg",
+    "photoAlt": {
+      "en": "Brisbane metro map by Metliner",
+      "zh": "Metliner 的布里斯本路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/oceania/australia/brisbane.dzi",
+      "thumb": "/maps-tiles/thumbs/brisbane.jpg",
+      "src": "/maps-tiles/thumbs/brisbane.jpg",
+      "title": {
+        "en": "Brisbane",
+        "zh": "布里斯本"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      },
+      "hero": "/maps-tiles/hero/brisbane.jpg"
+    },
+    "exploreMore": [
+      "adelaide",
+      "canberra",
+      "melbourne"
+    ]
+  },
+  "adelaide": {
+    "slug": "adelaide",
+    "continent": "oceania",
+    "country": "australia",
+    "name": {
+      "en": "Adelaide",
+      "zh": "阿得雷德"
+    },
+    "countryName": {
+      "en": "Australia",
+      "zh": "澳洲"
+    },
+    "seoTitle": {
+      "en": "Adelaide Metro Map 2026 | Metliner — Adelaide Rail & Transit Map",
+      "zh": "阿得雷德捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Adelaide metro and rail map for 2026 by Metliner. Explore every line and station across Adelaide in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放阿得雷德軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Adelaide is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Adelaide so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "阿得雷德的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現阿得雷德的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/adelaide.jpg",
+    "photoAlt": {
+      "en": "Adelaide metro map by Metliner",
+      "zh": "Metliner 的阿得雷德路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/oceania/australia/adelaide.dzi",
+      "thumb": "/maps-tiles/thumbs/adelaide.jpg",
+      "src": "/maps-tiles/thumbs/adelaide.jpg",
+      "title": {
+        "en": "Adelaide",
+        "zh": "阿得雷德"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      },
+      "hero": "/maps-tiles/hero/adelaide.jpg"
+    },
+    "exploreMore": [
+      "brisbane",
+      "canberra",
+      "melbourne"
+    ]
+  },
+  "hamburg": {
+    "slug": "hamburg",
+    "continent": "europe",
+    "country": "germany",
+    "name": {
+      "en": "Hamburg",
+      "zh": "漢堡"
+    },
+    "countryName": {
+      "en": "Germany",
+      "zh": "德國"
+    },
+    "seoTitle": {
+      "en": "Hamburg Metro Map 2026 | Metliner — Hamburg Rail & Transit Map",
+      "zh": "漢堡捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Hamburg metro and rail map for 2026 by Metliner. Explore every line and station across Hamburg in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放漢堡軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Hamburg is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Hamburg so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "漢堡的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現漢堡的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/hamburg.jpg",
+    "photoAlt": {
+      "en": "Hamburg metro map by Metliner",
+      "zh": "Metliner 的漢堡路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/europe/germany/hamburg.dzi",
+      "thumb": "/maps-tiles/thumbs/hamburg.jpg",
+      "src": "/maps-tiles/thumbs/hamburg.jpg",
+      "title": {
+        "en": "Hamburg",
+        "zh": "漢堡"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      },
+      "hero": "/maps-tiles/hero/hamburg.jpg"
+    },
+    "exploreMore": [
+      "berlin"
+    ]
+  },
+  "san-juan": {
+    "slug": "san-juan",
+    "continent": "america",
+    "country": "us",
+    "name": {
+      "en": "San Juan",
+      "zh": "聖胡安"
+    },
+    "countryName": {
+      "en": "USA",
+      "zh": "美國"
+    },
+    "seoTitle": {
+      "en": "San Juan Metro Map 2026 | Metliner — San Juan Rail & Transit Map",
+      "zh": "聖胡安捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable San Juan metro and rail map for 2026 by Metliner. Explore every line and station across San Juan in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放聖胡安軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "San Juan is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across San Juan so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "聖胡安的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現聖胡安的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/san-juan.jpg",
+    "photoAlt": {
+      "en": "San Juan metro map by Metliner",
+      "zh": "Metliner 的聖胡安路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/america/us/san-juan.dzi",
+      "thumb": "/maps-tiles/thumbs/san-juan.jpg",
+      "src": "/maps-tiles/thumbs/san-juan.jpg",
+      "title": {
+        "en": "San Juan",
+        "zh": "聖胡安"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      },
+      "hero": "/maps-tiles/hero/san-juan.jpg"
+    },
+    "exploreMore": [
+      "albuquerque",
+      "atlanta",
+      "austin"
+    ]
+  },
+  "dublin": {
+    "slug": "dublin",
+    "continent": "europe",
+    "country": "ireland",
+    "name": {
+      "en": "Dublin",
+      "zh": "都柏林"
+    },
+    "countryName": {
+      "en": "Ireland",
+      "zh": "愛爾蘭"
+    },
+    "seoTitle": {
+      "en": "Dublin Metro Map 2026 | Metliner — Dublin Rail & Transit Map",
+      "zh": "都柏林捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Dublin metro and rail map for 2026 by Metliner. Explore every line and station across Dublin in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放都柏林軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Dublin is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Dublin so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "都柏林的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現都柏林的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/dublin.jpg",
+    "photoAlt": {
+      "en": "Dublin metro map by Metliner",
+      "zh": "Metliner 的都柏林路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/europe/ireland/dublin.dzi",
+      "thumb": "/maps-tiles/thumbs/dublin.jpg",
+      "src": "/maps-tiles/thumbs/dublin.jpg",
+      "title": {
+        "en": "Dublin",
+        "zh": "都柏林"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      },
+      "hero": "/maps-tiles/hero/dublin.jpg"
     },
     "exploreMore": []
   }

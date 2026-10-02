@@ -17,6 +17,7 @@
           "chongqing",
           "dongguan",
           "guangzhou",
+          "hangzhou",
           "harbin",
           "hong-kong",
           "macau",
@@ -54,6 +55,7 @@
           "osaka",
           "sapporo",
           "sendai",
+          "takamatsu",
           "tokyo"
         ]
       },
@@ -170,8 +172,12 @@
         },
         "native": "Australia",
         "cities": [
-          "sydney",
-          "melbourne"
+          "adelaide",
+          "brisbane",
+          "canberra",
+          "melbourne",
+          "perth",
+          "sydney"
         ]
       },
       "new-zealand": {
@@ -232,7 +238,18 @@
         },
         "native": "Deutschland",
         "cities": [
-          "berlin"
+          "berlin",
+          "hamburg"
+        ]
+      },
+      "ireland": {
+        "name": {
+          "en": "Ireland",
+          "zh": "愛爾蘭"
+        },
+        "native": "Éire",
+        "cities": [
+          "dublin"
         ]
       },
       "portugal": {
@@ -394,6 +411,7 @@
           "pittsburgh",
           "salt-lake-city",
           "san-francisco",
+          "san-juan",
           "seattle",
           "st-louis",
           "tampa",
