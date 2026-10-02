@@ -1,4 +1,5 @@
 ---
+import ThemeToggle from '../components/ThemeToggle.astro';
 import '../config/theme.css';
 import cityNames from '../data/city-names.json';
 
@@ -14,8 +15,8 @@ const cities = country.cities.map(slug => ({
   slug,
   name: (cityNames[slug]||{})[lang] || slug,
   nameEn: (cityNames[slug]||{}).en || slug,
-  // Unsplash source: a city photo by keyword; swap for your own later
-  photo: `https://source.unsplash.com/640x480/?${encodeURIComponent(((cityNames[slug]||{}).en||slug)+' cityscape')}`
+  // map thumbnail (the Unsplash keyword-photo service this used was shut down)
+  photo: `/maps-tiles/thumbs/${slug}.jpg`
 }));
 ---
 <!DOCTYPE html>
@@ -41,6 +42,7 @@ const cities = country.cities.map(slug => ({
       <a href={`${base}/contact-us`}>{ui.contact}</a>
       <span class="lang">{ui.langLabel} ▾</span>
     </div>
+    <ThemeToggle lang={lang} />
   </div>
 </nav>
 <div class="brand-bar"><i></i><i></i><i></i><i></i><i></i></div>
@@ -59,7 +61,7 @@ const cities = country.cities.map(slug => ({
   <div class="city-grid">
     {cities.map(city => (
       <a class="ccard" href={`${base}/maps/${contKey}/${countryKey}/${city.slug}`}>
-        <div class="thumb"><img src={city.photo} alt={`${city.nameEn} cityscape`} loading="lazy" /></div>
+        <div class="thumb"><img src={city.photo} alt={`${city.nameEn} metro map`} loading="lazy" /></div>
         <div class="cfoot"><span class="dot" style={`background:${color}`}></span>{city.name}</div>
       </a>
     ))}

@@ -1,4 +1,5 @@
 ---
+import ThemeToggle from '../components/ThemeToggle.astro';
 import '../config/theme.css';
 import pages from '../data/pages.json';
 
@@ -33,6 +34,7 @@ const base = lang === 'en' ? '/english' : '/zh';
       <a href={`${base}/contact-us`}>{ui.contact}</a>
       <span class="lang">{ui.langLabel} ▾</span>
     </div>
+    <ThemeToggle lang={lang} />
   </div>
 </nav>
 <div class="brand-bar"><i></i><i></i><i></i><i></i><i></i></div>

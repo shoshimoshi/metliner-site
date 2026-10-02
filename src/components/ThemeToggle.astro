@@ -1,0 +1,133 @@
+---
+// Light / dark switch. Sits in the nav on every page.
+// The choice is saved in the visitor's browser; with no saved choice the site follows the device setting.
+const { lang = 'en' } = Astro.props;
+const label = lang === 'zh' ? '切換深色 / 淺色模式' : 'Toggle dark / light mode';
+---
+<script is:inline>
+  (function(){
+    var t=null;
+    try{ t=localStorage.getItem('metliner-theme'); }catch(e){}
+    if(t!=='dark' && t!=='light'){
+      t=(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';
+    }
+    document.documentElement.setAttribute('data-theme',t);
+  })();
+</script>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label={label} title={label}>
+  <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+  <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+</button>
+<script is:inline>
+  (function(){
+    document.querySelectorAll('[data-theme-toggle]').forEach(function(b){
+      b.addEventListener('click',function(){
+        var next=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+        document.documentElement.setAttribute('data-theme',next);
+        try{ localStorage.setItem('metliner-theme',next); }catch(e){}
+      });
+    });
+  })();
+</script>
+
+<style is:global>
+  /* ---- toggle button ---- */
+  nav .wrap .navlinks{margin-left:auto}
+  .theme-toggle{flex-shrink:0;margin-left:16px;width:38px;height:38px;display:inline-flex;align-items:center;justify-content:center;
+    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.4);border-radius:50%;color:#fff;cursor:pointer;
+    transition:background .15s,border-color .15s,transform .1s}
+  .theme-toggle:hover{background:rgba(255,255,255,.18);border-color:#FFC816}
+  .theme-toggle:active{transform:scale(.93)}
+  .theme-toggle:focus-visible{outline:2px solid #FFC816;outline-offset:2px}
+  .theme-toggle svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .theme-toggle .i-sun{display:none}
+  html[data-theme="dark"] .theme-toggle .i-sun{display:block}
+  html[data-theme="dark"] .theme-toggle .i-moon{display:none}
+
+  /* ---- dark palette ---- */
+  html[data-theme="dark"]{
+    color-scheme:dark;
+    --text:#e6e9f2;
+    --cream:#111729;
+    --d-bg:#0a0e1a;        /* page background */
+    --d-surface:#111729;   /* raised sections / cards */
+    --d-line:#242c44;      /* borders, rails */
+    --d-head:#ffffff;      /* headings */
+    --d-muted:#9aa3b8;     /* secondary text */
+  }
+  html[data-theme="dark"] body{background:var(--d-bg) !important;color:var(--text) !important}
+
+  /* page headers that were white */
+  html[data-theme="dark"] .page-hero,
+  html[data-theme="dark"] .maps-hero,
+  html[data-theme="dark"] .cont-hero,
+  html[data-theme="dark"] .ctry-hero,
+  html[data-theme="dark"] .cont-body{background:var(--d-bg) !important}
+  html[data-theme="dark"] .page-hero{border-bottom-color:var(--d-line) !important}
+
+  /* headings that were navy on white */
+  html[data-theme="dark"] .page-hero h1,
+  html[data-theme="dark"] .maps-hero h1,
+  html[data-theme="dark"] .cont-hero h1,
+  html[data-theme="dark"] .ctry-hero h1,
+  html[data-theme="dark"] .sec-head h2,
+  html[data-theme="dark"] .intro h2,
+  html[data-theme="dark"] .lead,
+  html[data-theme="dark"] .tl-date,
+  html[data-theme="dark"] .s-name,
+  html[data-theme="dark"] .st-en,
+  html[data-theme="dark"] .maps-body .name,
+  html[data-theme="dark"] .cont-hero .back:hover,
+  html[data-theme="dark"] .ctry-hero .back:hover{color:var(--d-head) !important}
+  html[data-theme="dark"] .station:hover .st-en{color:var(--c) !important}
+  html[data-theme="dark"] .or-email a{color:#FFC816 !important}
+
+  /* secondary text */
+  html[data-theme="dark"] .para,
+  html[data-theme="dark"] .tl-text,
+  html[data-theme="dark"] .or-email,
+  html[data-theme="dark"] .sec-head p,
+  html[data-theme="dark"] .maps-hero p,
+  html[data-theme="dark"] .cont-hero .back,
+  html[data-theme="dark"] .ctry-hero .back,
+  html[data-theme="dark"] .s-handle{color:var(--d-muted) !important}
+
+  html[data-theme="dark"] .back img{filter:invert(1) !important}
+
+  /* about: timeline */
+  html[data-theme="dark"] .tl-rail{background:var(--d-line) !important}
+  html[data-theme="dark"] .tl-node{background:var(--d-bg) !important}
+
+  /* contact */
+  html[data-theme="dark"] .contact-card{background:var(--d-surface) !important;border:1px solid var(--d-line) !important}
+  html[data-theme="dark"] .social-card{border-color:var(--d-line) !important}
+  html[data-theme="dark"] .social-card:hover{border-color:#FFC816 !important}
+
+  /* continent line list */
+  html[data-theme="dark"] .station .dot{background:var(--d-bg) !important;box-shadow:0 0 0 3px var(--d-bg) !important}
+
+  /* maps overview cards: tint from the continent colour instead of a pastel */
+  html[data-theme="dark"] .maps-body .ccard{background:color-mix(in srgb, var(--c) 16%, #111729) !important}
+  html[data-theme="dark"] .maps-body .node{background:var(--d-bg) !important}
+  html[data-theme="dark"] .maps-body .tag{color:#e6e9f2 !important;background:rgba(255,255,255,.08) !important;border-color:rgba(255,255,255,.12) !important}
+
+  /* country + home + city cards */
+  html[data-theme="dark"] .ccard .thumb{background:var(--d-surface) !important}
+  html[data-theme="dark"] .ccard .cfoot,
+  html[data-theme="dark"] .platefoot{background:#18213d !important}
+  html[data-theme="dark"] .ecard .thumb{border-color:var(--d-line) !important}
+  html[data-theme="dark"] .ecard .name{color:var(--d-head) !important}
+
+  /* home: continent pills */
+  html[data-theme="dark"] .cont:not(:hover){background:transparent !important}
+  html[data-theme="dark"] .cont[data-line="0"]{color:#f0695d !important}
+  html[data-theme="dark"] .cont[data-line="1"]{color:#f5a623 !important}
+  html[data-theme="dark"] .cont[data-line="2"]{color:#4cc084 !important}
+  html[data-theme="dark"] .cont[data-line="3"]{color:#5aa2ea !important}
+  html[data-theme="dark"] .cont[data-line="4"]{color:#b06ee6 !important}
+  html[data-theme="dark"] .cont:hover{color:#fff !important}
+
+  /* map viewer section + footer sit on navy; separate them from the dark page */
+  html[data-theme="dark"] .viewer-section{background:#0d1428 !important}
+  html[data-theme="dark"] footer{border-top:1px solid var(--d-line) !important}
+</style>

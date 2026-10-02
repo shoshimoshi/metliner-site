@@ -1,4 +1,5 @@
 ---
+import ThemeToggle from '../components/ThemeToggle.astro';
 import '../config/theme.css';
 import TiledMapViewer from '../components/TiledMapViewer.astro';
 import cities from '../data/cities.json';
@@ -67,6 +68,7 @@ const related = (city.exploreMore || [])
       <a href={`${base}/contact-us`}>{ui.contact}</a>
       <span class="lang">{ui.langLabel} ▾</span>
     </div>
+    <ThemeToggle lang={lang} />
   </div>
 </nav>
 <div class="brand-bar"><i></i><i></i><i></i><i></i><i></i></div>
