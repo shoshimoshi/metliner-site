@@ -73,10 +73,10 @@ const related = (city.exploreMore || [])
 <div class="brand-bar"><i></i><i></i><i></i><i></i><i></i></div>
 
 <header class="hero">
-  <div class="bg" style={`background:
-      radial-gradient(1200px 520px at 78% -10%, ${continentColor}44, transparent 60%),
-      radial-gradient(900px 600px at 10% 120%, ${continentColor}22, transparent 55%),
-      linear-gradient(135deg, #0A132E 0%, #0d1838 55%, #060b1c 100%);`}></div>
+  <div class="bg" style={`background-image:url('${city.map.hero || city.map.thumb}')`}></div>
+  <div class="bg-tint" style={`background:
+      linear-gradient(90deg, rgba(6,10,24,.92) 0%, rgba(6,10,24,.78) 38%, rgba(6,10,24,.5) 100%),
+      radial-gradient(1100px 500px at 82% -10%, ${continentColor}33, transparent 62%);`}></div>
   <div class="wrap inner">
     <h1>{city.name[lang]}</h1>
     <div class="country">{city.countryName[lang]}</div>
@@ -149,8 +149,9 @@ const related = (city.exploreMore || [])
   .lang{color:#fff;border:1px solid rgba(255,255,255,.4);padding:5px 12px;border-radius:20px;font-size:14px}
 
   .hero{position:relative;height:400px;overflow:hidden;background:#0A132E}
-  .hero .bg{position:absolute;inset:0}
-  .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,11,28,.35),transparent 60%);pointer-events:none}
+  .hero .bg{position:absolute;inset:0;background-size:cover;background-position:center;
+    transform:scale(1.05);filter:saturate(1.05)}
+  .hero .bg-tint{position:absolute;inset:0;pointer-events:none}
   .hero .inner{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;padding-top:44px}
   .hero h1{color:#fff;font-size:var(--h1-hero);font-weight:700;line-height:1;letter-spacing:-.005em}
   .hero .country{color:#fff;font-weight:600;font-size:22px;margin-top:8px;letter-spacing:.05em}

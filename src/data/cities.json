@@ -39,7 +39,8 @@
         "zh": "最後更新：2025 年 9 月"
       },
       "dzi": "/maps-tiles/asia/taiwan/taipei.dzi",
-      "thumb": "/maps-tiles/thumbs/taipei.jpg"
+      "thumb": "/maps-tiles/thumbs/taipei.jpg",
+      "hero": "/maps-tiles/hero/taipei.jpg"
     },
     "exploreMore": [
       "taichung",
@@ -87,7 +88,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/taichung.jpg"
     },
     "exploreMore": [
       "kaohsiung"
@@ -133,7 +135,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/kaohsiung.jpg"
     },
     "exploreMore": [
       "taichung"
@@ -179,7 +182,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/tokyo.jpg"
     },
     "exploreMore": [
       "fukuoka",
@@ -227,7 +231,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/beijing.jpg"
     },
     "exploreMore": [
       "chongqing",
@@ -275,7 +280,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/chongqing.jpg"
     },
     "exploreMore": [
       "beijing",
@@ -323,7 +329,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/dongguan.jpg"
     },
     "exploreMore": [
       "beijing",
@@ -371,7 +378,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/guangzhou.jpg"
     },
     "exploreMore": [
       "beijing",
@@ -419,7 +427,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/harbin.jpg"
     },
     "exploreMore": [
       "beijing",
@@ -467,7 +476,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/hong-kong.jpg"
     },
     "exploreMore": [
       "beijing",
@@ -515,7 +525,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/macau.jpg"
     },
     "exploreMore": [
       "beijing",
@@ -563,7 +574,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/shenzhen.jpg"
     },
     "exploreMore": [
       "beijing",
@@ -611,7 +623,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/xiamen.jpg"
     },
     "exploreMore": [
       "beijing",
@@ -659,7 +672,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/fukuoka.jpg"
     },
     "exploreMore": [
       "hakodate",
@@ -707,7 +721,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/hakodate.jpg"
     },
     "exploreMore": [
       "fukuoka",
@@ -755,7 +770,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/hiroshima.jpg"
     },
     "exploreMore": [
       "fukuoka",
@@ -803,7 +819,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/kagoshima.jpg"
     },
     "exploreMore": [
       "fukuoka",
@@ -851,7 +868,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/nagano.jpg"
     },
     "exploreMore": [
       "fukuoka",
@@ -899,7 +917,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/nagasaki.jpg"
     },
     "exploreMore": [
       "fukuoka",
@@ -947,7 +966,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/nagoya.jpg"
     },
     "exploreMore": [
       "fukuoka",
@@ -995,7 +1015,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/naha.jpg"
     },
     "exploreMore": [
       "fukuoka",
@@ -1043,7 +1064,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/niigata.jpg"
     },
     "exploreMore": [
       "fukuoka",
@@ -1091,7 +1113,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/okayama.jpg"
     },
     "exploreMore": [
       "fukuoka",
@@ -1139,7 +1162,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/osaka.jpg"
     },
     "exploreMore": [
       "fukuoka",
@@ -1187,7 +1211,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/sapporo.jpg"
     },
     "exploreMore": [
       "fukuoka",
@@ -1235,7 +1260,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/sendai.jpg"
     },
     "exploreMore": [
       "fukuoka",
@@ -1283,7 +1309,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/seoul.jpg"
     },
     "exploreMore": [
       "busan",
@@ -1331,7 +1358,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/busan.jpg"
     },
     "exploreMore": [
       "seoul",
@@ -1379,7 +1407,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/daegu.jpg"
     },
     "exploreMore": [
       "seoul",
@@ -1427,7 +1456,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/daejeon.jpg"
     },
     "exploreMore": [
       "seoul",
@@ -1475,7 +1505,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/gwangju.jpg"
     },
     "exploreMore": [
       "seoul",
@@ -1523,7 +1554,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/palembang.jpg"
     },
     "exploreMore": []
   },
@@ -1567,7 +1599,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/kuala-lumpur.jpg"
     },
     "exploreMore": []
   },
@@ -1611,7 +1644,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/manila.jpg"
     },
     "exploreMore": []
   },
@@ -1655,7 +1689,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/doha.jpg"
     },
     "exploreMore": []
   },
@@ -1699,7 +1734,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/singapore.jpg"
     },
     "exploreMore": []
   },
@@ -1743,7 +1779,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/bangkok.jpg"
     },
     "exploreMore": []
   },
@@ -1787,7 +1824,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/dubai.jpg"
     },
     "exploreMore": []
   },
@@ -1831,7 +1869,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/hanoi.jpg"
     },
     "exploreMore": [
       "ho-chi-minh-city"
@@ -1877,7 +1916,8 @@
       "updated": {
         "en": "Last updated: 2025",
         "zh": "最後更新：2025"
-      }
+      },
+      "hero": "/maps-tiles/hero/ho-chi-minh-city.jpg"
     },
     "exploreMore": [
       "hanoi"
