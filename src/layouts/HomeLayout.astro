@@ -3,6 +3,7 @@ import ThemeToggle from '../components/ThemeToggle.astro';
 import '../config/theme.css';
 import cities from '../data/cities.json';
 import home from '../data/home.json';
+import geo from '../data/geo.json';
 
 const { lang = 'en' } = Astro.props;
 const ui = {
@@ -83,8 +84,8 @@ const sp = home.spotlight;
     </div>
     <div class="worldmap-wrap"><div id="map"></div></div>
     <div class="continents">
-      {home.continents.map((c,i) => (
-        <a class="cont" href={`${base}/maps/${c.slug}`} data-line={i}>{c[lang]}</a>
+      {home.continents.map((c) => (
+        <a class="cont" href={`${base}/maps/${c.slug}`} style={`--c:${geo[c.slug].color}`}><span class="dot"></span>{c[lang]}</a>
       ))}
     </div>
   </div>
@@ -108,12 +109,12 @@ const sp = home.spotlight;
   </div>
 </section>
 
-<!-- TRANSFER HUBS -->
+<!-- FEATURED WORKS -->
 <section class="cards-sec">
   <div class="wrap">
     <div class="sec-head">
       <img class="arrow" src="/arrows/right.png" alt="" />
-      <div><div class="lines"><i></i><i></i><i></i><i></i><i></i></div><h2>{home.sections.transferHubs[lang]}</h2><p>{home.sections.transferHubsSub[lang]}</p></div>
+      <div><div class="lines"><i></i><i></i><i></i><i></i><i></i></div><h2>{home.sections.transferHubs[lang]}</h2></div>
     </div>
     <div class="cards three">
       {hubs.map((c) => (
@@ -206,7 +207,7 @@ const sp = home.spotlight;
   .sec-head p{font-size:17px;font-weight:500;color:#333;margin-top:6px}
 
   /* platform name-plate foot on each card */
-  .platefoot{display:flex;align-items:center;gap:10px;background:var(--navy);color:#fff;
+  .platefoot{display:flex;align-items:center;gap:10px;background:#141F2B;color:#fff;
     padding:12px 16px;font-weight:700;font-size:19px;border-radius:0 0 4px 4px}
   .platefoot .dot{width:13px;height:13px;border-radius:50%;flex-shrink:0}
   .platefoot .dot[data-line="0"]{background:#e0483a}
@@ -219,19 +220,12 @@ const sp = home.spotlight;
   .worldmap-wrap{max-width:100%;margin:0 auto}
   #map{width:100%}
   .continents{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
-  /* outlined pills — each continent its own line colour */
-  .cont{background:#fff;border:3px solid;font-weight:800;font-size:18px;padding:11px 28px;
-    border-radius:30px;text-decoration:none;transition:background .15s,color .15s}
-  .cont[data-line="0"]{border-color:#e0483a;color:#e0483a}
-  .cont[data-line="1"]{border-color:#f5a623;color:#c47d00}
-  .cont[data-line="2"]{border-color:#3aa06a;color:#2c7d51}
-  .cont[data-line="3"]{border-color:#2f7fd1;color:#2f7fd1}
-  .cont[data-line="4"]{border-color:#8e44c9;color:#8e44c9}
-  .cont[data-line="0"]:hover{background:#e0483a;color:#fff}
-  .cont[data-line="1"]:hover{background:#f5a623;color:#fff}
-  .cont[data-line="2"]:hover{background:#3aa06a;color:#fff}
-  .cont[data-line="3"]:hover{background:#2f7fd1;color:#fff}
-  .cont[data-line="4"]:hover{background:#8e44c9;color:#fff}
+  /* continent plates: rectangular outline, coloured dot, name */
+  .cont{display:inline-flex;align-items:center;gap:12px;background:transparent;border:2px solid #141F2B;color:#141F2B;
+    font-weight:700;font-size:19px;padding:14px 30px 14px 22px;border-radius:4px;text-decoration:none;
+    transition:border-color .15s,transform .15s,box-shadow .15s}
+  .cont .dot{width:13px;height:13px;border-radius:50%;background:var(--c);flex-shrink:0}
+  .cont:hover{border-color:var(--c);transform:translateY(-2px);box-shadow:0 8px 20px rgba(10,19,46,.12)}
 
   .cards-sec{padding:72px 0}
   .cards-sec.cream{background:var(--cream)}

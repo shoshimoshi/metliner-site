@@ -48,12 +48,12 @@ const label = lang === 'zh' ? '切換深色 / 淺色模式' : 'Toggle dark / lig
   html[data-theme="dark"]{
     color-scheme:dark;
     --text:#e6e9f2;
-    --cream:#111729;
-    --d-bg:#0a0e1a;        /* page background */
-    --d-surface:#111729;   /* raised sections / cards */
-    --d-line:#242c44;      /* borders, rails */
+    --cream:#000000;
+    --d-bg:#000000;        /* page background */
+    --d-surface:#121212;   /* raised sections / cards */
+    --d-line:#2a2a2a;      /* borders, rails */
     --d-head:#ffffff;      /* headings */
-    --d-muted:#9aa3b8;     /* secondary text */
+    --d-muted:#a3a3a3;     /* secondary text */
   }
   html[data-theme="dark"] body{background:var(--d-bg) !important;color:var(--text) !important}
 
@@ -107,27 +107,27 @@ const label = lang === 'zh' ? '切換深色 / 淺色模式' : 'Toggle dark / lig
   html[data-theme="dark"] .station .dot{background:var(--d-bg) !important;box-shadow:0 0 0 3px var(--d-bg) !important}
 
   /* maps overview cards: tint from the continent colour instead of a pastel */
-  html[data-theme="dark"] .maps-body .ccard{background:color-mix(in srgb, var(--c) 16%, #111729) !important}
+  html[data-theme="dark"] .maps-body .ccard{background:color-mix(in srgb, var(--c) 16%, #0a0a0a) !important}
   html[data-theme="dark"] .maps-body .node{background:var(--d-bg) !important}
   html[data-theme="dark"] .maps-body .tag{color:#e6e9f2 !important;background:rgba(255,255,255,.08) !important;border-color:rgba(255,255,255,.12) !important}
 
   /* country + home + city cards */
   html[data-theme="dark"] .ccard .thumb{background:var(--d-surface) !important}
   html[data-theme="dark"] .ccard .cfoot,
-  html[data-theme="dark"] .platefoot{background:#18213d !important}
+  html[data-theme="dark"] .platefoot{background:#141F2B !important}
   html[data-theme="dark"] .ecard .thumb{border-color:var(--d-line) !important}
   html[data-theme="dark"] .ecard .name{color:var(--d-head) !important}
 
-  /* home: continent pills */
-  html[data-theme="dark"] .cont:not(:hover){background:transparent !important}
-  html[data-theme="dark"] .cont[data-line="0"]{color:#f0695d !important}
-  html[data-theme="dark"] .cont[data-line="1"]{color:#f5a623 !important}
-  html[data-theme="dark"] .cont[data-line="2"]{color:#4cc084 !important}
-  html[data-theme="dark"] .cont[data-line="3"]{color:#5aa2ea !important}
-  html[data-theme="dark"] .cont[data-line="4"]{color:#b06ee6 !important}
-  html[data-theme="dark"] .cont:hover{color:#fff !important}
+  /* home: continent plates */
+  html[data-theme="dark"] .cont:not(:hover){border-color:#5a5a5a !important}
+  html[data-theme="dark"] .cont{color:#fff !important}
+
+  /* nav bar */
+  html[data-theme="dark"] nav.scrolled,
+  html[data-theme="dark"] nav.solid{background:#121212 !important}
 
   /* map viewer section + footer sit on navy; separate them from the dark page */
-  html[data-theme="dark"] .viewer-section{background:#0d1428 !important}
+  html[data-theme="dark"] .viewer-section,
+  html[data-theme="dark"] footer{background:#000000 !important}
   html[data-theme="dark"] footer{border-top:1px solid var(--d-line) !important}
 </style>
