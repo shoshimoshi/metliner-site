@@ -1482,5 +1482,405 @@
       "busan",
       "daegu"
     ]
+  },
+  "palembang": {
+    "slug": "palembang",
+    "continent": "asia",
+    "country": "indonesia",
+    "name": {
+      "en": "Palembang",
+      "zh": "巨港"
+    },
+    "countryName": {
+      "en": "Indonesia",
+      "zh": "印尼"
+    },
+    "seoTitle": {
+      "en": "Palembang Metro Map 2026 | Metliner — Palembang Rail & Transit Map",
+      "zh": "巨港捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Palembang metro and rail map for 2026 by Metliner. Explore every line and station across Palembang in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放巨港軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Palembang is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Palembang so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "巨港的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現巨港的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/palembang.jpg",
+    "photoAlt": {
+      "en": "Palembang metro map by Metliner",
+      "zh": "Metliner 的巨港路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/indonesia/palembang.dzi",
+      "thumb": "/maps-tiles/thumbs/palembang.jpg",
+      "src": "/maps-tiles/thumbs/palembang.jpg",
+      "title": {
+        "en": "Palembang",
+        "zh": "巨港"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      }
+    },
+    "exploreMore": []
+  },
+  "kuala-lumpur": {
+    "slug": "kuala-lumpur",
+    "continent": "asia",
+    "country": "malaysia",
+    "name": {
+      "en": "Kuala Lumpur",
+      "zh": "吉隆坡"
+    },
+    "countryName": {
+      "en": "Malaysia",
+      "zh": "馬來西亞"
+    },
+    "seoTitle": {
+      "en": "Kuala Lumpur Metro Map 2026 | Metliner — Kuala Lumpur Rail & Transit Map",
+      "zh": "吉隆坡捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Kuala Lumpur metro and rail map for 2026 by Metliner. Explore every line and station across Kuala Lumpur in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放吉隆坡軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Kuala Lumpur is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Kuala Lumpur so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "吉隆坡的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現吉隆坡的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/kuala-lumpur.jpg",
+    "photoAlt": {
+      "en": "Kuala Lumpur metro map by Metliner",
+      "zh": "Metliner 的吉隆坡路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/malaysia/kuala-lumpur.dzi",
+      "thumb": "/maps-tiles/thumbs/kuala-lumpur.jpg",
+      "src": "/maps-tiles/thumbs/kuala-lumpur.jpg",
+      "title": {
+        "en": "Kuala Lumpur",
+        "zh": "吉隆坡"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      }
+    },
+    "exploreMore": []
+  },
+  "manila": {
+    "slug": "manila",
+    "continent": "asia",
+    "country": "philippines",
+    "name": {
+      "en": "Manila",
+      "zh": "馬尼拉"
+    },
+    "countryName": {
+      "en": "Philippines",
+      "zh": "菲律賓"
+    },
+    "seoTitle": {
+      "en": "Manila Metro Map 2026 | Metliner — Manila Rail & Transit Map",
+      "zh": "馬尼拉捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Manila metro and rail map for 2026 by Metliner. Explore every line and station across Manila in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放馬尼拉軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Manila is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Manila so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "馬尼拉的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現馬尼拉的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/manila.jpg",
+    "photoAlt": {
+      "en": "Manila metro map by Metliner",
+      "zh": "Metliner 的馬尼拉路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/philippines/manila.dzi",
+      "thumb": "/maps-tiles/thumbs/manila.jpg",
+      "src": "/maps-tiles/thumbs/manila.jpg",
+      "title": {
+        "en": "Manila",
+        "zh": "馬尼拉"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      }
+    },
+    "exploreMore": []
+  },
+  "doha": {
+    "slug": "doha",
+    "continent": "asia",
+    "country": "qatar",
+    "name": {
+      "en": "Doha",
+      "zh": "杜哈"
+    },
+    "countryName": {
+      "en": "Qatar",
+      "zh": "卡達"
+    },
+    "seoTitle": {
+      "en": "Doha Metro Map 2026 | Metliner — Doha Rail & Transit Map",
+      "zh": "杜哈捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Doha metro and rail map for 2026 by Metliner. Explore every line and station across Doha in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放杜哈軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Doha is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Doha so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "杜哈的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現杜哈的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/doha.jpg",
+    "photoAlt": {
+      "en": "Doha metro map by Metliner",
+      "zh": "Metliner 的杜哈路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/qatar/doha.dzi",
+      "thumb": "/maps-tiles/thumbs/doha.jpg",
+      "src": "/maps-tiles/thumbs/doha.jpg",
+      "title": {
+        "en": "Doha",
+        "zh": "杜哈"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      }
+    },
+    "exploreMore": []
+  },
+  "singapore": {
+    "slug": "singapore",
+    "continent": "asia",
+    "country": "singapore",
+    "name": {
+      "en": "Singapore",
+      "zh": "新加坡"
+    },
+    "countryName": {
+      "en": "Singapore",
+      "zh": "新加坡"
+    },
+    "seoTitle": {
+      "en": "Singapore Metro Map 2026 | Metliner — Singapore Rail & Transit Map",
+      "zh": "新加坡捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Singapore metro and rail map for 2026 by Metliner. Explore every line and station across Singapore in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放新加坡軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Singapore is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Singapore so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "新加坡的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現新加坡的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/singapore.jpg",
+    "photoAlt": {
+      "en": "Singapore metro map by Metliner",
+      "zh": "Metliner 的新加坡路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/singapore/singapore.dzi",
+      "thumb": "/maps-tiles/thumbs/singapore.jpg",
+      "src": "/maps-tiles/thumbs/singapore.jpg",
+      "title": {
+        "en": "Singapore",
+        "zh": "新加坡"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      }
+    },
+    "exploreMore": []
+  },
+  "bangkok": {
+    "slug": "bangkok",
+    "continent": "asia",
+    "country": "thailand",
+    "name": {
+      "en": "Bangkok",
+      "zh": "曼谷"
+    },
+    "countryName": {
+      "en": "Thailand",
+      "zh": "泰國"
+    },
+    "seoTitle": {
+      "en": "Bangkok Metro Map 2026 | Metliner — Bangkok Rail & Transit Map",
+      "zh": "曼谷捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Bangkok metro and rail map for 2026 by Metliner. Explore every line and station across Bangkok in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放曼谷軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Bangkok is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Bangkok so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "曼谷的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現曼谷的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/bangkok.jpg",
+    "photoAlt": {
+      "en": "Bangkok metro map by Metliner",
+      "zh": "Metliner 的曼谷路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/thailand/bangkok.dzi",
+      "thumb": "/maps-tiles/thumbs/bangkok.jpg",
+      "src": "/maps-tiles/thumbs/bangkok.jpg",
+      "title": {
+        "en": "Bangkok",
+        "zh": "曼谷"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      }
+    },
+    "exploreMore": []
+  },
+  "dubai": {
+    "slug": "dubai",
+    "continent": "asia",
+    "country": "uae",
+    "name": {
+      "en": "Dubai",
+      "zh": "杜拜"
+    },
+    "countryName": {
+      "en": "UAE",
+      "zh": "阿聯"
+    },
+    "seoTitle": {
+      "en": "Dubai Metro Map 2026 | Metliner — Dubai Rail & Transit Map",
+      "zh": "杜拜捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Dubai metro and rail map for 2026 by Metliner. Explore every line and station across Dubai in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放杜拜軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Dubai is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Dubai so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "杜拜的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現杜拜的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/dubai.jpg",
+    "photoAlt": {
+      "en": "Dubai metro map by Metliner",
+      "zh": "Metliner 的杜拜路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/uae/dubai.dzi",
+      "thumb": "/maps-tiles/thumbs/dubai.jpg",
+      "src": "/maps-tiles/thumbs/dubai.jpg",
+      "title": {
+        "en": "Dubai",
+        "zh": "杜拜"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      }
+    },
+    "exploreMore": []
+  },
+  "hanoi": {
+    "slug": "hanoi",
+    "continent": "asia",
+    "country": "vietnam",
+    "name": {
+      "en": "Hanoi",
+      "zh": "河內"
+    },
+    "countryName": {
+      "en": "Vietnam",
+      "zh": "越南"
+    },
+    "seoTitle": {
+      "en": "Hanoi Metro Map 2026 | Metliner — Hanoi Rail & Transit Map",
+      "zh": "河內捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Hanoi metro and rail map for 2026 by Metliner. Explore every line and station across Hanoi in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放河內軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Hanoi is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Hanoi so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "河內的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現河內的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/hanoi.jpg",
+    "photoAlt": {
+      "en": "Hanoi metro map by Metliner",
+      "zh": "Metliner 的河內路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/vietnam/hanoi.dzi",
+      "thumb": "/maps-tiles/thumbs/hanoi.jpg",
+      "src": "/maps-tiles/thumbs/hanoi.jpg",
+      "title": {
+        "en": "Hanoi",
+        "zh": "河內"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      }
+    },
+    "exploreMore": [
+      "ho-chi-minh-city"
+    ]
+  },
+  "ho-chi-minh-city": {
+    "slug": "ho-chi-minh-city",
+    "continent": "asia",
+    "country": "vietnam",
+    "name": {
+      "en": "Ho Chi Minh City",
+      "zh": "胡志明市"
+    },
+    "countryName": {
+      "en": "Vietnam",
+      "zh": "越南"
+    },
+    "seoTitle": {
+      "en": "Ho Chi Minh City Metro Map 2026 | Metliner — Ho Chi Minh City Rail & Transit Map",
+      "zh": "胡志明市捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Ho Chi Minh City metro and rail map for 2026 by Metliner. Explore every line and station across Ho Chi Minh City in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放胡志明市軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Ho Chi Minh City is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Ho Chi Minh City so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "胡志明市的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現胡志明市的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/ho-chi-minh-city.jpg",
+    "photoAlt": {
+      "en": "Ho Chi Minh City metro map by Metliner",
+      "zh": "Metliner 的胡志明市路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/vietnam/ho-chi-minh-city.dzi",
+      "thumb": "/maps-tiles/thumbs/ho-chi-minh-city.jpg",
+      "src": "/maps-tiles/thumbs/ho-chi-minh-city.jpg",
+      "title": {
+        "en": "Ho Chi Minh City",
+        "zh": "胡志明市"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      }
+    },
+    "exploreMore": [
+      "hanoi"
+    ]
   }
 }
