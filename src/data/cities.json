@@ -4422,5 +4422,246 @@
       "atlanta",
       "austin"
     ]
+  },
+  "sydney": {
+    "slug": "sydney",
+    "continent": "oceania",
+    "country": "australia",
+    "name": {
+      "en": "Sydney",
+      "zh": "雪梨"
+    },
+    "countryName": {
+      "en": "Australia",
+      "zh": "澳洲"
+    },
+    "seoTitle": {
+      "en": "Sydney Metro Map 2026 | Metliner — Sydney Rail & Transit Map",
+      "zh": "雪梨捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Sydney metro and rail map for 2026 by Metliner. Explore every line and station across Sydney in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放雪梨軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Sydney is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Sydney so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "雪梨的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現雪梨的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/sydney.jpg",
+    "photoAlt": {
+      "en": "Sydney metro map by Metliner",
+      "zh": "Metliner 的雪梨路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/oceania/australia/sydney.dzi",
+      "thumb": "/maps-tiles/thumbs/sydney.jpg",
+      "src": "/maps-tiles/thumbs/sydney.jpg",
+      "title": {
+        "en": "Sydney",
+        "zh": "雪梨"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      },
+      "hero": "/maps-tiles/hero/sydney.jpg"
+    },
+    "exploreMore": [
+      "melbourne",
+      "auckland",
+      "wellington"
+    ]
+  },
+  "melbourne": {
+    "slug": "melbourne",
+    "continent": "oceania",
+    "country": "australia",
+    "name": {
+      "en": "Melbourne",
+      "zh": "墨爾本"
+    },
+    "countryName": {
+      "en": "Australia",
+      "zh": "澳洲"
+    },
+    "seoTitle": {
+      "en": "Melbourne Metro Map 2026 | Metliner — Melbourne Rail & Transit Map",
+      "zh": "墨爾本捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Melbourne metro and rail map for 2026 by Metliner. Explore every line and station across Melbourne in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放墨爾本軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Melbourne is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Melbourne so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "墨爾本的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現墨爾本的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/melbourne.jpg",
+    "photoAlt": {
+      "en": "Melbourne metro map by Metliner",
+      "zh": "Metliner 的墨爾本路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/oceania/australia/melbourne.dzi",
+      "thumb": "/maps-tiles/thumbs/melbourne.jpg",
+      "src": "/maps-tiles/thumbs/melbourne.jpg",
+      "title": {
+        "en": "Melbourne",
+        "zh": "墨爾本"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      },
+      "hero": "/maps-tiles/hero/melbourne.jpg"
+    },
+    "exploreMore": [
+      "sydney",
+      "auckland",
+      "wellington"
+    ]
+  },
+  "auckland": {
+    "slug": "auckland",
+    "continent": "oceania",
+    "country": "new-zealand",
+    "name": {
+      "en": "Auckland",
+      "zh": "奧克蘭"
+    },
+    "countryName": {
+      "en": "New Zealand",
+      "zh": "紐西蘭"
+    },
+    "seoTitle": {
+      "en": "Auckland Metro Map 2026 | Metliner — Auckland Rail & Transit Map",
+      "zh": "奧克蘭捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Auckland metro and rail map for 2026 by Metliner. Explore every line and station across Auckland in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放奧克蘭軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Auckland is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Auckland so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "奧克蘭的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現奧克蘭的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/auckland.jpg",
+    "photoAlt": {
+      "en": "Auckland metro map by Metliner",
+      "zh": "Metliner 的奧克蘭路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/oceania/new-zealand/auckland.dzi",
+      "thumb": "/maps-tiles/thumbs/auckland.jpg",
+      "src": "/maps-tiles/thumbs/auckland.jpg",
+      "title": {
+        "en": "Auckland",
+        "zh": "奧克蘭"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      },
+      "hero": "/maps-tiles/hero/auckland.jpg"
+    },
+    "exploreMore": [
+      "sydney",
+      "melbourne",
+      "wellington"
+    ]
+  },
+  "wellington": {
+    "slug": "wellington",
+    "continent": "oceania",
+    "country": "new-zealand",
+    "name": {
+      "en": "Wellington",
+      "zh": "威靈頓"
+    },
+    "countryName": {
+      "en": "New Zealand",
+      "zh": "紐西蘭"
+    },
+    "seoTitle": {
+      "en": "Wellington Metro Map 2026 | Metliner — Wellington Rail & Transit Map",
+      "zh": "威靈頓捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Wellington metro and rail map for 2026 by Metliner. Explore every line and station across Wellington in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放威靈頓軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Wellington is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Wellington so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "威靈頓的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現威靈頓的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/wellington.jpg",
+    "photoAlt": {
+      "en": "Wellington metro map by Metliner",
+      "zh": "Metliner 的威靈頓路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/oceania/new-zealand/wellington.dzi",
+      "thumb": "/maps-tiles/thumbs/wellington.jpg",
+      "src": "/maps-tiles/thumbs/wellington.jpg",
+      "title": {
+        "en": "Wellington",
+        "zh": "威靈頓"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      },
+      "hero": "/maps-tiles/hero/wellington.jpg"
+    },
+    "exploreMore": [
+      "sydney",
+      "melbourne",
+      "auckland"
+    ]
+  },
+  "port-louis": {
+    "slug": "port-louis",
+    "continent": "africa",
+    "country": "mauritius",
+    "name": {
+      "en": "Port Louis",
+      "zh": "路易港"
+    },
+    "countryName": {
+      "en": "Mauritius",
+      "zh": "模里西斯"
+    },
+    "seoTitle": {
+      "en": "Port Louis Metro Map 2026 | Metliner — Port Louis Rail & Transit Map",
+      "zh": "路易港捷運路線圖 2026 | Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Port Louis metro and rail map for 2026 by Metliner. Explore every line and station across Port Louis in one clean, unified design.",
+      "zh": "Metliner 設計的高解析、可縮放路易港軌道路線圖 2026，涵蓋完整路網，一致清晰的設計。"
+    },
+    "intro": {
+      "en": "Port Louis is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Port Louis so you can trace a route at a glance, whether you live here or are visiting for the first time.",
+      "zh": "路易港的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現路易港的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+    },
+    "photo": "/maps-tiles/thumbs/port-louis.jpg",
+    "photoAlt": {
+      "en": "Port Louis metro map by Metliner",
+      "zh": "Metliner 的路易港路線圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/africa/mauritius/port-louis.dzi",
+      "thumb": "/maps-tiles/thumbs/port-louis.jpg",
+      "src": "/maps-tiles/thumbs/port-louis.jpg",
+      "title": {
+        "en": "Port Louis",
+        "zh": "路易港"
+      },
+      "updated": {
+        "en": "Last updated: 2025",
+        "zh": "最後更新：2025"
+      },
+      "hero": "/maps-tiles/hero/port-louis.jpg"
+    },
+    "exploreMore": []
   }
 }
