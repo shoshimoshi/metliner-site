@@ -2,6 +2,10 @@
 // Light / dark switch. Sits in the nav on every page.
 // The choice is saved in the visitor's browser; with no saved choice the site follows the device setting.
 const { lang = 'en' } = Astro.props;
+// language switch: same page in the other language
+const path = Astro.url.pathname;
+const otherPath = lang === 'zh' ? path.replace(/^\/zh(\/|$)/, '/english$1') : path.replace(/^\/english(\/|$)/, '/zh$1');
+const otherLabel = lang === 'zh' ? 'English' : '中文';
 const label = lang === 'zh' ? '切換深色 / 淺色模式' : 'Toggle dark / light mode';
 ---
 <script is:inline>
@@ -14,6 +18,7 @@ const label = lang === 'zh' ? '切換深色 / 淺色模式' : 'Toggle dark / lig
     document.documentElement.setAttribute('data-theme',t);
   })();
 </script>
+<a class="lang-switch" href={otherPath} hreflang={lang === 'zh' ? 'en' : 'zh-Hant'}>{otherLabel}</a>
 <button class="theme-toggle" type="button" data-theme-toggle aria-label={label} title={label}>
   <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
   <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
@@ -33,7 +38,10 @@ const label = lang === 'zh' ? '切換深色 / 淺色模式' : 'Toggle dark / lig
 <style is:global>
   /* ---- toggle button ---- */
   nav .wrap .navlinks{margin-left:auto}
-  .theme-toggle{flex-shrink:0;margin-left:16px;width:38px;height:38px;display:inline-flex;align-items:center;justify-content:center;
+  .lang-switch{flex-shrink:0;margin-left:22px;color:#fff;text-decoration:none;font-size:14px;font-weight:500;
+    border:1px solid rgba(255,255,255,.4);padding:6px 14px;border-radius:20px;transition:background .15s,border-color .15s}
+  .lang-switch:hover{background:rgba(255,255,255,.14);border-color:#FFC816}
+  .theme-toggle{flex-shrink:0;margin-left:10px;width:38px;height:38px;display:inline-flex;align-items:center;justify-content:center;
     background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.4);border-radius:50%;color:#fff;cursor:pointer;
     transition:background .15s,border-color .15s,transform .1s}
   .theme-toggle:hover{background:rgba(255,255,255,.18);border-color:#FFC816}
