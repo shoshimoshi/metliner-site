@@ -40,10 +40,10 @@ const sp = home.spotlight;
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Metliner — {home.slogan[lang]}</title>
+  <title>Metliner — {home.title[lang]}</title>
   <meta name="description" content={home.tagline[lang]} />
   <link rel="canonical" href={`https://www.metliner.com${base}`} />
-  <meta property="og:title" content={`Metliner — ${home.slogan[lang]}`} />
+  <meta property="og:title" content={`Metliner — ${home.title[lang]}`} />
   <meta property="og:description" content={home.tagline[lang]} />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -71,7 +71,6 @@ const sp = home.spotlight;
   <div class="hero-veil"></div>
   <div class="wrap hero-inner">
     <h1>{home.title[lang]}</h1>
-    <p class="slogan">{home.slogan[lang]}</p>
   </div>
 </header>
 
@@ -150,6 +149,7 @@ const sp = home.spotlight;
 <footer><div class="wrap">
   <h3>{lang==='zh'?'聯絡我們':'Contact Us'}</h3>
   <p>{lang==='zh'?'有任何建議或問題嗎？透過電子郵件與我們聯絡：':'Any suggestions or concerns? Contact us through our email:'}<br /><a href="mailto:metliner64@gmail.com">metliner64@gmail.com</a></p>
+  <p class="f-form">{lang==='zh'?'或是透過表單聯絡我們：':'Or reach us through our form:'} <a href="https://forms.gle/yXgh2pHnQRBxDBMP9" target="_blank" rel="noopener">{lang==='zh'?'填寫聯絡表單':'Fill in the contact form'}</a></p>
   <div class="social"><a href="#">Instagram</a><a href="#">X</a><a href="#">Pinterest</a><a href="#">Threads</a></div>
 </div></footer>
 

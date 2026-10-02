@@ -124,10 +124,11 @@ const label = lang === 'zh' ? '切換深色 / 淺色模式' : 'Toggle dark / lig
 
   /* nav bar */
   html[data-theme="dark"] nav.scrolled,
-  html[data-theme="dark"] nav.solid{background:#121212 !important}
+  html[data-theme="dark"] nav.solid{background:#373737 !important}
 
   /* map viewer section + footer sit on navy; separate them from the dark page */
-  html[data-theme="dark"] .viewer-section,
-  html[data-theme="dark"] footer{background:#000000 !important}
+  html[data-theme="dark"] .viewer-section{background:#000000 !important}
+  html[data-theme="dark"] footer{background:#373737 !important}
   html[data-theme="dark"] footer{border-top:1px solid var(--d-line) !important}
+  footer .f-form{margin-top:12px}
 </style>

@@ -14,13 +14,13 @@ var simplemaps_worldmap_mapdata={
     all_states_zoomable: "no",
     location_description: "Location description",
     // ── Pin style: small circle, deep terracotta ──
-    location_color: "#B84A3E",
+    location_color: "#FFFFFF",
     location_opacity: 0.9,
     location_hover_opacity: 1,
     location_url: "",
     location_size: 9,
     location_type: "circle",
-    location_border_color: "#FFFFFF",
+    location_border_color: "#141F2B",
     location_border: 1.5,
     location_hover_border: 2.5,
     all_locations_inactive: "no",
@@ -371,10 +371,10 @@ var simplemaps_worldmap_mapdata={
   },  labels: {},
   legend: {entries: []},
   regions: {
-    "0": {name:"Oceania", states:["AU","FJ","NZ","SB","PG"], color:"#ff0025"},
-    "1": {name:"America", states:["AR","AW","BB","BZ","BO","BR","CL","CO","CR","PA","PY","PE","DO","DM","EC","SV","GT","GY","HN","JM","SR","TT","UY","VE","NI","CU","HT","US","MX","CA"], color:"#ee334e"},
-    "2": {name:"Europe",  states:["AL","AT","BY","BE","BA","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LT","LU","MK","MT","MD","NL","NO","PL","PT","RO","RU","RS","ME","XK","SK","SI","ES","SE","CH","UA","GB","TR"], color:"#0081c8"},
-    "3": {name:"Africa",  states:["DZ","AO","BJ","BW","BF","BI","CM","CV","CF","TD","CG","CI","MG","MW","ML","MU","MR","MA","NA","NE","NG","CD","EG","ER","ET","GA","GH","GN","LS","SN","SC","SL","SO","ZA","SZ","TZ","TG","TN","UG","ZM","ZW","LY","SD","SS","KE","MZ","RW","LR","GW","EH"], color:"#000000"},
-    "5": {name:"Asia",    states:["AF","AM","AZ","BH","BD","BT","BN","KH","CN","TL","GE","IN","ID","IR","IQ","IL","JP","JO","KZ","KP","KR","KW","KG","LA","LB","MY","MN","MM","NP","OM","PK","PH","QA","SA","SG","LK","SY","TW","TJ","TH","TM","AE","UZ","VN","YE"], color:"#fcb131"}
+    "0": {name:"Oceania", states:["AU","FJ","NZ","SB","PG"], color:"#8e44c9"},
+    "1": {name:"America", states:["AR","AW","BB","BZ","BO","BR","CL","CO","CR","PA","PY","PE","DO","DM","EC","SV","GT","GY","HN","JM","SR","TT","UY","VE","NI","CU","HT","US","MX","CA"], color:"#e0483a"},
+    "2": {name:"Europe",  states:["AL","AT","BY","BE","BA","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LT","LU","MK","MT","MD","NL","NO","PL","PT","RO","RU","RS","ME","XK","SK","SI","ES","SE","CH","UA","GB","TR"], color:"#2f7fd1"},
+    "3": {name:"Africa",  states:["DZ","AO","BJ","BW","BF","BI","CM","CV","CF","TD","CG","CI","MG","MW","ML","MU","MR","MA","NA","NE","NG","CD","EG","ER","ET","GA","GH","GN","LS","SN","SC","SL","SO","ZA","SZ","TZ","TG","TN","UG","ZM","ZW","LY","SD","SS","KE","MZ","RW","LR","GW","EH"], color:"#3aa06a"},
+    "5": {name:"Asia",    states:["AF","AM","AZ","BH","BD","BT","BN","KH","CN","TL","GE","IN","ID","IR","IQ","IL","JP","JO","KZ","KP","KR","KW","KG","LA","LB","MY","MN","MM","NP","OM","PK","PH","QA","SA","SG","LK","SY","TW","TJ","TH","TM","AE","UZ","VN","YE"], color:"#f5a623"}
   } 
 };
