@@ -1,4 +1,5 @@
 ---
+import Seo from '../components/Seo.astro';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import '../config/theme.css';
 import geo from '../data/geo.json';
@@ -33,7 +34,7 @@ const conts = order.filter(k=>geo[k]).map((k,i) => ({
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{lang==='zh'?'地圖':'Maps'} | Metliner</title>
   <meta name="description" content="Browse Metliner's unified metro and rail maps by continent — Asia, Europe, America, Oceania and Africa." />
-  <link rel="canonical" href={`https://www.metliner.com${base}/maps`} />
+  <Seo />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />

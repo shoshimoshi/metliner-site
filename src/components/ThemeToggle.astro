@@ -41,6 +41,8 @@ const label = lang === 'zh' ? '切換深色 / 淺色模式' : 'Toggle dark / lig
   .lang-switch{flex-shrink:0;margin-left:22px;color:#fff;text-decoration:none;font-size:14px;font-weight:500;
     border:1px solid rgba(255,255,255,.4);padding:6px 14px;border-radius:20px;transition:background .15s,border-color .15s}
   .lang-switch:hover{background:rgba(255,255,255,.14);border-color:#FFC816}
+  @media(max-width:760px){ .lang-switch{margin-left:auto} }
+  html[lang="zh-Hant"] .home-hero h1{word-break:keep-all}
   .theme-toggle{flex-shrink:0;margin-left:10px;width:38px;height:38px;display:inline-flex;align-items:center;justify-content:center;
     background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.4);border-radius:50%;color:#fff;cursor:pointer;
     transition:background .15s,border-color .15s,transform .1s}

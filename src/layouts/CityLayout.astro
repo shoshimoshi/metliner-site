@@ -1,4 +1,5 @@
 ---
+import Seo from '../components/Seo.astro';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import '../config/theme.css';
 import TiledMapViewer from '../components/TiledMapViewer.astro';
@@ -39,17 +40,18 @@ const related = (city.exploreMore || [])
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{city.seoTitle[lang]}</title>
   <meta name="description" content={city.seoDescription[lang]} />
-  <link rel="canonical" href={`https://www.metliner.com${base}/maps/${city.continent}/${city.country}/${city.slug}`} />
+  <Seo />
   <meta property="og:title" content={city.seoTitle[lang]} />
   <meta property="og:description" content={city.seoDescription[lang]} />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content={`https://www.metliner.com${city.map.src}`} />
+  <meta property="og:image" content={`https://www.metliner.com${city.map.hero || city.map.src}`} />
   <meta name="twitter:card" content="summary_large_image" />
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context":"https://schema.org","@type":"ImageObject",
     "name": city.map.title[lang],
     "description": city.seoDescription[lang],
-    "contentUrl": `https://www.metliner.com${city.map.src}`,
+    "contentUrl": `https://www.metliner.com${city.map.hero || city.map.src}`,
+    "url": `https://www.metliner.com${base}/maps/${city.continent}/${city.country}/${city.slug}/`,
     "creator": {"@type":"Organization","name":"Metliner"},
     "about": `${city.name[lang]} metro / rail network map`
   })} />
@@ -84,7 +86,7 @@ const related = (city.exploreMore || [])
 </header>
 
 <section class="intro"><div class="wrap grid">
-  <div class="photo"><img src={city.photo} alt={city.photoAlt[lang]} /></div>
+  <div class="photo"><img src={city.photo === city.map.thumb ? (city.map.hero || city.photo) : city.photo} alt={city.photoAlt[lang]} /></div>
   <div>
     <h2>{city.name[lang]}</h2>
     <p>{city.intro[lang]}</p>
