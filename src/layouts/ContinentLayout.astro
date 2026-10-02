@@ -12,7 +12,7 @@ const color = continent.color;
 
 const countries = Object.entries(continent.countries).map(([ck, c]) => ({
   key: ck,
-  name: c.name.en,
+  name: c.name[lang] || c.name.en,
   native: c.native || c.name.en
 }));
 ---

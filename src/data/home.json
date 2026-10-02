@@ -1,7 +1,7 @@
 {
   "title": {
     "en": "Cities, Reimagined",
-    "zh": "城市，重新想像"
+    "zh": "城市，再想像"
   },
   "tagline": {
     "en": "Metliner is your ultimate destination for exploring cities across the globe through their intricate railway networks. Whether you're a passionate rail enthusiast or a curious traveler, this platform offers unified rail maps, insightful stories, and practical tips to make your journey seamless and unforgettable.",
@@ -10,7 +10,7 @@
   "sections": {
     "latestStops": {
       "en": "Latest Stops",
-      "zh": "最新加入"
+      "zh": "新到站"
     },
     "latestStopsSub": {
       "en": "Step into the newest stops added to our global network",
@@ -18,11 +18,11 @@
     },
     "transferHubs": {
       "en": "Featured Works",
-      "zh": "精選作品"
+      "zh": "精選"
     },
     "routeMap": {
       "en": "Route Map",
-      "zh": "路線地圖"
+      "zh": "探索地圖"
     },
     "routeMapSub": {
       "en": "Pick a continent and follow the lines to explore each city",

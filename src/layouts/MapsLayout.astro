@@ -2,23 +2,24 @@
 import ThemeToggle from '../components/ThemeToggle.astro';
 import '../config/theme.css';
 import geo from '../data/geo.json';
+import cityNames from '../data/city-names.json';
 
 const { lang = 'en' } = Astro.props;
 const ui = {
   en: { maps:'Maps', metraveler:'Metraveler', about:'About us', contact:'Contact us', langLabel:'English',
         title:'Maps', kicker:'ROUTE NETWORK', sub:'Pick a continent and follow the lines to explore each city' },
   zh: { maps:'地圖', metraveler:'Metraveler', about:'關於我們', contact:'聯絡我們', langLabel:'繁體中文',
-        title:'地圖', kicker:'路線網絡', sub:'選擇一個大洲，沿著路線探索每座城市' }
+        title:'地圖', kicker:'路線網路', sub:'選擇一個大洲，沿著路線探索每座城市' }
 }[lang];
 const base = lang === 'en' ? '/english' : '/zh';
 
 // representative cities per continent + a soft tint derived from the line colour
 const meta = {
-  asia:    { cities:['Tokyo','Taipei','Seoul','Singapore'],  tint:'#FEF6E6' },
-  europe:  { cities:['Paris','London','Berlin','Madrid'],    tint:'#EAF2FB' },
-  america: { cities:['New York','Toronto','São Paulo'],      tint:'#FCECEA' },
-  oceania: { cities:['Sydney','Melbourne','Auckland'],       tint:'#F4EBFB' },
-  africa:  { cities:['Port Louis'],                          tint:'#EAF5EF' }
+  asia:    { cities:['tokyo','taipei','seoul','singapore'],  tint:'#FEF6E6' },
+  europe:  { cities:['paris','london','berlin','madrid'],    tint:'#EAF2FB' },
+  america: { cities:['new-york','toronto','sao-paulo'],      tint:'#FCECEA' },
+  oceania: { cities:['sydney','melbourne','auckland'],       tint:'#F4EBFB' },
+  africa:  { cities:['port-louis'],                          tint:'#EAF5EF' }
 };
 const order = ['asia','europe','america','oceania','africa'];
 const conts = order.filter(k=>geo[k]).map((k,i) => ({
@@ -72,7 +73,7 @@ const conts = order.filter(k=>geo[k]).map((k,i) => ({
           </span>
           <span class="name">{c.name}</span>
           <span class="tags">
-            {c.cities.map(city => <span class="tag">{city}</span>)}
+            {c.cities.map(city => <span class="tag">{(cityNames[city]||{})[lang] || city}</span>)}
           </span>
           <img class="arrow" src="/arrows/right.png" alt="" />
         </span>
