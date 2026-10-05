@@ -3,6 +3,7 @@ import Seo from '../components/Seo.astro';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import '../config/theme.css';
 import cityNames from '../data/city-names.json';
+import allCities from '../data/cities.json';
 
 const { continent, contKey, country, countryKey, lang = 'en' } = Astro.props;
 const ui = {
@@ -61,7 +62,7 @@ const cities = country.cities.map(slug => ({
   <div class="city-grid">
     {cities.map(city => (
       <a class="ccard" href={`${base}/maps/${contKey}/${countryKey}/${city.slug}`}>
-        <div class="thumb"><img src={city.photo} alt={`${city.nameEn} metro map`} loading="lazy" /></div>
+        <div class="thumb"><img src={city.photo} alt={(allCities[city.slug]||{}).mapAlt ? allCities[city.slug].mapAlt[lang] : `${city.nameEn} metro map`} loading="lazy" /></div>
         <div class="cfoot"><span class="dot" style={`background:${color}`}></span>{city.name}</div>
       </a>
     ))}

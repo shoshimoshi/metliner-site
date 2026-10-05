@@ -53,6 +53,7 @@ const related = (city.exploreMore || [])
     "contentUrl": `https://www.metliner.com${city.map.hero || city.map.src}`,
     "url": `https://www.metliner.com${base}/maps/${city.continent}/${city.country}/${city.slug}/`,
     "creator": {"@type":"Organization","name":"Metliner"},
+    "caption": city.mapAlt[lang],
     "about": `${city.name[lang]} metro / rail network map`
   })} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -86,7 +87,10 @@ const related = (city.exploreMore || [])
 </header>
 
 <section class="intro"><div class="wrap grid">
-  <div class="photo"><img src={city.photo === city.map.thumb ? (city.map.hero || city.photo) : city.photo} alt={city.photoAlt[lang]} /></div>
+  <figure class="photo-fig">
+    <div class="photo"><img src={city.photo === city.map.thumb ? (city.map.hero || city.photo) : city.photo} alt={city.photoAlt[lang]} /></div>
+    {city.photo === city.map.thumb && <figcaption>{city.mapLabel[lang]} 2026 · Metliner</figcaption>}
+  </figure>
   <div>
     <h2>{city.name[lang]}</h2>
     <p>{city.intro[lang]}</p>
@@ -98,7 +102,7 @@ const related = (city.exploreMore || [])
   <div><h2>{ui.bannerMap}</h2><p>{ui.bannerMapSub}</p></div>
 </div></section>
 
-<TiledMapViewer dzi={city.map.dzi} src={city.map.src} alt={`${city.name[lang]} metro map by Metliner`}
+<TiledMapViewer dzi={city.map.dzi} src={city.map.src} alt={city.mapAlt[lang]}
            title={city.map.title[lang]} updated={city.map.updated[lang]} />
 
 <section class="explore">
@@ -109,7 +113,7 @@ const related = (city.exploreMore || [])
   <div class="wrap cards">
     {related.map(r => (
       <a class="ecard" href={`${base}/maps/${r.continent}/${r.country}/${r.slug}`}>
-        <div class="thumb"><img src={r.map.src} alt={`${r.name[lang]} metro map`} /></div>
+        <div class="thumb"><img src={r.map.src} alt={r.mapAlt[lang]} loading="lazy" /></div>
         <div class="name">{r.name[lang]}</div>
       </a>
     ))}
@@ -162,6 +166,7 @@ const related = (city.exploreMore || [])
   .intro{background:var(--cream)}
   .intro .grid{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:center;padding:72px 0}
   .intro .photo{border-radius:4px;overflow:hidden;aspect-ratio:4/3}
+  .intro .photo-fig figcaption{margin-top:10px;font-size:14px;color:#6a6f7a}
   .intro .photo img{width:100%;height:100%;object-fit:cover}
   .intro h2{font-size:var(--h2-section);font-weight:800;margin-bottom:22px;color:#000}
   .intro p{color:var(--text);font-size:var(--body-size);line-height:1.7;max-width:56ch}

@@ -29,7 +29,7 @@ function card(slug){
   const c = cities[slug];
   const cont = (c && c.continent) || CITY_CONT[slug] || 'asia';
   const color = CONT_COLOR[cont] || '#f5a623';
-  if(c) return { name: c.name[lang], href: `${base}/maps/${c.continent}/${c.country}/${c.slug}`, img: c.map.src, color };
+  if(c) return { name: c.name[lang], href: `${base}/maps/${c.continent}/${c.country}/${c.slug}`, img: c.map.src, color, alt: c.mapAlt[lang] };
   const nice = slug.split('-').map(w=>w[0].toUpperCase()+w.slice(1)).join(' ');
   return { name: nice, href: '#', img: '/maps/taipei_2026.jpg', color };
 }
@@ -106,7 +106,7 @@ const zhCities = Object.fromEntries(Object.entries(cityNames).map(([k,v]) => [k,
     <div class="cards four">
       {latest.map((c) => (
         <a class="ecard" href={c.href}>
-          <div class="thumb"><img src={c.img} alt={c.name} /></div>
+          <div class="thumb"><img src={c.img} alt={c.alt || c.name} loading="lazy" /></div>
           <div class="platefoot"><span class="dot" style={`background:${c.color}`}></span>{c.name}</div>
         </a>
       ))}
@@ -124,7 +124,7 @@ const zhCities = Object.fromEntries(Object.entries(cityNames).map(([k,v]) => [k,
     <div class="cards three">
       {hubs.map((c) => (
         <a class="ecard" href={c.href}>
-          <div class="thumb"><img src={c.img} alt={c.name} /></div>
+          <div class="thumb"><img src={c.img} alt={c.alt || c.name} loading="lazy" /></div>
           <div class="platefoot"><span class="dot" style={`background:${c.color}`}></span>{c.name}</div>
         </a>
       ))}
