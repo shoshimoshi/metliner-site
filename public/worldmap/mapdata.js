@@ -376,7 +376,9 @@ var simplemaps_worldmap_mapdata={
     "100": {name:"Brisbane", lat:-27.4698, lng:153.0251, url:"/english/maps/oceania/australia/brisbane", description:"Brisbane, Australia"},
     "101": {name:"Adelaide", lat:-34.9285, lng:138.6007, url:"/english/maps/oceania/australia/adelaide", description:"Adelaide, Australia"},
     "102": {name:"Takamatsu", lat:34.3428, lng:134.0466, url:"/english/maps/asia/japan/takamatsu", description:"Takamatsu, Japan"},
-    "103": {name:"Hangzhou", lat:30.2741, lng:120.1551, url:"/english/maps/asia/china/hangzhou", description:"Hangzhou, China"}
+    "103": {name:"Hangzhou", lat:30.2741, lng:120.1551, url:"/english/maps/asia/china/hangzhou", description:"Hangzhou, China"},
+    "104": {name:"New York", lat:40.7128, lng:-74.006, url:"/english/maps/america/us/new-york", description:"New York, USA"},
+    "105": {name:"Houston", lat:29.7604, lng:-95.3698, url:"/english/maps/america/us/houston", description:"Houston, USA"}
   },  labels: {},
   legend: {entries: []},
   regions: {
