@@ -1,4 +1,5 @@
 ---
+import Icons from '../components/Icons.astro';
 import Seo from '../components/Seo.astro';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import '../config/theme.css';
@@ -41,6 +42,7 @@ const related = (city.exploreMore || [])
   <title>{city.seoTitle[lang]}</title>
   <meta name="description" content={city.seoDescription[lang]} />
   <Seo />
+  <Icons />
   <meta property="og:title" content={city.seoTitle[lang]} />
   <meta property="og:description" content={city.seoDescription[lang]} />
   <meta property="og:type" content="website" />

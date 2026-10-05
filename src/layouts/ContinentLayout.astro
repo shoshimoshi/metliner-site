@@ -1,4 +1,5 @@
 ---
+import Icons from '../components/Icons.astro';
 import Seo from '../components/Seo.astro';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import '../config/theme.css';
@@ -25,6 +26,7 @@ const countries = Object.entries(continent.countries).map(([ck, c]) => ({
   <title>{lang==='zh' ? `${continent.name.zh}捷運與鐵路路線圖` : `${continent.name.en} Metro Maps`} | Metliner</title>
   <meta name="description" content={`Explore metro and rail maps across ${continent.name.en} by Metliner. Browse cities country by country.`} />
   <Seo />
+  <Icons />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />

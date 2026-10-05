@@ -1,4 +1,5 @@
 ---
+import Icons from '../components/Icons.astro';
 import Seo from '../components/Seo.astro';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import '../config/theme.css';
@@ -35,6 +36,7 @@ const conts = order.filter(k=>geo[k]).map((k,i) => ({
   <title>{lang==='zh'?'地圖':'Maps'} | Metliner</title>
   <meta name="description" content="Browse Metliner's unified metro and rail maps by continent — Asia, Europe, America, Oceania and Africa." />
   <Seo />
+  <Icons />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
