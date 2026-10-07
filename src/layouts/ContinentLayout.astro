@@ -23,8 +23,8 @@ const countries = Object.entries(continent.countries).map(([ck, c]) => ({
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{lang==='zh' ? `${continent.name.zh}捷運與鐵路路線圖` : `${continent.name.en} Metro Maps`} | Metliner</title>
-  <meta name="description" content={`Explore metro and rail maps across ${continent.name.en} by Metliner. Browse cities country by country.`} />
+  <title>{lang==='zh' ? `${continent.name.zh}地鐵與鐵路路線圖` : `${continent.name.en} Metro Maps`} | Metliner</title>
+  <meta name="description" content={lang==='zh' ? `Metliner 繪製的${continent.name.zh}地鐵與鐵路路線圖，依國家瀏覽：${countries.slice(0,8).map(c=>c.name).join('、')}${countries.length>8?'等':''}。` : `Metro and rail maps across ${continent.name.en}, drawn by Metliner in one consistent style. Browse by country: ${countries.slice(0,8).map(c=>c.name).join(', ')}${countries.length>8?' and more':''}.`} />
   <Seo />
   <Icons />
   <link rel="preconnect" href="https://fonts.googleapis.com" />

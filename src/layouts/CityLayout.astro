@@ -115,7 +115,7 @@ const related = (city.exploreMore || [])
   <div class="wrap cards">
     {related.map(r => (
       <a class="ecard" href={`${base}/maps/${r.continent}/${r.country}/${r.slug}`}>
-        <div class="thumb"><img src={r.map.src} alt={r.mapAlt[lang]} loading="lazy" /></div>
+        <div class="thumb"><img src={r.map.src} alt={r.mapLabel[lang]} loading="lazy" /></div>
         <div class="name">{r.name[lang]}</div>
       </a>
     ))}

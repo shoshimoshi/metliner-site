@@ -21,14 +21,22 @@ const cities = country.cities.map(slug => ({
   // map thumbnail (the Unsplash keyword-photo service this used was shut down)
   photo: `/maps-tiles/thumbs/${slug}.jpg`
 }));
+
+// search-result title and description
+const zhTerm = countryKey === 'taiwan' ? '捷運' : '地鐵';
+const cityList = cities.map(c => c.name);
+const pageTitle = lang === 'zh' ? `${country.name.zh}${zhTerm}與鐵路路線圖` : `${country.name.en} Metro Maps`;
+const pageDesc = lang === 'zh'
+  ? `Metliner 繪製的${country.name.zh}${zhTerm}與鐵路路線圖，共 ${cities.length} 座城市：${cityList.slice(0,8).join('、')}${cities.length>8?'等':''}。高解析、可縮放，風格統一。`
+  : `Metro and rail maps for ${cities.length} ${cities.length===1?'city':'cities'} in ${country.name.en}, drawn by Metliner in one consistent style: ${cityList.slice(0,8).join(', ')}${cities.length>8?' and more':''}. High-resolution and zoomable.`;
 ---
 <!DOCTYPE html>
 <html lang={lang === 'zh' ? 'zh-Hant' : 'en'}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{lang==='zh' ? `${country.name.zh}捷運與鐵路路線圖` : `${country.name.en} Metro Maps`} | Metliner</title>
-  <meta name="description" content={`Metro and rail maps for cities across ${country.name.en} by Metliner.`} />
+  <title>{pageTitle} | Metliner</title>
+  <meta name="description" content={pageDesc} />
   <Seo />
   <Icons />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,7 +72,7 @@ const cities = country.cities.map(slug => ({
   <div class="city-grid">
     {cities.map(city => (
       <a class="ccard" href={`${base}/maps/${contKey}/${countryKey}/${city.slug}`}>
-        <div class="thumb"><img src={city.photo} alt={(allCities[city.slug]||{}).mapAlt ? allCities[city.slug].mapAlt[lang] : `${city.nameEn} metro map`} loading="lazy" /></div>
+        <div class="thumb"><img src={city.photo} alt={(allCities[city.slug]||{}).mapLabel ? allCities[city.slug].mapLabel[lang] : `${city.nameEn} metro map`} loading="lazy" /></div>
         <div class="cfoot"><span class="dot" style={`background:${color}`}></span>{city.name}</div>
       </a>
     ))}

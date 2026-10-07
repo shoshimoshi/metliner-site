@@ -33,8 +33,8 @@ const conts = order.filter(k=>geo[k]).map((k,i) => ({
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{lang==='zh'?'地圖':'Maps'} | Metliner</title>
-  <meta name="description" content="Browse Metliner's unified metro and rail maps by continent — Asia, Europe, America, Oceania and Africa." />
+  <title>{lang==='zh'?'全球地鐵路線圖':'Metro Maps by Continent'} | Metliner</title>
+  <meta name="description" content={lang==='zh' ? 'Metliner 的全球地鐵與鐵路路線圖，依大洲瀏覽：亞洲、歐洲、美洲、大洋洲、非洲，超過 100 座城市。' : 'Browse Metliner metro and rail maps by continent: Asia, Europe, America, Oceania and Africa. Over 100 cities drawn in one consistent style.'} />
   <Seo />
   <Icons />
   <link rel="preconnect" href="https://fonts.googleapis.com" />

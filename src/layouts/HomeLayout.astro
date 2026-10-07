@@ -30,7 +30,7 @@ function card(slug){
   const c = cities[slug];
   const cont = (c && c.continent) || CITY_CONT[slug] || 'asia';
   const color = CONT_COLOR[cont] || '#f5a623';
-  if(c) return { name: c.name[lang], href: `${base}/maps/${c.continent}/${c.country}/${c.slug}`, img: c.map.src, color, alt: c.mapAlt[lang] };
+  if(c) return { name: c.name[lang], href: `${base}/maps/${c.continent}/${c.country}/${c.slug}`, img: c.map.src, color, alt: c.mapLabel[lang] };
   const nice = slug.split('-').map(w=>w[0].toUpperCase()+w.slice(1)).join(' ');
   return { name: nice, href: '#', img: '/maps/taipei_2026.jpg', color };
 }
@@ -53,6 +53,11 @@ const siteName = lang === 'zh' ? 'Metliner — 100+ 座城市的地鐵路線圖'
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{siteName}</title>
   <meta name="description" content={home.tagline[lang]} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context":"https://schema.org","@type":"WebSite",
+    "name":"Metliner","alternateName":["metliner","Metliner 捷線者"],
+    "url":"https://www.metliner.com/"
+  })} />
   <Seo />
   <Icons />
   <meta property="og:title" content={siteName} />
