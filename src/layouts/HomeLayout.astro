@@ -42,17 +42,20 @@ const sp = home.spotlight;
 const zhCountries = Object.fromEntries(Object.values(geo).flatMap(c => Object.entries(c.countries||{}).map(([k,v]) => [k, v.name.zh])));
 const zhContinents = Object.fromEntries(Object.entries(geo).map(([k,v]) => [k, v.name.zh]));
 const zhCities = Object.fromEntries(Object.entries(cityNames).map(([k,v]) => [k, v.zh]));
+
+// Name shown in the browser tab and in search results (the big heading on the page stays home.title)
+const siteName = lang === 'zh' ? 'Metliner — 100+ 座城市的地鐵路線圖' : 'Metliner — Metro Maps of 100+ Cities';
 ---
 <!DOCTYPE html>
 <html lang={lang === 'zh' ? 'zh-Hant' : 'en'}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Metliner — {home.title[lang]}</title>
+  <title>{siteName}</title>
   <meta name="description" content={home.tagline[lang]} />
   <Seo />
   <Icons />
-  <meta property="og:title" content={`Metliner — ${home.title[lang]}`} />
+  <meta property="og:title" content={siteName} />
   <meta property="og:description" content={home.tagline[lang]} />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
