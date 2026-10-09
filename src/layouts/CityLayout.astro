@@ -50,11 +50,15 @@ const related = (city.exploreMore || [])
   <meta name="twitter:card" content="summary_large_image" />
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context":"https://schema.org","@type":"ImageObject",
-    "name": city.map.title[lang],
+    "name": `${city.mapLabel[lang]} 2026`,
     "description": city.seoDescription[lang],
     "contentUrl": `https://www.metliner.com${city.map.hero || city.map.src}`,
     "url": `https://www.metliner.com${base}/maps/${city.continent}/${city.country}/${city.slug}/`,
-    "creator": {"@type":"Organization","name":"Metliner"},
+    "creator": {"@type":"Organization","name":"Metliner","url":"https://www.metliner.com/"},
+    "creditText": "Metliner",
+    "copyrightNotice": `© ${new Date().getFullYear()} Metliner`,
+    "license": `https://www.metliner.com${base}/contact-us/`,
+    "acquireLicensePage": `https://www.metliner.com${base}/contact-us/`,
     "caption": city.mapAlt[lang],
     "about": `${city.name[lang]} metro / rail network map`
   })} />
@@ -104,7 +108,7 @@ const related = (city.exploreMore || [])
   <div><h2>{ui.bannerMap}</h2><p>{ui.bannerMapSub}</p></div>
 </div></section>
 
-<TiledMapViewer dzi={city.map.dzi} src={city.map.src} alt={city.mapAlt[lang]}
+<TiledMapViewer dzi={city.map.dzi} src={city.map.src} alt={city.mapAlt[lang]} poster={city.map.hero}
            title={city.map.title[lang]} updated={city.map.updated[lang]} />
 
 <section class="explore">

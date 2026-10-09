@@ -2,14 +2,17 @@
 // Zoomable map viewer.
 //  - If `dzi` is given, load DZI tiles via OpenSeadragon (fast, high-res, mobile-friendly).
 //  - Otherwise fall back to the single-image pan/zoom viewer (`src`).
-const { dzi, src, alt, title, updated } = Astro.props;
+const { dzi, src, alt, title, updated, poster } = Astro.props;
 const useTiles = !!dzi;
 ---
 <section class="viewer-section">
   <div class="viewer-inner">
     <div class="viewer-shell" data-shell>
       {useTiles ? (
-        <div class="osd" data-osd data-dzi={dzi}></div>
+        <>
+          {poster && <img class="poster" src={poster} alt={alt} />}
+          <div class="osd" data-osd data-dzi={dzi}></div>
+        </>
       ) : (
         <div class="viewer" data-viewer>
           <img data-mapimg src={src} alt={alt} draggable="false" />
@@ -40,7 +43,9 @@ const useTiles = !!dzi;
     border-radius:var(--radius); overflow:hidden; background:#0d0d10; }
 
   /* OpenSeadragon canvas */
-  .osd{ width:100%; height:100%; }
+  .osd{ position:relative; width:100%; height:100%; }
+  /* full map image sits under the zoomable canvas: shows while tiles load and is the image search engines index */
+  .poster{ position:absolute; inset:0; width:100%; height:100%; object-fit:contain; }
 
   /* single-image fallback viewer */
   .viewer{ position:relative; width:100%; height:100%; overflow:hidden;
