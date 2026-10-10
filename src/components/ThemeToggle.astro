@@ -6,6 +6,12 @@ const { lang = 'en' } = Astro.props;
 const path = Astro.url.pathname;
 const otherPath = lang === 'zh' ? path.replace(/^\/zh(\/|$)/, '/english$1') : path.replace(/^\/english(\/|$)/, '/zh$1');
 const otherLabel = lang === 'zh' ? 'English' : '中文';
+// mobile menu (shown on narrow screens, where the nav links are hidden)
+const base = lang === 'zh' ? '/zh' : '/english';
+const menuItems = lang === 'zh'
+  ? [['地圖', `${base}/maps/`], ['關於我們', `${base}/about-us/`], ['聯絡我們', `${base}/contact-us/`]]
+  : [['Maps', `${base}/maps/`], ['About us', `${base}/about-us/`], ['Contact us', `${base}/contact-us/`]];
+const menuLabel = lang === 'zh' ? '選單' : 'Menu';
 const label = lang === 'zh' ? '切換深色 / 淺色模式' : 'Toggle dark / light mode';
 ---
 <script is:inline>
@@ -23,6 +29,32 @@ const label = lang === 'zh' ? '切換深色 / 淺色模式' : 'Toggle dark / lig
   <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
   <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
 </button>
+<button class="menu-toggle" type="button" data-menu-toggle aria-label={menuLabel} aria-expanded="false" aria-controls="mobile-menu">
+  <svg class="i-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  <svg class="i-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+</button>
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+  {menuItems.map(([t, href]) => (
+    <a href={href} aria-current={path.startsWith(href) ? 'page' : undefined}>{t}</a>
+  ))}
+</div>
+<script is:inline>
+  (function(){
+    var btn=document.querySelector('[data-menu-toggle]'), menu=document.querySelector('[data-mobile-menu]');
+    if(!btn||!menu) return;
+    function place(){ var nav=btn.closest('nav'); var r=nav?nav.getBoundingClientRect():{bottom:64}; menu.style.top=Math.max(0,r.bottom)+'px'; }
+    function set(open){
+      if(open) place();
+      menu.hidden=!open; btn.setAttribute('aria-expanded',open?'true':'false');
+      document.documentElement.classList.toggle('menu-open',open);
+    }
+    btn.addEventListener('click',function(e){ e.stopPropagation(); set(menu.hidden); });
+    document.addEventListener('click',function(e){ if(!menu.hidden && !menu.contains(e.target)) set(false); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') set(false); });
+    window.addEventListener('resize',function(){ if(window.innerWidth>760) set(false); else if(!menu.hidden) place(); });
+    window.addEventListener('scroll',function(){ if(!menu.hidden) place(); },{passive:true});
+  })();
+</script>
 <script is:inline>
   (function(){
     document.querySelectorAll('[data-theme-toggle]').forEach(function(b){
@@ -42,6 +74,27 @@ const label = lang === 'zh' ? '切換深色 / 淺色模式' : 'Toggle dark / lig
     border:1px solid rgba(255,255,255,.4);padding:6px 14px;border-radius:20px;transition:background .15s,border-color .15s}
   .lang-switch:hover{background:rgba(255,255,255,.14);border-color:#FFC816}
   @media(max-width:760px){ .lang-switch{margin-left:auto} }
+  /* ---- mobile menu ---- */
+  .menu-toggle{display:none;flex-shrink:0;margin-left:10px;width:38px;height:38px;align-items:center;justify-content:center;
+    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.4);border-radius:50%;color:#fff;cursor:pointer;padding:0}
+  .menu-toggle svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+  .menu-toggle .i-close{display:none}
+  .menu-toggle[aria-expanded="true"] .i-open{display:none}
+  .menu-toggle[aria-expanded="true"] .i-close{display:block}
+  .menu-toggle:focus-visible{outline:2px solid #FFC816;outline-offset:2px}
+  .mobile-menu{position:fixed;left:0;right:0;z-index:60;display:flex;flex-direction:column;
+    background:rgba(10,19,46,.98);box-shadow:0 12px 24px rgba(0,0,0,.25);padding:6px 0 10px}
+  .mobile-menu[hidden]{display:none}
+  .mobile-menu a{color:#fff;text-decoration:none;font-size:17px;font-weight:600;padding:14px 24px;border-left:4px solid transparent}
+  .mobile-menu a:hover,.mobile-menu a:focus-visible{background:rgba(255,255,255,.06);outline:none}
+  .mobile-menu a[aria-current="page"]{border-left-color:#FFC816;color:#FFC816}
+  html[data-theme="dark"] .mobile-menu{background:rgba(55,55,55,.98)}
+  /* keep the transparent home/city nav readable while the menu is open */
+  html.menu-open nav{background:rgba(10,19,46,.97)}
+  html[data-theme="dark"].menu-open nav{background:#373737}
+  @media(max-width:760px){ .menu-toggle{display:inline-flex} }
+  /* very narrow phones: keep the logo, drop the wordmark so the buttons fit */
+  @media(max-width:370px){ nav .brand{font-size:0 !important;gap:0 !important} .lang-switch{padding:6px 11px} }
   html[lang="zh-Hant"] .home-hero h1{word-break:keep-all}
   .theme-toggle{flex-shrink:0;margin-left:10px;width:38px;height:38px;display:inline-flex;align-items:center;justify-content:center;
     background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.4);border-radius:50%;color:#fff;cursor:pointer;
