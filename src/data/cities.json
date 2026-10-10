@@ -77,8 +77,8 @@
       "zh": "Metliner 繪製的台中捷運路線圖 2026：高解析、可縮放，涵蓋台中完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Taichung is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Taichung so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "台中的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現台中的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "2021 年 4 月，台中捷運綠線正式通車，台中從此有了第一條捷運，也是台灣第五個捷運系統。綠線全線高架、無人駕駛，從北屯總站一路通往高鐵台中站，讓高鐵旅客多了一條直接進入市區的路線。在此之前，台中的軌道已經先有了大改變：2016 年台鐵台中站完成高架化，新站啟用，1917 年落成的紅磚舊站則被保留為國定古蹟；2025 年，從台中港通往市區的捷運藍線動工，預計約九年後完工。",
+      "en": "Taichung got its first metro line in April 2021, when the Taichung MRT Green Line opened, the fifth metro system in Taiwan. The fully elevated, driverless line runs from Beitun Main Station to Taichung HSR station, giving high-speed rail passengers another direct way into the city. Rail in the city had already changed before that. In 2016 the TRA's Taichung Station moved onto a new elevated line, and the red-brick station building from 1917 was preserved as a national historic site. In 2025 construction began on the Blue Line from the Port of Taichung into the city, with about nine years of work expected."
     },
     "photo": "/maps-tiles/thumbs/taichung.jpg",
     "photoAlt": {
@@ -132,8 +132,8 @@
       "zh": "Metliner 繪製的高雄捷運路線圖 2026：高解析、可縮放，涵蓋高雄完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Kaohsiung is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Kaohsiung so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "高雄的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現高雄的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "2008 年，高雄捷運紅線在 3 月通車，橘線在同年 9 月接著通車，高雄從此有了第一條捷運。兩線交會的美麗島站，有一座由 4,500 片玻璃組成的「光之穹頂」，常被稱為世界最大的玻璃藝術作品。十多年來，路網從兩條十字交會的路線持續擴展：2015 年環狀輕軌開始營運，列車靠超級電容供電，沿線看不到架空電線，2024 年元旦環線正式閉合；同年 6 月，紅線延伸到岡山車站，與台鐵岡山站相連。",
+      "en": "Kaohsiung got its first metro line in 2008, when the Red Line opened in March, followed by the Orange Line that September. Where the two lines cross, Formosa Boulevard station holds the Dome of Light, made of 4,500 glass panels and often described as the largest glass artwork in the world. In the years since, the network has grown beyond those two crossing lines. The Circular Light Rail began service in 2015, its trams powered by supercapacitors with no overhead wires, and the loop was completed on New Year's Day 2024. That June the Red Line reached Gangshan station, connecting with the TRA station there."
     },
     "photo": "/maps-tiles/thumbs/kaohsiung.jpg",
     "photoAlt": {
@@ -1498,8 +1498,8 @@
       "zh": "Metliner 繪製的首爾地鐵路線圖 2026：高解析、可縮放，涵蓋首爾完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Seoul is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Seoul so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "首爾的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現首爾的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1974 年，首爾地鐵 1 號線通車，首爾從此有了第一條地鐵，而且一開始就與韓國鐵道的郊區路線直通運轉。五十多年來，路網擴展到整個首都圈，2017 年起每一座車站都裝上了月台門：2007 年通車的機場鐵道 AREX 先連接仁川與金浦兩座機場，2010 年延伸到首爾站，讓旅客從市中心搭車就能直達仁川機場；2024 年，首都圈廣域快線 GTX-A 開始營運，大幅縮短了首爾與京畿道之間的通勤時間。",
+      "en": "Seoul got its first subway line in 1974, when Line 1 opened, running through onto Korail's suburban lines from the very start. In the fifty years since, the network has spread across the whole capital region, and by 2017 every station had platform screen doors. The AREX airport railroad opened in 2007 between Incheon and Gimpo airports and reached Seoul Station in 2010, giving travelers a direct ride from the city center to Incheon, and in 2024 the GTX-A express began service, sharply cutting commute times between Seoul and Gyeonggi Province."
     },
     "photo": "/maps-tiles/thumbs/seoul.jpg",
     "photoAlt": {
@@ -1555,8 +1555,8 @@
       "zh": "Metliner 繪製的釜山地鐵路線圖 2026：高解析、可縮放，涵蓋釜山完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Busan is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Busan so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "釜山的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現釜山的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1985 年，釜山地鐵 1 號線通車，釜山從此有了第一條地鐵，也是繼首爾之後韓國第二座擁有地鐵的城市。四十年來，路網陸續增加到四條地鐵線，再加上輕軌與通勤電車：2011 年通車的 4 號線採用膠輪、無人駕駛，是韓國第一條無人駕駛的地鐵；同年釜山金海輕軌通車，把金海機場與鄰近的金海市接上了路網；2016 年底，東海線開始提供密集的通勤電車服務，往海雲台與機張方向的移動也方便了許多。",
+      "en": "Busan got its first subway line in 1985, when Line 1 opened, making it the second city in Korea after Seoul to have a metro. In the forty years since, the network has grown to four subway lines plus light rail and commuter trains. Line 4, opened in 2011, runs on rubber tires without drivers and was the first driverless metro line in Korea, and the Busan-Gimhae Light Rail opened the same year, linking Gimhae Airport and the neighboring city of Gimhae to the network. At the end of 2016 the Donghae Line began frequent commuter service, making trips toward Haeundae and Gijang much easier."
     },
     "photo": "/maps-tiles/thumbs/busan.jpg",
     "photoAlt": {
@@ -1612,8 +1612,8 @@
       "zh": "Metliner 繪製的大邱地鐵路線圖 2026：高解析、可縮放，涵蓋大邱完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Daegu is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Daegu so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "大邱的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現大邱的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1997 年，大邱地鐵 1 號線從辰泉到中央路的路段通車，大邱從此有了第一條地鐵。2003 年 2 月，中央路站發生列車縱火事件，造成 192 人罹難，之後大邱的地鐵車廂全面改用阻燃材質的內裝。近三十年來，路網擴展到三條線：2005 年 2 號線通車，東西向貫穿市區；2015 年通車的 3 號線是韓國第一條跨座式單軌，全線高架，乘客可以一路從空中看著大邱的街景。",
+      "en": "Daegu got its first subway line in 1997, when Line 1 opened between Jincheon and Jungangno. In February 2003 an arson attack on a train at Jungangno station killed 192 people, and afterward Daegu's subway cars were refitted with flame-retardant interiors. In the nearly thirty years since its opening, the network has grown to three lines. Line 2 opened in 2005, crossing the city from east to west, and Line 3, opened in 2015, is Korea's first straddle-type monorail, fully elevated so riders can watch the city pass below."
     },
     "photo": "/maps-tiles/thumbs/daegu.jpg",
     "photoAlt": {
@@ -1669,8 +1669,8 @@
       "zh": "Metliner 繪製的大田地鐵路線圖 2026：高解析、可縮放，涵蓋大田完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Daejeon is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Daejeon so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "大田的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現大田的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "2006 年，大田地鐵 1 號線從板岩到政府綜合廳舍的路段通車，大田從此有了第一條地鐵。這條線在 1996 年動工，卻因為隔年的亞洲金融危機延宕多年，直到 2007 年才延伸到反石站、全線通車，總長約 23 公里、22 座車站。之後路網持續規劃擴張：通往世宗市政府綜合廳舍的延伸線正在規劃中；2 號線則採用氫燃料電池路面電車，目前正在興建，完工後將與 1 號線在五座車站交會。",
+      "en": "Daejeon got its first subway line in 2006, when Line 1 opened between Panam and the Government Complex. Construction had started in 1996 but was held up for years by the Asian financial crisis the following year, and the full line to Banseok finally opened in 2007, about 23 km long with 22 stations. The network is still growing. An extension toward the Sejong Government Complex is being planned, and Line 2, a hydrogen fuel-cell tram line, is now under construction and will meet Line 1 at five stations."
     },
     "photo": "/maps-tiles/thumbs/daejeon.jpg",
     "photoAlt": {
@@ -1726,8 +1726,8 @@
       "zh": "Metliner 繪製的光州地鐵路線圖 2026：高解析、可縮放，涵蓋光州完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Gwangju is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Gwangju so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "光州的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現光州的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "2004 年，光州地鐵 1 號線從鹿洞到尚武的路段通車，光州從此有了第一條地鐵。2008 年，路線延伸到平洞，全線 20 座車站，大部分位於地下。光州的路網至今仍在成長：環繞市區的 2 號線在 2019 年動工，第一階段約 17 公里、20 座車站，預計在 2028 年底通車，完工後市區將有更多地方可以搭地鐵抵達。",
+      "en": "Gwangju got its first subway line in 2004, when Line 1 opened between Nokdong and Sangmu. The line reached Pyeongdong in 2008, giving it 20 stations, most of them underground. The network is still growing. Construction of Line 2, a loop around the city, began in 2019, and its first phase, about 17 km with 20 stations, is expected to open at the end of 2028, bringing the subway to many more parts of the city."
     },
     "photo": "/maps-tiles/thumbs/gwangju.jpg",
     "photoAlt": {
@@ -1995,7 +1995,7 @@
       "zh": "Metliner 繪製的新加坡地鐵路線圖 2026：高解析、可縮放，涵蓋新加坡完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "zh": "1987 年 11 月，地鐵從宜春到大巴窯的路段通車，全長約 6 公里、5 座車站，新加坡從此有了第一條地鐵。三十多年來，路網擴展到遍布全島：2002 年樟宜機場站啟用，旅客從機場就能直接搭地鐵進城；環線在 2011 年大致完工，讓乘客不必再經過市中心就能在各條路線之間轉乘；2020 年起，湯申-東海岸線分階段通車，2024 年延伸到東部的海灣站。",
+      "zh": "1987 年 11 月，地鐵從楊厝港到大巴窯的路段通車，全長約 6 公里、5 座車站，新加坡從此有了第一條地鐵。三十多年來，路網擴展到遍布全島：2002 年樟宜機場站啟用，旅客從機場就能直接搭地鐵進城；環線在 2011 年大致完工，讓乘客不必再經過市中心就能在各條路線之間轉乘；2020 年起，湯申-東海岸線分階段通車，2024 年延伸到東部的碧灣站。",
       "en": "Singapore got its first MRT line in November 1987, when a 6 km stretch with five stations opened between Yio Chu Kang and Toa Payoh. In the decades since, the network has spread across the island. Changi Airport station opened in 2002, letting travelers ride the MRT straight from the airport into the city. The Circle Line was largely complete by 2011, so riders could change between lines without going through the city center, and the Thomson-East Coast Line has opened in stages since 2020, reaching Bayshore in the east in 2024."
     },
     "photo": "/maps-tiles/thumbs/singapore.jpg",
@@ -2048,8 +2048,8 @@
       "zh": "Metliner 繪製的曼谷地鐵路線圖 2026：高解析、可縮放，涵蓋曼谷完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Bangkok is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Bangkok so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "曼谷的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現曼谷的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1999 年 12 月，BTS 空鐵的素坤逸線與是隆線同時通車，曼谷從此有了第一條城市軌道。2004 年，曼谷第一條地鐵 MRT 藍線通車，二十多年來，路網擴展成由空鐵、地鐵、機場快線、通勤鐵路與單軌組成的系統：2020 年藍線完成環狀運轉，從湄南河底穿過，經過中國城與大皇宮附近的車站；2023 年與 2024 年，黃線與粉紅線兩條單軌相繼通車，把路網延伸到曼谷東部與北部的住宅區。",
+      "en": "Bangkok got its first urban rail line in December 1999, when the BTS Skytrain opened its Sukhumvit and Silom lines together. The city's first subway, the MRT Blue Line, followed in 2004, and in the two decades since, the network has grown into a mix of elevated rail, subway, airport link, commuter rail, and monorail. In 2020 the Blue Line completed its loop, tunneling under the Chao Phraya River and stopping near Chinatown and the Grand Palace, and in 2023 and 2024 the Yellow and Pink monorail lines opened, extending the network into residential districts in the city's east and north."
     },
     "photo": "/maps-tiles/thumbs/bangkok.jpg",
     "photoAlt": {
@@ -2101,8 +2101,8 @@
       "zh": "Metliner 繪製的杜拜地鐵路線圖 2026：高解析、可縮放，涵蓋杜拜完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Dubai is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Dubai so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "杜拜的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現杜拜的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "2009 年 9 月 9 日晚上 9 點 9 分 9 秒，杜拜地鐵紅線舉行通車典禮，杜拜從此有了第一條地鐵。所有列車從第一天起就全自動無人駕駛。十多年來，路網持續擴展：2011 年綠線通車；2014 年通車的杜拜電車，沿線沒有架空電線，在 DMCC 與杜拜碼頭兩站和紅線相連；2020 年，紅線通往世博會場的支線「Route 2020」完工，並在 2021 年陸續開放車站，迎接延後舉辦的杜拜世博。",
+      "en": "Dubai got its first metro line at 9:09:09 pm on September 9, 2009, when the Red Line was officially opened. Every train has run fully driverless since the first day. In the years since, the network has kept growing. The Green Line opened in 2011, and the Dubai Tram followed in 2014, running without overhead wires and connecting with the Red Line at DMCC and Dubai Marina stations. In 2020 Route 2020, a Red Line branch to the Expo site, was completed, and its stations opened in stages through 2021 for the postponed Expo."
     },
     "photo": "/maps-tiles/thumbs/dubai.jpg",
     "photoAlt": {
@@ -2154,8 +2154,8 @@
       "zh": "Metliner 繪製的河內地鐵路線圖 2026：高解析、可縮放，涵蓋河內完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Hanoi is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Hanoi so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "河內的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現河內的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "2021 年 11 月，河內地鐵 2A 號線從吉靈到河東的路段通車，河內從此有了第一條地鐵，這也是越南第一條營運的城市軌道。這條線全長約 13 公里、12 座車站，全線高架。之後路網開始擴展：2024 年 8 月，3 號線從仁到紙橋的高架路段通車，往西延伸了約 8.5 公里；這條線通往河內車站的地下路段目前仍在興建，完工後河內才會有第一段地下的地鐵。",
+      "en": "Hanoi got its first metro line in November 2021, when Line 2A opened between Cat Linh and Ha Dong. It was also the first urban rail line to operate in Vietnam, about 13 km long with 12 stations, all elevated. Since then the network has started to grow. In August 2024 the elevated section of Line 3 opened between Nhon and Cau Giay, adding about 8.5 km in the west of the city. Its underground section toward Hanoi Station is still under construction, and once it opens Hanoi will have its first stretch of underground metro."
     },
     "photo": "/maps-tiles/thumbs/hanoi.jpg",
     "photoAlt": {
@@ -2209,8 +2209,8 @@
       "zh": "Metliner 繪製的胡志明市地鐵路線圖 2026：高解析、可縮放，涵蓋胡志明市完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Ho Chi Minh City is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Ho Chi Minh City so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "胡志明市的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現胡志明市的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "2024 年 12 月 22 日，胡志明市地鐵 1 號線從濱城到仙泉的路線通車，胡志明市從此有了第一條地鐵。這條線在 2012 年動工，原本預計 2018 年完工，延宕多年才終於通車。全線約 20 公里、14 座車站，其中市中心的濱城、大劇院與巴森三站位於地下，其餘 11 站都是高架；建設經費約八成來自日本的政府開發援助，列車也由日立製造。通車後先免費試乘一個月，2025 年 1 月 21 日起才正式收費。",
+      "en": "Ho Chi Minh City got its first metro line on December 22, 2024, when Line 1 opened between Ben Thanh and Suoi Tien. Construction began in 2012 with a target of 2018, and the line opened years late. It is about 20 km long with 14 stations. The three downtown stations, Ben Thanh, Opera House, and Ba Son, are underground, while the other 11 are elevated. About 80 percent of the funding came from Japanese development loans, and the trains were built by Hitachi. Rides were free for the first month, and fares began on January 21, 2025."
     },
     "photo": "/maps-tiles/thumbs/ho-chi-minh-city.jpg",
     "photoAlt": {
