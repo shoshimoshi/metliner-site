@@ -99,7 +99,7 @@ const related = (city.exploreMore || [])
   </figure>
   <div>
     <h2>{city.name[lang]}</h2>
-    <p>{city.intro[lang]}</p>
+    {city.intro[lang].split(/\n\n+/).map(par => <p>{par}</p>)}
   </div>
 </div></section>
 
@@ -109,7 +109,7 @@ const related = (city.exploreMore || [])
 </div></section>
 
 <TiledMapViewer dzi={city.map.dzi} src={city.map.src} alt={city.mapAlt[lang]} poster={city.map.hero}
-           title={city.map.title[lang]} updated={city.map.updated[lang]} />
+           title={city.map.title[lang]} />
 
 <section class="explore">
   <div class="banner"><div class="wrap">
@@ -176,6 +176,7 @@ const related = (city.exploreMore || [])
   .intro .photo img{width:100%;height:100%;object-fit:cover}
   .intro h2{font-size:var(--h2-section);font-weight:800;margin-bottom:22px;color:#000}
   .intro p{color:var(--text);font-size:var(--body-size);line-height:1.7;max-width:56ch}
+  .intro p + p{margin-top:1em}
 
   .banner{background:var(--yellow);padding:44px 0}
   .banner .wrap{display:flex;align-items:center;gap:24px}
