@@ -187,8 +187,8 @@
       "zh": "Metliner 繪製的東京地鐵路線圖 2026：高解析、可縮放，涵蓋東京完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Tokyo is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Tokyo so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "東京的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現東京的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1927 年，銀座線從上野到淺草的路段通車，東京從此有了第一條地鐵，這也是亞洲最早的地鐵。今天東京的地鐵由東京 Metro 與都營地下鐵兩家業者經營，再加上 JR 與眾多私鐵。近百年來，路網一路擴張：1960 年通車的都營淺草線，是日本第一條與私鐵直通運轉的地鐵，乘客不必換車就能從郊外直達市中心；2004 年營團地下鐵改組為東京 Metro，2023 年起直通運轉更延伸到相鐵與東急沿線。",
+      "en": "Tokyo got its first subway line in 1927, when the Ginza Line opened between Ueno and Asakusa, the oldest subway line in Asia. Today the subway is run by two separate operators, Tokyo Metro and Toei, alongside JR and a long list of private railways. In the century since, the network has kept growing. The Toei Asakusa Line, opened in 1960, was the first subway in Japan to run through onto a private railway, letting riders reach the center from the suburbs without changing trains. The old Teito Rapid Transit Authority became Tokyo Metro in 2004, and in 2023 through-running reached the Sotetsu and Tokyu lines."
     },
     "photo": "/maps-tiles/thumbs/tokyo.jpg",
     "photoAlt": {
@@ -1270,8 +1270,8 @@
       "zh": "Metliner 繪製的岡山地鐵路線圖 2026：高解析、可縮放，涵蓋岡山完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Okayama is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Okayama so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "岡山的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現岡山的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1912 年，岡山電氣軌道的路面電車開始行駛，岡山從此有了第一條城市軌道。如今全線只有約 4.7 公里、16 個站，常被稱為日本最小的路面電車。百年來，岡山也成了中國與四國之間的鐵道樞紐：1972 年山陽新幹線通到岡山，直到 1975 年延伸至博多前，岡山都是新幹線的西端終點；1988 年瀨戶大橋通車，從岡山搭快速「Marine Liner」約 55 分鐘就能抵達四國的高松。",
+      "en": "Okayama got its first urban rail line in 1912, when the Okayama Electric Tramway began running. At about 4.7 km with 16 stops, it is often called the smallest tram system in Japan. Over the century since, the city has become the rail hub between western Honshu and Shikoku. The Sanyo Shinkansen reached Okayama in 1972, and the city stayed the line's western terminus until the extension to Hakata in 1975. In 1988 the Great Seto Bridge opened, and the Marine Liner rapid service now reaches Takamatsu on Shikoku in about 55 minutes."
     },
     "photo": "/maps-tiles/thumbs/okayama.jpg",
     "photoAlt": {
@@ -1327,8 +1327,8 @@
       "zh": "Metliner 繪製的大阪地鐵路線圖 2026：高解析、可縮放，涵蓋大阪完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Osaka is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Osaka so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "大阪的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現大阪的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1933 年，地下鐵 1 號線（今御堂筋線）從梅田到心齋橋通車，大阪從此有了第一條地鐵，這也是日本第一條公營地鐵。九十多年來，路網擴展到 8 條地鐵線與一條新電車，每天搭載約 250 萬人次：2018 年，大阪市營地下鐵民營化，改名為 Osaka Metro；2025 年 1 月，中央線延伸到人工島夢洲，為同年的大阪世界博覽會做好準備，讓遊客從市中心搭地鐵就能直達會場。",
+      "en": "Osaka got its first subway line in 1933, when Line 1, today's Midosuji Line, opened between Umeda and Shinsaibashi, the first publicly operated subway in Japan. In the ninety-plus years since, the network has grown to eight subway lines plus the New Tram, carrying about 2.5 million riders a day. In 2018 the municipal subway was privatized as Osaka Metro, and in January 2025 the Chuo Line was extended to the artificial island of Yumeshima ahead of Expo 2025, letting visitors ride the subway from the city center straight to the Expo grounds."
     },
     "photo": "/maps-tiles/thumbs/osaka.jpg",
     "photoAlt": {
@@ -1384,8 +1384,8 @@
       "zh": "Metliner 繪製的札幌地鐵路線圖 2026：高解析、可縮放，涵蓋札幌完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Sapporo is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Sapporo so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "札幌的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現札幌的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1971 年，南北線通車，札幌從此有了第一條地鐵，時間就在隔年冬季奧運舉辦之前；在此之前，路面電車早已在市區行駛了五十多年。札幌的三條地鐵線全都採用膠輪，行駛起來格外安靜。五十多年來，路網陸續擴展：1976 年東西線、1988 年東豐線相繼通車，三條線在大通交會；2015 年 12 月，路面電車在薄野與西四丁目之間補上缺口，連成一個環狀路線。",
+      "en": "Sapporo got its first subway line in 1971, when the Namboku Line opened just before the 1972 Winter Olympics, though streetcars had already been running through the city for more than fifty years. All three of its subway lines run on rubber tires, which makes for a notably quiet ride. In the decades since, the network has steadily grown. The Tozai Line followed in 1976 and the Toho Line in 1988, and in December 2015 the streetcar closed the gap between Susukino and Nishi-Yon-Chome, turning its route into a full loop."
     },
     "photo": "/maps-tiles/thumbs/sapporo.jpg",
     "photoAlt": {
@@ -1441,8 +1441,8 @@
       "zh": "Metliner 繪製的仙台地鐵路線圖 2026：高解析、可縮放，涵蓋仙台完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Sendai is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Sendai so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "仙台的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現仙台的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1987 年，地下鐵南北線從八乙女到富澤的路段通車，仙台從此有了第一條地鐵。2011 年東日本大地震時，地鐵受損停駛，一個多月後的 4 月 29 日全線恢復通車。三十多年來，路網逐步擴展：2007 年通車的 JR 仙台空港線，讓仙台機場第一次有了鐵路連結；2015 年 12 月東西線通車，在仙台站與南北線交會，形成今天十字形的地鐵路網。",
+      "en": "Sendai got its first subway line in 1987, when the Namboku Line opened between Yaotome and Tomizawa. The 2011 Tohoku earthquake damaged the subway and halted service, but the full line was running again by April 29, little more than a month later. In the decades since, the network has grown step by step. The JR Sendai Airport Line, opened in 2007, gave Sendai Airport its first rail link, and in December 2015 the Tozai Line opened, crossing the Namboku Line at Sendai Station and giving the subway its cross shape."
     },
     "photo": "/maps-tiles/thumbs/sendai.jpg",
     "photoAlt": {
@@ -1836,8 +1836,8 @@
       "zh": "Metliner 繪製的吉隆坡地鐵路線圖 2026：高解析、可縮放，涵蓋吉隆坡完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Kuala Lumpur is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Kuala Lumpur so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "吉隆坡的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現吉隆坡的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1996 年，STAR 輕軌（今安邦線）通車，吉隆坡從此有了第一條輕軌；在此前一年，KTM 通勤電車已經開始行駛。三十年來，路網擴展成由輕軌、單軌、捷運與機場快線組成的系統：1998 年通車的 PUTRA 輕軌（今格拉那再也線），是巴生谷第一條全自動無人駕駛的鐵路；2001 年吉隆坡中央車站啟用，隔年機場快線通車，旅客甚至可以在中央車站先辦理部分航班的登機手續，再輕鬆搭車前往機場。",
+      "en": "Kuala Lumpur got its first light rail line in 1996, when the STAR LRT, today's Ampang Line, opened. KTM Komuter commuter trains had started running the year before. In the thirty years since, the network has grown into a mix of light rail, monorail, MRT, and airport express lines. The PUTRA LRT, now the Kelana Jaya Line, opened in 1998 as the first fully automated, driverless rail line in the Klang Valley, and KL Sentral opened in 2001, followed a year later by the KLIA Ekspres, where travelers on some flights can even check in at KL Sentral before riding to the airport."
     },
     "photo": "/maps-tiles/thumbs/kuala-lumpur.jpg",
     "photoAlt": {
@@ -1889,8 +1889,8 @@
       "zh": "Metliner 繪製的馬尼拉地鐵路線圖 2026：高解析、可縮放，涵蓋馬尼拉完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Manila is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Manila so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "馬尼拉的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現馬尼拉的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1984 年，輕軌 1 號線從巴克拉蘭到中央車站的路段通車，馬尼拉從此有了第一條快速軌道交通，這也是東南亞第一條城市快速軌道。四十多年來，路網陸續增加新線：1999 年底捷運 3 號線開始營運，沿著 EDSA 大道行駛，2003 年輕軌 2 號線通車；2024 年 11 月，1 號線往南延伸到甲米地省，讓南邊的通勤族不必再塞在車陣中進城。",
+      "en": "Manila got its first rapid transit line in 1984, when LRT Line 1 opened between Baclaran and Central Terminal. It was the first rapid transit service in Southeast Asia. In the four decades since, the network has added new lines. MRT Line 3 began service along EDSA at the end of 1999, and LRT Line 2 opened in 2003. In November 2024 Line 1 was extended south into Cavite, giving commuters from the south a way into the city without sitting in traffic."
     },
     "photo": "/maps-tiles/thumbs/manila.jpg",
     "photoAlt": {
@@ -1942,8 +1942,8 @@
       "zh": "Metliner 繪製的杜哈地鐵路線圖 2026：高解析、可縮放，涵蓋杜哈完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Doha is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Doha so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "杜哈的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現杜哈的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "2019 年 5 月，地鐵紅線通車，杜哈從此有了第一條地鐵。同年 11 月與 12 月，金線、綠線，以及紅線通往哈馬德國際機場的支線陸續啟用，短短一年內三條線全部投入營運：2022 年卡達世界盃期間，所有車廂暫時改為標準車廂，以載運大量球迷；平時列車則分為標準、Goldclub 與家庭三種車廂，家庭車廂專供家庭與單身女性乘坐。",
+      "en": "Doha got its first metro line in May 2019, when the Red Line opened. The Gold and Green Lines followed in November and December of that year, along with the Red Line branch to Hamad International Airport, so all three lines were running within a single year. During the 2022 FIFA World Cup, every car was switched to standard class to carry the crowds of fans, and in normal service trains have three classes, standard, Goldclub, and a family class reserved for families and women traveling alone."
     },
     "photo": "/maps-tiles/thumbs/doha.jpg",
     "photoAlt": {
@@ -1995,8 +1995,8 @@
       "zh": "Metliner 繪製的新加坡地鐵路線圖 2026：高解析、可縮放，涵蓋新加坡完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Singapore is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Singapore so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "新加坡的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現新加坡的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1987 年 11 月，地鐵從宜春到大巴窯的路段通車，全長約 6 公里、5 座車站，新加坡從此有了第一條地鐵。三十多年來，路網擴展到遍布全島：2002 年樟宜機場站啟用，旅客從機場就能直接搭地鐵進城；環線在 2011 年大致完工，讓乘客不必再經過市中心就能在各條路線之間轉乘；2020 年起，湯申-東海岸線分階段通車，2024 年延伸到東部的海灣站。",
+      "en": "Singapore got its first MRT line in November 1987, when a 6 km stretch with five stations opened between Yio Chu Kang and Toa Payoh. In the decades since, the network has spread across the island. Changi Airport station opened in 2002, letting travelers ride the MRT straight from the airport into the city. The Circle Line was largely complete by 2011, so riders could change between lines without going through the city center, and the Thomson-East Coast Line has opened in stages since 2020, reaching Bayshore in the east in 2024."
     },
     "photo": "/maps-tiles/thumbs/singapore.jpg",
     "photoAlt": {
@@ -5463,8 +5463,8 @@
       "zh": "Metliner 繪製的高松地鐵路線圖 2026：高解析、可縮放，涵蓋高松完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Takamatsu is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Takamatsu so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "高松的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現高松的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1911 年，琴電的前身之一在今橋與志度之間開通了路線，高松從此有了第一條電車。琴電車隊中有不少來自京急、京王與名古屋的二手車輛，因而有「會跑的鐵道博物館」之稱。一百多年來，高松的鐵道幾經變化：1988 年瀨戶大橋通車，鐵路從此跨海連接本州，快速「Marine Liner」從岡山到高松只要約 55 分鐘，取代了過去約一小時的渡輪；2001 年琴電經營破產，經過重整後繼續營運至今。",
+      "en": "Takamatsu got its first electric railway in 1911, when a predecessor of today's Kotoden opened a line between Imabashi and Shido. Much of the Kotoden fleet is secondhand stock from Keikyu, Keio, and Nagoya, which has earned it the nickname of a moving train museum. Over the century since, rail in the city has changed in big ways. The Great Seto Bridge opened in 1988, linking Shikoku to Honshu by rail, and the Marine Liner rapid service now runs from Okayama to Takamatsu in about 55 minutes, replacing a ferry crossing of about an hour. Kotoden went bankrupt in 2001 but was rebuilt and still runs today."
     },
     "photo": "/maps-tiles/thumbs/takamatsu.jpg",
     "photoAlt": {
