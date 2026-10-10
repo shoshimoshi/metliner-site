@@ -757,8 +757,8 @@
       "zh": "Metliner 繪製的福岡地鐵路線圖 2026：高解析、可縮放，涵蓋福岡完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Fukuoka is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Fukuoka so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "福岡的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現福岡的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1981 年，地下鐵空港線從室見到天神的首段通車，福岡從此有了第一條地鐵。每座車站都有自己專屬的圖案標誌，福岡機場站就是一架飛機。四十多年來，路網擴展到三條線：1993 年空港線延伸到福岡機場，從博多站只要搭兩站就能抵達機場；2005 年通車的七隈線在 2023 年延伸到博多，福岡西南部的乘客從此不必在天神換車，就能直接抵達博多站。",
+      "en": "Fukuoka got its first subway line in 1981, when the Airport Line opened between Muromi and Tenjin. Every station has its own pictogram logo, and Fukuoka Airport's is an airplane. In the forty-plus years since, the network has grown to three lines. The Airport Line reached Fukuoka Airport in 1993, putting the airport just two stops from Hakata Station, and the Nanakuma Line, opened in 2005, was extended to Hakata in 2023, so riders from the city's southwest can now reach Hakata Station without changing at Tenjin."
     },
     "photo": "/maps-tiles/thumbs/fukuoka.jpg",
     "photoAlt": {
@@ -814,8 +814,8 @@
       "zh": "Metliner 繪製的函館地鐵路線圖 2026：高解析、可縮放，涵蓋函館完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Hakodate is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Hakodate so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "函館的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現函館的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1897 年，函館的馬車鐵道開始行駛，1913 年改為電車，成為北海道第一條路面電車，函館市電就此誕生。一百多年來，路網在高峰時期一度長達近 18 公里，之後陸續縮減，如今保留約 11 公里、兩條系統：1993 年，修復後的 1918 年古董電車「箱館 Haikara 號」重新上路，每到夏天就在街上行駛；2016 年北海道新幹線通到新函館北斗，旅客轉乘「函館 Liner」就能進入市區。",
+      "en": "Hakodate's street rail began in 1897 with a horse-drawn tramway, which was electrified in 1913 as the first streetcar line in Hokkaido. Over the century since, the network peaked at nearly 18 km before shrinking to the roughly 11 km and two routes that run today. In 1993 a restored 1918 tram, the Hakodate Haikara-go, returned to the streets for summer runs, and in 2016 the Hokkaido Shinkansen reached Shin-Hakodate-Hokuto, where travelers change to the Hakodate Liner to ride into the city."
     },
     "photo": "/maps-tiles/thumbs/hakodate.jpg",
     "photoAlt": {
@@ -871,8 +871,8 @@
       "zh": "Metliner 繪製的廣島地鐵路線圖 2026：高解析、可縮放，涵蓋廣島完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Hiroshima is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Hiroshima so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "廣島的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現廣島的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1912 年，廣島的路面電車通車，廣島從此有了第一條城市軌道。一百多年來，廣島電鐵的路網擴展到約 35 公里，包括通往宮島渡輪碼頭的宮島線，是日本最長的路面電車系統：1945 年原子彈爆炸後僅僅三天，市區電車就部分恢復行駛；2025 年 8 月，電車月台搬進新廣島車站大樓的二樓，出了 JR 剪票口走幾步就能搭車，前往市中心也快了約 4 分鐘。",
+      "en": "Hiroshima got its first urban rail line in 1912, when its streetcars began running. In the century since, the Hiroden network has grown to about 35 km, including the Miyajima Line out to the Miyajima ferry, making it the longest tram system in Japan. Just three days after the 1945 atomic bombing, city trams were partly back in service, and in August 2025 the tram platforms moved into the second floor of the new Hiroshima Station building, a few steps from the JR gates, cutting about four minutes off the ride downtown."
     },
     "photo": "/maps-tiles/thumbs/hiroshima.jpg",
     "photoAlt": {
@@ -928,8 +928,8 @@
       "zh": "Metliner 繪製的鹿兒島地鐵路線圖 2026：高解析、可縮放，涵蓋鹿兒島完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Kagoshima is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Kagoshima so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "鹿兒島的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現鹿兒島的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1912 年，從武之橋到谷山的電車通車，鹿兒島從此有了第一條路面電車。市區的電車軌道鋪著草皮，路面中央一片綠意；谷山站還立著「日本最南端的電車站」的標示。百年來，電車始終是鹿兒島市民的日常交通工具：1945 年的空襲重創路線，但谷山線只過了 12 天就恢復行駛；2004 年九州新幹線通到鹿兒島中央站，2011 年全線開通後，從博多搭新幹線就能直達鹿兒島。",
+      "en": "Kagoshima got its first streetcar line in 1912, when trams began running from Takenohashi to Taniyama. Much of the street track is now laid with grass, giving the middle of the road a strip of green, and Taniyama has a marker for the southernmost tram stop in Japan. For more than a century the trams have been part of daily life in the city. An air raid in 1945 badly damaged the line, but the Taniyama Line was running again just 12 days later, and the Kyushu Shinkansen reached Kagoshima-Chuo in 2004, with through trains from Hakata after the full line opened in 2011."
     },
     "photo": "/maps-tiles/thumbs/kagoshima.jpg",
     "photoAlt": {
@@ -985,8 +985,8 @@
       "zh": "Metliner 繪製的長野地鐵路線圖 2026：高解析、可縮放，涵蓋長野完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Nagano is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Nagano so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "長野的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現長野的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1926 年，長野電鐵的第一段路線通車，兩年後延伸到長野站，長野從此有了自己的地方鐵路。如今長野電鐵的特急列車，用的是退役的成田特快與小田急浪漫特快車廂。九十多年來，城市的軌道一路改變：1981 年，長野站到善光寺下的一段改為地下化；1997 年為了隔年冬季奧運通車的長野新幹線，讓往返東京的時間大幅縮短，同一天，信濃鐵道也接手了舊信越本線的區間列車。",
+      "en": "Nagano got its own local railway in 1926, when the first section of the Nagano Electric Railway opened, reaching Nagano Station two years later. Its limited expresses today run on retired Narita Express and Odakyu Romancecar trains. In the decades since, the city's rail has changed a great deal. In 1981 the line from Nagano Station to Zenkojishita was moved underground, and in 1997 the Nagano Shinkansen opened ahead of the next year's Winter Olympics, cutting travel time to Tokyo sharply, while Shinano Railway took over local service on the old Shin'etsu Main Line the same day."
     },
     "photo": "/maps-tiles/thumbs/nagano.jpg",
     "photoAlt": {
@@ -1042,8 +1042,8 @@
       "zh": "Metliner 繪製的長崎地鐵路線圖 2026：高解析、可縮放，涵蓋長崎完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Nagasaki is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Nagasaki so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "長崎的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現長崎的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1915 年，長崎電氣軌道從病院下到築町的路線通車，長崎從此有了第一條路面電車。一百多年來，路網在 1960 年完成最後一段延伸後，就維持著今天的規模，全線至今仍是單一票價：1945 年 8 月 9 日原子彈爆炸，電車全面停駛，16 輛車被毀、120 名員工罹難；2022 年 9 月西九州新幹線通車，從博多到長崎由約 2 小時縮短為約 90 分鐘。",
+      "en": "Nagasaki got its first streetcar line in 1915, when the Nagasaki Electric Tramway opened between Byoinshita and Tsukimachi. The network reached its current size with a final extension in 1960, and it still charges a single flat fare on every route. The atomic bombing on August 9, 1945 stopped every line, destroying 16 cars and killing 120 employees, and in September 2022 the Nishi-Kyushu Shinkansen opened, cutting the trip from Hakata to Nagasaki from about two hours to about 90 minutes."
     },
     "photo": "/maps-tiles/thumbs/nagasaki.jpg",
     "photoAlt": {
@@ -1099,8 +1099,8 @@
       "zh": "Metliner 繪製的名古屋地鐵路線圖 2026：高解析、可縮放，涵蓋名古屋完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Nagoya is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Nagoya so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "名古屋的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現名古屋的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1957 年，今東山線的前身地下鐵 1 號線從名古屋到榮町通車，名古屋從此有了第一條地鐵。六十多年來，路網擴展到 6 條線、87 座車站：2004 年名城線完成環狀化，乘客可以沿著市中心繞上一整圈而不必折返；2005 年為愛知博覽會開通的 Linimo，是日本第一條商業運轉的 HSST 型磁浮線，博覽會結束後也持續作為當地的通勤路線。",
+      "en": "Nagoya got its first subway line in 1957, when Line 1, today's Higashiyama Line, opened between Nagoya and Sakaemachi. In the sixty-plus years since, the network has grown to 6 lines and 87 stations. In 2004 the Meijo Line was completed as a loop, letting riders circle the city center without turning back, and Linimo, opened in 2005 for the Aichi Expo, became the first commercial HSST-type maglev line in Japan and kept running as a local commuter line after the Expo ended."
     },
     "photo": "/maps-tiles/thumbs/nagoya.jpg",
     "photoAlt": {
@@ -1156,8 +1156,8 @@
       "zh": "Metliner 繪製的那霸地鐵路線圖 2026：高解析、可縮放，涵蓋那霸完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Naha is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Naha so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "那霸的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現那霸的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "2003 年，沖繩都市單軌電車「Yui Rail」通車，那霸從此有了戰後第一條鐵路。沖繩早在 1914 年就有客運鐵路，但在二戰空襲中被毀，戰後殘存的鐵軌也因鋼鐵短缺被拆除，此後沖繩長年依賴汽車：2019 年 10 月，路線延伸到浦添的 Tedako-Uranishi 站，全長約 17 公里、19 座車站；2020 年起，除了在地的 OKICA，Suica 等全國交通 IC 卡也能直接使用。",
+      "en": "Naha got its first postwar railway in 2003, when the Okinawa Urban Monorail, known as Yui Rail, opened. Okinawa had passenger trains as early as 1914, but they were destroyed in air raids during World War II, and the remaining track was pulled up after the war because steel was scarce, leaving the island dependent on cars for more than half a century. In October 2019 the line was extended to Tedako-Uranishi in Urasoe, bringing it to about 17 km and 19 stations, and since 2020 riders can pay with Suica and other nationwide IC cards as well as the local OKICA."
     },
     "photo": "/maps-tiles/thumbs/naha.jpg",
     "photoAlt": {
@@ -1213,8 +1213,8 @@
       "zh": "Metliner 繪製的新潟地鐵路線圖 2026：高解析、可縮放，涵蓋新潟完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Niigata is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Niigata so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "新潟的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現新潟的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "1904 年，新潟站啟用，新潟從此接上了鐵路網。新潟沒有地鐵，曾經行駛在市區路面上的新潟交通電車，也在 1992 年結束路面區段、1999 年全線停駛，JR 路線就成了市內軌道的骨幹：1982 年上越新幹線通車，如今從東京最快約 90 分鐘就能抵達；2018 年起新潟站陸續高架化，新幹線與往秋田方向的特急「稻穗號」可以在同一月台對面轉乘，高架工程在 2022 年全部完成。",
+      "en": "Niigata joined the rail network in 1904, when Niigata Station opened. The city has no subway, and the Niigata Kotsu electric line that once ran through its streets ended street running in 1992 and closed entirely in 1999, leaving the JR lines as the backbone of rail in the city. The Joetsu Shinkansen opened in 1982, and the fastest trains now reach Tokyo in about 90 minutes. From 2018 Niigata Station was raised onto a viaduct in stages, letting riders change across the same platform between the Shinkansen and the Inaho limited express, and the work was finished in 2022."
     },
     "photo": "/maps-tiles/thumbs/niigata.jpg",
     "photoAlt": {
@@ -1783,8 +1783,8 @@
       "zh": "Metliner 繪製的巨港地鐵路線圖 2026：高解析、可縮放，涵蓋巨港完整軌道路網，一張圖看懂所有路線與轉乘站。"
     },
     "intro": {
-      "en": "Palembang is served by an urban rail network that Metliner has redrawn in a single, consistent visual language. This map lays out every line and interchange across Palembang so you can trace a route at a glance, whether you live here or are visiting for the first time.",
-      "zh": "巨港的軌道路網由 Metliner 以統一的視覺語言重新繪製。這張地圖清楚呈現巨港的每一條路線與轉乘站，無論你是在地居民還是初次造訪，都能一眼看懂如何搭乘。"
+      "zh": "2018 年，為了雅加達巨港亞運而興建的輕軌通車，巨港從此有了第一條城市軌道，這也是印尼第一條正式營運的輕軌。路線全程高架，長約 23 公里，從蘇丹馬哈茂德巴達魯丁二世機場一路延伸到亞運場館所在的賈卡巴林體育城：同年 8 月先開放 6 座車站，到 10 月 13 座車站全數啟用；列車在安佩拉大橋旁跨越穆西河，讓旅客從機場搭一班車就能進入市中心。",
+      "en": "Palembang got its first urban rail line in 2018, when the LRT built for the Asian Games opened. It was also the first LRT in Indonesia to enter service. The fully elevated line runs about 23 km from Sultan Mahmud Badaruddin II Airport to Jakabaring Sport City, home to the Games venues. Six stations opened that August and all 13 were in use by October, and the trains cross the Musi River right beside the Ampera Bridge, so travelers can ride a single train from the airport into the city center."
     },
     "photo": "/maps-tiles/thumbs/palembang.jpg",
     "photoAlt": {
