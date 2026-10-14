@@ -7,6 +7,7 @@ import cities from '../data/cities.json';
 import home from '../data/home.json';
 import geo from '../data/geo.json';
 import cityNames from '../data/city-names.json';
+import FavCities from '../components/FavCities.astro';
 
 const { lang = 'en' } = Astro.props;
 const ui = {
@@ -89,6 +90,8 @@ const siteName = lang === 'zh' ? 'Metliner — 100+ 座城市的地鐵路線圖'
     <h1>{home.title[lang]}</h1>
   </div>
 </header>
+
+<FavCities lang={lang} variant="home" />
 
 <!-- ROUTE MAP -->
 <section class="route-map">

@@ -1,0 +1,103 @@
+---
+// "Saved cities" strip. Reads the visitor's saved list (localStorage "metliner-favs")
+// and draws a card for each city. Stays hidden while nothing is saved.
+import cities from '../data/cities.json';
+import geo from '../data/geo.json';
+
+const { lang = 'en', variant = 'home' } = Astro.props;
+const base = lang === 'en' ? '/english' : '/zh';
+const t = lang === 'zh'
+  ? { title: '我的收藏', sub: '你收藏的城市，下次打開就在這裡', remove: '從收藏移除', sep: '：' }
+  : { title: 'Saved Cities', sub: 'The cities you saved, ready whenever you come back', remove: 'Remove from saved cities', sep: ': ' };
+
+// compact lookup the browser needs: slug -> [name, href, thumb, colour, alt]
+const data = Object.fromEntries(Object.values(cities).map(c => [c.slug, [
+  c.name[lang],
+  `${base}/maps/${c.continent}/${c.country}/${c.slug}`,
+  c.map.src,
+  (geo[c.continent] && geo[c.continent].color) || '#f5a623',
+  c.mapLabel ? c.mapLabel[lang] : c.name[lang]
+]]));
+---
+<section class={`fav-sec fav-${variant}`} data-fav-sec hidden>
+  <div class="fav-wrap">
+    <div class="fav-head">
+      <svg class="fav-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9z"/></svg>
+      <div><h2>{t.title}</h2><p>{t.sub}</p></div>
+    </div>
+    <div class="fav-cards" data-fav-cards></div>
+  </div>
+</section>
+
+<script is:inline define:vars={{ data, removeLabel: t.remove, sep: t.sep }}>
+  (function(){
+    var KEY='metliner-favs';
+    var sec=document.querySelector('[data-fav-sec]'), box=sec&&sec.querySelector('[data-fav-cards]');
+    if(!sec||!box) return;
+    function read(){ try{ var v=JSON.parse(localStorage.getItem(KEY)||'[]'); return Array.isArray(v)?v:[]; }catch(e){ return []; } }
+    function write(v){ try{ localStorage.setItem(KEY, JSON.stringify(v)); }catch(e){} }
+    function el(tag,cls){ var e=document.createElement(tag); if(cls) e.className=cls; return e; }
+    function render(){
+      var favs=read().filter(function(s){ return data[s]; });
+      box.textContent='';
+      favs.forEach(function(slug){
+        var d=data[slug];
+        var wrap=el('div','fav-card');
+        var a=el('a','fav-link'); a.href=d[1];
+        var th=el('div','fav-thumb'); var img=el('img'); img.src=d[2]; img.alt=d[4]; img.loading='lazy'; th.appendChild(img);
+        var foot=el('div','fav-foot'); var dot=el('span','fav-dot'); dot.style.background=d[3];
+        foot.appendChild(dot); foot.appendChild(document.createTextNode(d[0]));
+        a.appendChild(th); a.appendChild(foot);
+        var x=el('button','fav-x'); x.type='button'; x.setAttribute('aria-label', removeLabel+sep+d[0]); x.title=removeLabel;
+        x.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg>';
+        x.addEventListener('click',function(){ write(read().filter(function(s){ return s!==slug; })); render(); });
+        wrap.appendChild(a); wrap.appendChild(x); box.appendChild(wrap);
+      });
+      sec.hidden = favs.length===0;
+    }
+    window.addEventListener('storage',function(e){ if(e.key===KEY) render(); });
+    window.addEventListener('pageshow',render);
+    render();
+  })();
+</script>
+
+<style is:global>
+  .fav-sec[hidden]{display:none}
+  .fav-sec.fav-home{background:var(--cream);padding:56px 0 64px}
+  .fav-sec.fav-maps{padding:8px 0 36px}
+  .fav-wrap{max-width:var(--page-max,1100px);margin:0 auto;padding:0 24px}
+  .fav-maps .fav-wrap{padding:0}
+  .fav-head{display:flex;align-items:flex-start;gap:16px;margin-bottom:26px}
+  .fav-star{width:40px;height:40px;flex-shrink:0;fill:#FFC816;stroke:#0A132E;stroke-width:1.2;stroke-linejoin:round;margin-top:2px}
+  .fav-head h2,.fav-head p{margin:0}
+  .fav-head h2{font-size:34px;font-weight:800;color:var(--navy);line-height:1.05}
+  .fav-head p{font-size:16px;font-weight:500;color:#555;margin-top:6px}
+  .fav-sec *{box-sizing:border-box}
+  .fav-maps .fav-head h2{font-size:26px}
+  .fav-maps .fav-star{width:30px;height:30px}
+  .fav-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:18px}
+  .fav-card{position:relative}
+  .fav-link{display:block;text-decoration:none;color:inherit;border-radius:4px;transition:transform .15s,box-shadow .15s}
+  .fav-link:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(10,19,46,.18)}
+  .fav-thumb{aspect-ratio:1/1;border-radius:4px 4px 0 0;overflow:hidden;background:#0d1330}
+  .fav-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .fav-foot{display:flex;align-items:center;gap:10px;background:#141F2B;color:#fff;padding:11px 14px;
+    font-weight:700;font-size:17px;border-radius:0 0 4px 4px}
+  .fav-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+  .fav-x{position:absolute;top:8px;right:8px;width:30px;height:30px;border-radius:50%;border:0;cursor:pointer;
+    background:rgba(10,19,46,.72);color:#fff;display:flex;align-items:center;justify-content:center;padding:0;
+    opacity:0;transition:opacity .15s,background .15s}
+  .fav-x svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
+  .fav-card:hover .fav-x,.fav-x:focus-visible{opacity:1}
+  .fav-x:hover{background:#e0483a}
+  .fav-x:focus-visible{outline:2px solid #FFC816;outline-offset:2px}
+  @media (hover:none){ .fav-x{opacity:1} }
+  @media(max-width:760px){
+    .fav-cards{grid-template-columns:1fr 1fr;gap:14px}
+    .fav-head h2{font-size:28px}
+    .fav-foot{font-size:15px}
+  }
+  html[data-theme="dark"] .fav-head h2{color:#fff}
+  html[data-theme="dark"] .fav-head p{color:#a3a3a3}
+  html[data-theme="dark"] .fav-star{stroke:#FFC816}
+</style>

@@ -1,0 +1,50 @@
+---
+// "Save city" star on a city page. Saved cities live in the visitor's browser (localStorage "metliner-favs").
+const { slug, lang = 'en' } = Astro.props;
+const t = lang === 'zh'
+  ? { add: '收藏城市', saved: '已收藏', addAria: '加入收藏', removeAria: '從收藏移除' }
+  : { add: 'Save city', saved: 'Saved', addAria: 'Add to saved cities', removeAria: 'Remove from saved cities' };
+---
+<button class="fav-btn" type="button" data-fav-btn data-slug={slug}
+  data-l-add={t.add} data-l-saved={t.saved} data-a-add={t.addAria} data-a-remove={t.removeAria}
+  aria-pressed="false" aria-label={t.addAria}>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9z"/></svg>
+  <span data-fav-label>{t.add}</span>
+</button>
+
+<script is:inline>
+  (function(){
+    var KEY='metliner-favs';
+    function read(){ try{ var v=JSON.parse(localStorage.getItem(KEY)||'[]'); return Array.isArray(v)?v:[]; }catch(e){ return []; } }
+    function write(v){ try{ localStorage.setItem(KEY, JSON.stringify(v)); }catch(e){} }
+    document.querySelectorAll('[data-fav-btn]').forEach(function(b){
+      var slug=b.getAttribute('data-slug'), label=b.querySelector('[data-fav-label]');
+      function paint(){
+        var on=read().indexOf(slug)!==-1;
+        b.setAttribute('aria-pressed', on?'true':'false');
+        b.setAttribute('aria-label', b.getAttribute(on?'data-a-remove':'data-a-add'));
+        label.textContent=b.getAttribute(on?'data-l-saved':'data-l-add');
+      }
+      b.addEventListener('click',function(){
+        var v=read(), i=v.indexOf(slug);
+        if(i===-1) v.unshift(slug); else v.splice(i,1);
+        write(v); paint();
+      });
+      window.addEventListener('storage',function(e){ if(e.key===KEY) paint(); });
+      paint();
+    });
+  })();
+</script>
+
+<style is:global>
+  .fav-btn{display:inline-flex;align-items:center;gap:8px;margin-top:22px;align-self:flex-start;
+    background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.45);border-radius:22px;
+    padding:8px 18px 8px 14px;font:inherit;font-size:15px;font-weight:600;cursor:pointer;
+    transition:background .15s,border-color .15s,color .15s,transform .1s}
+  .fav-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round;transition:fill .15s}
+  .fav-btn:hover{background:rgba(255,255,255,.16);border-color:#FFC816}
+  .fav-btn:active{transform:scale(.96)}
+  .fav-btn:focus-visible{outline:2px solid #FFC816;outline-offset:2px}
+  .fav-btn[aria-pressed="true"]{background:#FFC816;border-color:#FFC816;color:#0A132E}
+  .fav-btn[aria-pressed="true"] svg{fill:currentColor}
+</style>

@@ -4,6 +4,7 @@ import Seo from '../components/Seo.astro';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import '../config/theme.css';
 import TiledMapViewer from '../components/TiledMapViewer.astro';
+import FavButton from '../components/FavButton.astro';
 import cities from '../data/cities.json';
 import geo from '../data/geo.json';
 
@@ -89,6 +90,7 @@ const related = (city.exploreMore || [])
   <div class="wrap inner">
     <h1>{city.name[lang]}</h1>
     <div class="country">{city.countryName[lang]}</div>
+    <FavButton slug={city.slug} lang={lang} />
   </div>
 </header>
 

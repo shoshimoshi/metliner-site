@@ -5,6 +5,7 @@ import ThemeToggle from '../components/ThemeToggle.astro';
 import '../config/theme.css';
 import geo from '../data/geo.json';
 import cityNames from '../data/city-names.json';
+import FavCities from '../components/FavCities.astro';
 
 const { lang = 'en' } = Astro.props;
 const ui = {
@@ -65,6 +66,7 @@ const conts = order.filter(k=>geo[k]).map((k,i) => ({
 </header>
 
 <main class="wrap maps-body">
+  <FavCities lang={lang} variant="maps" />
   <div class="cont-grid">
     {conts.map(c => (
       <a class="ccard" href={`${base}/maps/${c.key}`} style={`--c:${c.color};--tint:${c.tint}`}>
