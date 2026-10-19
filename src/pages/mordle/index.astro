@@ -1,0 +1,12 @@
+---
+// Short link used on the share card: sends visitors to the Chinese or English game.
+---
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8" /><title>Mordle | Metliner</title>
+<link rel="canonical" href="https://www.metliner.com/english/mordle/" />
+<meta http-equiv="refresh" content="1;url=/english/mordle/" />
+<script is:inline>
+  (function(){var l=(navigator.languages&&navigator.languages[0])||navigator.language||'';
+  location.replace(/^zh/i.test(l)?'/zh/mordle/':'/english/mordle/');})();
+</script></head>
+<body><a href="/english/mordle/">Mordle</a></body></html>

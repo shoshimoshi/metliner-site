@@ -6,7 +6,7 @@ const SITE = 'https://www.metliner.com';
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 export function GET() {
-  const paths = [{ p: '/' }, { p: '/maps/' }, { p: '/about-us/' }, { p: '/contact-us/' }];
+  const paths = [{ p: '/' }, { p: '/maps/' }, { p: '/about-us/' }, { p: '/contact-us/' }, { p: '/mordle/' }];
   for (const [ck, c] of Object.entries(geo)) {
     paths.push({ p: `/maps/${ck}/` });
     for (const [nk, n] of Object.entries(c.countries || {})) {
