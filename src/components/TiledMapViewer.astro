@@ -104,6 +104,15 @@ const useTiles = !!dzi;
       constrainDuringPan: true,
       backgroundColor: '#0d0d10'
     });
+    // the poster image only covers the wait for tiles; once the map is drawn, hide it so it never shows behind a dragged map
+    const poster = shell.querySelector('.poster');
+    if(poster){
+      let hidden=false;
+      const hide=()=>{ if(hidden) return; hidden=true; poster.style.visibility='hidden'; };
+      viewer.addOnceHandler('tile-drawn', hide);
+      viewer.addOnceHandler('open', ()=>setTimeout(hide, 1500));
+      viewer.addOnceHandler('canvas-drag', hide);
+    }
     const zf = 1.6;
     shell.querySelector('[data-zin]').onclick   = ()=>viewer.viewport.zoomBy(zf).applyConstraints();
     shell.querySelector('[data-zout]').onclick  = ()=>viewer.viewport.zoomBy(1/zf).applyConstraints();
