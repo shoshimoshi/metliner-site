@@ -77,7 +77,7 @@ const cfg = { lang, launch: mordle.launch, schedule: mordle.schedule, T, C, CONT
   </header>
 
   <div class="mo-frame" id="mo-frame">
-    <img alt="" id="mo-i0"><img alt="" id="mo-i1"><img alt="" id="mo-i2"><img alt="" id="mo-i3"><img alt="" id="mo-i4" class="full">
+    <img alt="" id="mo-i0"><img alt="" id="mo-i1"><img alt="" id="mo-i2"><img alt="" id="mo-i3"><img alt="" id="mo-i4"><img alt="" id="mo-i5" class="full">
   </div>
 
   <div class="mo-boxes" id="mo-boxes" aria-label={T.boxes}></div>
@@ -190,7 +190,7 @@ const cfg = { lang, launch: mordle.launch, schedule: mordle.schedule, T, C, CONT
 (function(){
   const {T,C,CONT,schedule,launch,lang}=cfg, MAX=5;
   const BY=Object.fromEntries(C.map(c=>[c[0],c]));
-  const STAGES=[{img:0,b:7,g:1},{img:0,b:6,g:0},{img:1,b:4,g:0},{img:2,b:1,g:0},{img:3,b:0,g:0}];
+  const STAGES=[{img:0,b:5,g:0},{img:1,b:3.5,g:0},{img:2,b:2,g:0},{img:3,b:0.8,g:0},{img:4,b:0,g:0}];
   const $=id=>document.getElementById('mo-'+id);
   // puzzle number from the player's local date
   const now=new Date(), today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
@@ -203,9 +203,9 @@ const cfg = { lang, launch: mordle.launch, schedule: mordle.schedule, T, C, CONT
   let st=store.get('mordle-state',null);
   if(!st||st.num!==num) st={num,guesses:[],rider:null};
   let over=false, sel=0, list=[];
-  const imgs=[0,1,2,3,4].map(i=>$('i'+i)), frame=$('frame'), q=$('q'), sugg=$('sugg');
-  [0,1,2,3].forEach(i=>imgs[i].src='/mordle/'+answer+'/'+i+'.jpg');
-  imgs[4].src=BY[answer][7]; imgs[4].alt=BY[answer][2];
+  const imgs=[0,1,2,3,4,5].map(i=>$('i'+i)), frame=$('frame'), q=$('q'), sugg=$('sugg');
+  [0,1,2,3,4].forEach(i=>imgs[i].src='/mordle/'+answer+'/'+i+'.jpg');
+  imgs[5].src=BY[answer][7]; imgs[5].alt=BY[answer][2];
   if(window.ResizeObserver) new ResizeObserver(()=>frame.style.setProperty('--k',frame.clientWidth/480)).observe(frame);
 
   function norm(s){return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[\s.\-']/g,'');}
@@ -258,7 +258,7 @@ const cfg = { lang, launch: mordle.launch, schedule: mordle.schedule, T, C, CONT
   }
   function paint(){
     const won=st.guesses.includes(answer), s=STAGES[Math.min(st.guesses.length,MAX-1)];
-    imgs.forEach((im,i)=>im.classList.toggle('on',over?i===4:i===s.img));
+    imgs.forEach((im,i)=>im.classList.toggle('on',over?i===5:i===s.img));
     if(!over){ imgs[s.img].style.setProperty('--b',s.b); imgs[s.img].style.setProperty('--g',s.g); }
     const boxes=$('boxes'); boxes.textContent='';
     for(let i=0;i<MAX;i++){const b=document.createElement('div');b.className='mo-box';
