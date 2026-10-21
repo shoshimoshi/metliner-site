@@ -32,8 +32,8 @@ const base = lang === 'en' ? '/english' : '/zh';
   <div class="wrap">
     <a href={base} class="brand"><img src="/img/logo.png" alt="Metliner logo" />metliner</a>
     <div class="navlinks">
+      <a class="nav-mordle" href={`${base}/mordle`}>Mordle</a>
       <a href={`${base}/maps`}>{ui.maps}</a>
-      <a href={`${base}/mordle`}>Mordle</a>
       <a href={`${base}/about-us`}>{ui.about}</a>
       <a href={`${base}/contact-us`}>{ui.contact}</a>
     </div>
@@ -60,11 +60,6 @@ const base = lang === 'en' ? '/english' : '/zh';
     </a>
   </div>
 
-  <p class="or-email">
-    {lang==='zh' ? '或直接寫信給我們：' : 'Or email us directly at '}
-    <a id="email-link" href="#" data-u="metliner64" data-d="gmail.com">…</a>
-  </p>
-
   <div class="follow-head"><span class="kdot"></span>{ui.followLabel}</div>
   <div class="socials">
     {p.socials.map(s => (
@@ -75,16 +70,6 @@ const base = lang === 'en' ? '/english' : '/zh';
     ))}
   </div>
 </main>
-
-<script>
-  // assemble the email at runtime so scrapers can't read it from the HTML
-  var el = document.getElementById('email-link');
-  if (el) {
-    var addr = el.getAttribute('data-u') + '@' + el.getAttribute('data-d');
-    el.textContent = addr;
-    el.setAttribute('href', 'mailto:' + addr);
-  }
-</script>
 
 <footer><div class="wrap">
   <h3>{lang==='zh'?'聯絡我們':'Contact Us'}</h3>
