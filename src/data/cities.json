@@ -261,8 +261,8 @@
         "zh": "北京"
       },
       "updated": {
-        "en": "Last updated: 2025",
-        "zh": "最後更新：2025"
+        "en": "Last updated: 2026",
+        "zh": "最後更新：2026"
       },
       "hero": "/maps-tiles/hero/beijing-metro-map.jpg"
     },
@@ -1116,8 +1116,8 @@
         "zh": "名古屋"
       },
       "updated": {
-        "en": "Last updated: 2025",
-        "zh": "最後更新：2025"
+        "en": "Last updated: 2026",
+        "zh": "最後更新：2026"
       },
       "hero": "/maps-tiles/hero/nagoya-metro-map.jpg"
     },
@@ -2025,6 +2025,12 @@
     "mapLabel": {
       "en": "Singapore metro map",
       "zh": "新加坡地鐵路線圖"
+    },
+    "mapZh": {
+      "dzi": "/maps-tiles/asia/singapore/singapore-zh.dzi",
+      "thumb": "/maps-tiles/thumbs/singapore-zh.jpg",
+      "src": "/maps-tiles/thumbs/singapore-zh.jpg",
+      "hero": "/maps-tiles/hero/singapore-zh-metro-map.jpg"
     }
   },
   "bangkok": {
@@ -5947,6 +5953,63 @@
     "mapLabel": {
       "en": "Dublin metro map",
       "zh": "都柏林地鐵路線圖"
+    }
+  },
+  "rome": {
+    "slug": "rome",
+    "continent": "europe",
+    "country": "italy",
+    "name": {
+      "en": "Rome",
+      "zh": "羅馬"
+    },
+    "countryName": {
+      "en": "Italy",
+      "zh": "義大利"
+    },
+    "seoTitle": {
+      "en": "Rome Metro Map 2026 | Rome Metro & Rail Map – Metliner",
+      "zh": "羅馬地鐵路線圖 2026｜羅馬地鐵圖 – Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Rome metro and rail map for 2026 by Metliner, covering the Rome Metro, regional rail and tram network. Explore every line and station across Rome in one clean, unified design.",
+      "zh": "Metliner 繪製的羅馬地鐵路線圖 2026：高解析、可縮放，涵蓋羅馬完整軌道路網，一張圖看懂所有路線與轉乘站。"
+    },
+    "intro": {
+      "zh": "羅馬的第一條地鐵是 1955 年 2 月通車的 B 線，連接 Termini 車站與 EUR 區，這條路線最初是為了原訂 1942 年舉辦的世界博覽會而規劃。A 線在 1980 年開通，2014 年啟用的 C 線則是義大利第一條全自動無人駕駛地鐵，2025 年 12 月延伸到 Colosseo 站。由於地下不時挖到古蹟，地鐵路網發展得很慢，市區的鐵路運輸因此還要靠 FL 區域鐵路、Roma-Lido 與 Roma-Viterbo 等近郊線，以及電車路網來補足。",
+      "en": "Rome's first metro line, Line B, opened in February 1955 between Termini and EUR, a route first planned for a 1942 World's Fair that was never held. Line A followed in 1980, and Line C, Italy's first fully automated metro, began service in 2014 and reached Colosseo in December 2025. Because tunneling keeps running into archaeological remains, the metro has grown slowly, so the regional FL lines, the Roma-Lido and Roma-Viterbo suburban railways, and the tram network fill in much of the city's rail service."
+    },
+    "photo": "/maps-tiles/thumbs/rome.jpg",
+    "photoAlt": {
+      "en": "Rome metro map 2026 – Rome Metro and rail network map by Metliner",
+      "zh": "羅馬地鐵路線圖 2026 – Metliner 繪製的羅馬地鐵圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/europe/italy/rome.dzi",
+      "thumb": "/maps-tiles/thumbs/rome.jpg",
+      "src": "/maps-tiles/thumbs/rome.jpg",
+      "title": {
+        "en": "Rome",
+        "zh": "羅馬"
+      },
+      "updated": {
+        "en": "Last updated: 2026",
+        "zh": "最後更新：2026"
+      },
+      "hero": "/maps-tiles/hero/rome-metro-map.jpg"
+    },
+    "exploreMore": [
+      "madrid",
+      "paris",
+      "vienna"
+    ],
+    "mapAlt": {
+      "en": "Rome metro map 2026 – Rome Metro and rail network map by Metliner",
+      "zh": "羅馬地鐵路線圖 2026 – Metliner 繪製的羅馬地鐵圖"
+    },
+    "mapLabel": {
+      "en": "Rome metro map",
+      "zh": "羅馬地鐵路線圖"
     }
   }
 }

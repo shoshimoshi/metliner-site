@@ -252,6 +252,16 @@
           "dublin"
         ]
       },
+      "italy": {
+        "name": {
+          "en": "Italy",
+          "zh": "義大利"
+        },
+        "native": "Italia",
+        "cities": [
+          "rome"
+        ]
+      },
       "portugal": {
         "name": {
           "en": "Portugal",

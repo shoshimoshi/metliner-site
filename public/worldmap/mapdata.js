@@ -129,7 +129,7 @@ var simplemaps_worldmap_mapdata={
     IQ:{name:"Iraq",color:"#6d6e80",description:"0 cities"},
     IS:{name:"Iceland",color:"#e9dcc9",description:"0 cities"},
     IL:{name:"Israel",color:"#cfbeb4",description:"0 cities"},
-    IT:{name:"Italy",color:"#b1b6ba",description:"0 cities"},
+    IT:{name:"Italy",color:"#d0b1a3",description:"1 city",url:"/english/maps/europe/italy"},
     JM:{name:"Jamaica",color:"#82ac7c",description:"0 cities"},
     JO:{name:"Jordan",color:"#bfd2c6",description:"0 cities"},
     JP:{name:"Japan",color:"#7297a0",description:"15 cities",url:"/english/maps/asia/japan"},
@@ -378,7 +378,8 @@ var simplemaps_worldmap_mapdata={
     "102": {name:"Takamatsu", lat:34.3428, lng:134.0466, url:"/english/maps/asia/japan/takamatsu", description:"Takamatsu, Japan"},
     "103": {name:"Hangzhou", lat:30.2741, lng:120.1551, url:"/english/maps/asia/china/hangzhou", description:"Hangzhou, China"},
     "104": {name:"New York", lat:40.7128, lng:-74.006, url:"/english/maps/america/us/new-york", description:"New York, USA"},
-    "105": {name:"Houston", lat:29.7604, lng:-95.3698, url:"/english/maps/america/us/houston", description:"Houston, USA"}
+    "105": {name:"Houston", lat:29.7604, lng:-95.3698, url:"/english/maps/america/us/houston", description:"Houston, USA"},
+    "106": {name:"Rome", lat:41.9028, lng:12.4964, url:"/english/maps/europe/italy/rome", description:"Rome, Italy"}
   },  labels: {},
   legend: {entries: []},
   regions: {
