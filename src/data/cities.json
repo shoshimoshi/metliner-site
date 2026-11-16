@@ -6011,5 +6011,360 @@
       "en": "Rome metro map",
       "zh": "羅馬地鐵路線圖"
     }
+  },
+  "shanghai": {
+    "slug": "shanghai",
+    "continent": "asia",
+    "country": "china",
+    "name": {
+      "en": "Shanghai",
+      "zh": "上海"
+    },
+    "countryName": {
+      "en": "China",
+      "zh": "中國"
+    },
+    "seoTitle": {
+      "en": "Shanghai Metro Map 2026 | Shanghai Subway Map – Metliner",
+      "zh": "上海地鐵路線圖 2026｜上海地鐵圖 – Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Shanghai metro map for 2026 by Metliner, covering the Shanghai metro network. Explore every line and station across Shanghai in one clean, unified design.",
+      "zh": "Metliner 繪製的上海地鐵路線圖 2026：高解析、可縮放，涵蓋上海完整軌道路網，一張圖看懂所有路線與轉乘站。"
+    },
+    "intro": {
+      "en": "Shanghai Metro opened the southern section of Line 1 in May 1993 and completed the full line in 1995. The network has since grown to more than 800 km of routes, making it one of the largest metro systems in the world. Beyond the metro, the Pudong Airport maglev, which began service in 2004, links Longyang Road station with the airport over about 30 km at speeds of up to 431 km/h, and it was the first commercial high-speed maglev line in the world.",
+      "zh": "上海地鐵 1 號線的南段在 1993 年 5 月通車，1995 年全線完工，之後路網快速擴張，如今營運路線已超過 800 公里，是全球規模最大的地鐵系統之一。除了地鐵，2004 年啟用的浦東機場磁浮列車連接龍陽路站與機場，全長約 30 公里，最高營運時速可達 431 公里，是世界上第一條商業營運的高速磁浮線。"
+    },
+    "photo": "/maps-tiles/thumbs/shanghai.jpg",
+    "photoAlt": {
+      "en": "Shanghai metro map 2026 – Shanghai metro network map by Metliner",
+      "zh": "上海地鐵路線圖 2026 – Metliner 繪製的上海地鐵圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/china/shanghai.dzi",
+      "thumb": "/maps-tiles/thumbs/shanghai.jpg",
+      "src": "/maps-tiles/thumbs/shanghai.jpg",
+      "title": {
+        "en": "Shanghai",
+        "zh": "上海"
+      },
+      "updated": {
+        "en": "Last updated: 2026",
+        "zh": "最後更新：2026"
+      },
+      "hero": "/maps-tiles/hero/shanghai-metro-map.jpg"
+    },
+    "mapDelta": {
+      "dzi": "/maps-tiles/asia/china/yangtze-river-delta.dzi",
+      "thumb": "/maps-tiles/thumbs/yangtze-river-delta.jpg",
+      "src": "/maps-tiles/thumbs/yangtze-river-delta.jpg",
+      "hero": "/maps-tiles/hero/yangtze-river-delta-metro-map.jpg",
+      "title": {
+        "en": "Yangtze River Delta",
+        "zh": "長江三角洲"
+      },
+      "alt": {
+        "en": "Yangtze River Delta metro and rail map by Metliner",
+        "zh": "長江三角洲地鐵與鐵路路線圖 – Metliner"
+      }
+    },
+    "exploreMore": [
+      "suzhou",
+      "hangzhou",
+      "nantong"
+    ],
+    "mapAlt": {
+      "en": "Shanghai metro map 2026 – Shanghai metro network map by Metliner",
+      "zh": "上海地鐵路線圖 2026 – Metliner 繪製的上海地鐵圖"
+    },
+    "mapLabel": {
+      "en": "Shanghai metro map",
+      "zh": "上海地鐵路線圖"
+    }
+  },
+  "suzhou": {
+    "slug": "suzhou",
+    "continent": "asia",
+    "country": "china",
+    "name": {
+      "en": "Suzhou",
+      "zh": "蘇州"
+    },
+    "countryName": {
+      "en": "China",
+      "zh": "中國"
+    },
+    "seoTitle": {
+      "en": "Suzhou Metro Map 2026 | Suzhou Subway Map – Metliner",
+      "zh": "蘇州地鐵路線圖 2026｜蘇州地鐵圖 – Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Suzhou metro map for 2026 by Metliner, covering the Suzhou metro network. Explore every line and station across Suzhou in one clean, unified design.",
+      "zh": "Metliner 繪製的蘇州地鐵路線圖 2026：高解析、可縮放，涵蓋蘇州完整軌道路網，一張圖看懂所有路線與轉乘站。"
+    },
+    "intro": {
+      "en": "Suzhou Rail Transit opened Line 1 in April 2012 and Line 2 in December 2013, bringing the metro age to a city best known for its classical gardens. Line 3 followed in late 2019, Line 5 in 2021 and Line 11 in 2023, and Lines 6 and 8 opened in 2024. Line 11 runs out to Huaqiao on the Shanghai border, where it connects with Shanghai Metro Line 11.",
+      "zh": "蘇州軌道交通 1 號線在 2012 年 4 月開通，2 號線於 2013 年 12 月接著通車，讓這座以園林聞名的古城正式進入地鐵時代。之後 3 號線在 2019 年底、5 號線在 2021 年、11 號線在 2023 年陸續營運，2024 年又有 6 號線與 8 號線開通。其中 11 號線通到與上海交界的花橋，與上海地鐵 11 號線相連。"
+    },
+    "photo": "/maps-tiles/thumbs/suzhou.jpg",
+    "photoAlt": {
+      "en": "Suzhou metro map 2026 – Suzhou metro network map by Metliner",
+      "zh": "蘇州地鐵路線圖 2026 – Metliner 繪製的蘇州地鐵圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/china/suzhou.dzi",
+      "thumb": "/maps-tiles/thumbs/suzhou.jpg",
+      "src": "/maps-tiles/thumbs/suzhou.jpg",
+      "title": {
+        "en": "Suzhou",
+        "zh": "蘇州"
+      },
+      "updated": {
+        "en": "Last updated: 2026",
+        "zh": "最後更新：2026"
+      },
+      "hero": "/maps-tiles/hero/suzhou-metro-map.jpg"
+    },
+    "mapDelta": {
+      "dzi": "/maps-tiles/asia/china/yangtze-river-delta.dzi",
+      "thumb": "/maps-tiles/thumbs/yangtze-river-delta.jpg",
+      "src": "/maps-tiles/thumbs/yangtze-river-delta.jpg",
+      "hero": "/maps-tiles/hero/yangtze-river-delta-metro-map.jpg",
+      "title": {
+        "en": "Yangtze River Delta",
+        "zh": "長江三角洲"
+      },
+      "alt": {
+        "en": "Yangtze River Delta metro and rail map by Metliner",
+        "zh": "長江三角洲地鐵與鐵路路線圖 – Metliner"
+      }
+    },
+    "exploreMore": [
+      "shanghai",
+      "wuxi",
+      "hangzhou"
+    ],
+    "mapAlt": {
+      "en": "Suzhou metro map 2026 – Suzhou metro network map by Metliner",
+      "zh": "蘇州地鐵路線圖 2026 – Metliner 繪製的蘇州地鐵圖"
+    },
+    "mapLabel": {
+      "en": "Suzhou metro map",
+      "zh": "蘇州地鐵路線圖"
+    }
+  },
+  "wuxi": {
+    "slug": "wuxi",
+    "continent": "asia",
+    "country": "china",
+    "name": {
+      "en": "Wuxi",
+      "zh": "無錫"
+    },
+    "countryName": {
+      "en": "China",
+      "zh": "中國"
+    },
+    "seoTitle": {
+      "en": "Wuxi Metro Map 2026 | Wuxi Subway Map – Metliner",
+      "zh": "無錫地鐵路線圖 2026｜無錫地鐵圖 – Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Wuxi metro map for 2026 by Metliner, covering the Wuxi metro network. Explore every line and station across Wuxi in one clean, unified design.",
+      "zh": "Metliner 繪製的無錫地鐵路線圖 2026：高解析、可縮放，涵蓋無錫完整軌道路網，一張圖看懂所有路線與轉乘站。"
+    },
+    "intro": {
+      "en": "Wuxi Metro opened Line 1 in July 2014 and Line 2 that December. Line 3, which opened in October 2020, reaches Sunan Shuofang International Airport, and Line 4 joined in December 2021. In January 2024 the suburban Line S1 opened between Wuxi and neighboring Jiangyin, and the network now has five lines in operation.",
+      "zh": "無錫地鐵 1 號線在 2014 年 7 月通車，同年 12 月 2 號線接著開通，2020 年 10 月啟用的 3 號線一路延伸到蘇南碩放國際機場，2021 年 12 月又有 4 號線加入。2024 年 1 月，連接無錫與江陰的市郊 S1 線開通，讓路網從市區延伸到鄰近的江陰。目前共有 5 條營運路線。"
+    },
+    "photo": "/maps-tiles/thumbs/wuxi.jpg",
+    "photoAlt": {
+      "en": "Wuxi metro map 2026 – Wuxi metro network map by Metliner",
+      "zh": "無錫地鐵路線圖 2026 – Metliner 繪製的無錫地鐵圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/china/wuxi.dzi",
+      "thumb": "/maps-tiles/thumbs/wuxi.jpg",
+      "src": "/maps-tiles/thumbs/wuxi.jpg",
+      "title": {
+        "en": "Wuxi",
+        "zh": "無錫"
+      },
+      "updated": {
+        "en": "Last updated: 2026",
+        "zh": "最後更新：2026"
+      },
+      "hero": "/maps-tiles/hero/wuxi-metro-map.jpg"
+    },
+    "mapDelta": {
+      "dzi": "/maps-tiles/asia/china/yangtze-river-delta.dzi",
+      "thumb": "/maps-tiles/thumbs/yangtze-river-delta.jpg",
+      "src": "/maps-tiles/thumbs/yangtze-river-delta.jpg",
+      "hero": "/maps-tiles/hero/yangtze-river-delta-metro-map.jpg",
+      "title": {
+        "en": "Yangtze River Delta",
+        "zh": "長江三角洲"
+      },
+      "alt": {
+        "en": "Yangtze River Delta metro and rail map by Metliner",
+        "zh": "長江三角洲地鐵與鐵路路線圖 – Metliner"
+      }
+    },
+    "exploreMore": [
+      "suzhou",
+      "changzhou",
+      "shanghai"
+    ],
+    "mapAlt": {
+      "en": "Wuxi metro map 2026 – Wuxi metro network map by Metliner",
+      "zh": "無錫地鐵路線圖 2026 – Metliner 繪製的無錫地鐵圖"
+    },
+    "mapLabel": {
+      "en": "Wuxi metro map",
+      "zh": "無錫地鐵路線圖"
+    }
+  },
+  "changzhou": {
+    "slug": "changzhou",
+    "continent": "asia",
+    "country": "china",
+    "name": {
+      "en": "Changzhou",
+      "zh": "常州"
+    },
+    "countryName": {
+      "en": "China",
+      "zh": "中國"
+    },
+    "seoTitle": {
+      "en": "Changzhou Metro Map 2026 | Changzhou Subway Map – Metliner",
+      "zh": "常州地鐵路線圖 2026｜常州地鐵圖 – Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Changzhou metro map for 2026 by Metliner, covering the Changzhou metro network. Explore every line and station across Changzhou in one clean, unified design.",
+      "zh": "Metliner 繪製的常州地鐵路線圖 2026：高解析、可縮放，涵蓋常州完整軌道路網，一張圖看懂所有路線與轉乘站。"
+    },
+    "intro": {
+      "en": "Changzhou Metro Line 1 opened on September 21, 2019, making Changzhou the 35th city in mainland China with a subway. Line 2 followed on June 28, 2021, and together the two lines cover about 54 km with 43 stations, with announcements in both Mandarin and English.",
+      "zh": "常州地鐵 1 號線在 2019 年 9 月 21 日通車，常州成為中國大陸第 35 個開通地鐵的城市。2 號線於 2021 年 6 月 28 日加入營運，兩條路線合計約 54 公里，設有 43 座車站，列車廣播提供華語與英語。"
+    },
+    "photo": "/maps-tiles/thumbs/changzhou.jpg",
+    "photoAlt": {
+      "en": "Changzhou metro map 2026 – Changzhou metro network map by Metliner",
+      "zh": "常州地鐵路線圖 2026 – Metliner 繪製的常州地鐵圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/china/changzhou.dzi",
+      "thumb": "/maps-tiles/thumbs/changzhou.jpg",
+      "src": "/maps-tiles/thumbs/changzhou.jpg",
+      "title": {
+        "en": "Changzhou",
+        "zh": "常州"
+      },
+      "updated": {
+        "en": "Last updated: 2026",
+        "zh": "最後更新：2026"
+      },
+      "hero": "/maps-tiles/hero/changzhou-metro-map.jpg"
+    },
+    "mapDelta": {
+      "dzi": "/maps-tiles/asia/china/yangtze-river-delta.dzi",
+      "thumb": "/maps-tiles/thumbs/yangtze-river-delta.jpg",
+      "src": "/maps-tiles/thumbs/yangtze-river-delta.jpg",
+      "hero": "/maps-tiles/hero/yangtze-river-delta-metro-map.jpg",
+      "title": {
+        "en": "Yangtze River Delta",
+        "zh": "長江三角洲"
+      },
+      "alt": {
+        "en": "Yangtze River Delta metro and rail map by Metliner",
+        "zh": "長江三角洲地鐵與鐵路路線圖 – Metliner"
+      }
+    },
+    "exploreMore": [
+      "wuxi",
+      "suzhou",
+      "nantong"
+    ],
+    "mapAlt": {
+      "en": "Changzhou metro map 2026 – Changzhou metro network map by Metliner",
+      "zh": "常州地鐵路線圖 2026 – Metliner 繪製的常州地鐵圖"
+    },
+    "mapLabel": {
+      "en": "Changzhou metro map",
+      "zh": "常州地鐵路線圖"
+    }
+  },
+  "nantong": {
+    "slug": "nantong",
+    "continent": "asia",
+    "country": "china",
+    "name": {
+      "en": "Nantong",
+      "zh": "南通"
+    },
+    "countryName": {
+      "en": "China",
+      "zh": "中國"
+    },
+    "seoTitle": {
+      "en": "Nantong Metro Map 2026 | Nantong Subway Map – Metliner",
+      "zh": "南通地鐵路線圖 2026｜南通地鐵圖 – Metliner"
+    },
+    "seoDescription": {
+      "en": "High-resolution, zoomable Nantong metro map for 2026 by Metliner, covering the Nantong metro network. Explore every line and station across Nantong in one clean, unified design.",
+      "zh": "Metliner 繪製的南通地鐵路線圖 2026：高解析、可縮放，涵蓋南通完整軌道路網，一張圖看懂所有路線與轉乘站。"
+    },
+    "intro": {
+      "en": "Nantong sits on the north bank of the Yangtze, and its Line 1 opened on November 10, 2022, running about 39 km from Pingchao to Zhenxing Lu. Line 2 joined on December 27, 2023, and the two lines together cover about 60 km with 45 stations.",
+      "zh": "南通位於長江北岸，地鐵 1 號線在 2022 年 11 月 10 日通車，從平潮站一路開到振興路站，全長約 39 公里。2 號線在 2023 年 12 月 27 日加入營運，兩條路線合計約 60 公里，設有 45 座車站。"
+    },
+    "photo": "/maps-tiles/thumbs/nantong.jpg",
+    "photoAlt": {
+      "en": "Nantong metro map 2026 – Nantong metro network map by Metliner",
+      "zh": "南通地鐵路線圖 2026 – Metliner 繪製的南通地鐵圖"
+    },
+    "map": {
+      "dzi": "/maps-tiles/asia/china/nantong.dzi",
+      "thumb": "/maps-tiles/thumbs/nantong.jpg",
+      "src": "/maps-tiles/thumbs/nantong.jpg",
+      "title": {
+        "en": "Nantong",
+        "zh": "南通"
+      },
+      "updated": {
+        "en": "Last updated: 2026",
+        "zh": "最後更新：2026"
+      },
+      "hero": "/maps-tiles/hero/nantong-metro-map.jpg"
+    },
+    "mapDelta": {
+      "dzi": "/maps-tiles/asia/china/yangtze-river-delta.dzi",
+      "thumb": "/maps-tiles/thumbs/yangtze-river-delta.jpg",
+      "src": "/maps-tiles/thumbs/yangtze-river-delta.jpg",
+      "hero": "/maps-tiles/hero/yangtze-river-delta-metro-map.jpg",
+      "title": {
+        "en": "Yangtze River Delta",
+        "zh": "長江三角洲"
+      },
+      "alt": {
+        "en": "Yangtze River Delta metro and rail map by Metliner",
+        "zh": "長江三角洲地鐵與鐵路路線圖 – Metliner"
+      }
+    },
+    "exploreMore": [
+      "shanghai",
+      "changzhou",
+      "suzhou"
+    ],
+    "mapAlt": {
+      "en": "Nantong metro map 2026 – Nantong metro network map by Metliner",
+      "zh": "南通地鐵路線圖 2026 – Metliner 繪製的南通地鐵圖"
+    },
+    "mapLabel": {
+      "en": "Nantong metro map",
+      "zh": "南通地鐵路線圖"
+    }
   }
 }

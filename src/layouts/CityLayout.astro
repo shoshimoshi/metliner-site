@@ -115,6 +115,10 @@ const related = (city.exploreMore || [])
 
 <TiledMapViewer dzi={map.dzi} src={map.src} alt={city.mapAlt[lang]} poster={map.hero}
            title={map.title[lang]} />
+{city.mapDelta && (
+  <TiledMapViewer dzi={city.mapDelta.dzi} src={city.mapDelta.src} alt={city.mapDelta.alt[lang]} poster={city.mapDelta.hero}
+             title={city.mapDelta.title[lang]} />
+)}
 
 <section class="explore">
   <div class="banner"><div class="wrap">

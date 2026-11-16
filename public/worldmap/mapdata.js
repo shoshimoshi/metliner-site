@@ -85,7 +85,7 @@ var simplemaps_worldmap_mapdata={
     CA:{name:"Canada",color:"#a493b7",description:"6 cities",url:"/english/maps/america/canada"},
     CH:{name:"Switzerland",color:"#a089a0",description:"0 cities"},
     CL:{name:"Chile",color:"#6d6e80",description:"0 cities"},
-    CN:{name:"China",color:"#e9dcc9",description:"10 cities",url:"/english/maps/asia/china"},
+    CN:{name:"China",color:"#e9dcc9",description:"15 cities",url:"/english/maps/asia/china"},
     CI:{name:"Côte d'Ivoire",color:"#cfbeb4",description:"0 cities"},
     CM:{name:"Cameroon",color:"#b1b6ba",description:"0 cities"},
     CD:{name:"Democratic Republic of the Congo",color:"#82ac7c",description:"0 cities"},
@@ -379,7 +379,12 @@ var simplemaps_worldmap_mapdata={
     "103": {name:"Hangzhou", lat:30.2741, lng:120.1551, url:"/english/maps/asia/china/hangzhou", description:"Hangzhou, China"},
     "104": {name:"New York", lat:40.7128, lng:-74.006, url:"/english/maps/america/us/new-york", description:"New York, USA"},
     "105": {name:"Houston", lat:29.7604, lng:-95.3698, url:"/english/maps/america/us/houston", description:"Houston, USA"},
-    "106": {name:"Rome", lat:41.9028, lng:12.4964, url:"/english/maps/europe/italy/rome", description:"Rome, Italy"}
+    "106": {name:"Rome", lat:41.9028, lng:12.4964, url:"/english/maps/europe/italy/rome", description:"Rome, Italy"},
+    "107": {name:"Shanghai", lat:31.2304, lng:121.4737, url:"/english/maps/asia/china/shanghai", description:"Shanghai, China"},
+    "108": {name:"Suzhou", lat:31.2989, lng:120.5853, url:"/english/maps/asia/china/suzhou", description:"Suzhou, China"},
+    "109": {name:"Wuxi", lat:31.4912, lng:120.3119, url:"/english/maps/asia/china/wuxi", description:"Wuxi, China"},
+    "110": {name:"Changzhou", lat:31.8107, lng:119.974, url:"/english/maps/asia/china/changzhou", description:"Changzhou, China"},
+    "111": {name:"Nantong", lat:31.9802, lng:120.8943, url:"/english/maps/asia/china/nantong", description:"Nantong, China"}
   },  labels: {},
   legend: {entries: []},
   regions: {

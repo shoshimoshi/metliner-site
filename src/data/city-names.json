@@ -426,5 +426,25 @@
   "rome": {
     "en": "Rome",
     "zh": "羅馬"
+  },
+  "shanghai": {
+    "en": "Shanghai",
+    "zh": "上海"
+  },
+  "suzhou": {
+    "en": "Suzhou",
+    "zh": "蘇州"
+  },
+  "wuxi": {
+    "en": "Wuxi",
+    "zh": "無錫"
+  },
+  "changzhou": {
+    "en": "Changzhou",
+    "zh": "常州"
+  },
+  "nantong": {
+    "en": "Nantong",
+    "zh": "南通"
   }
 }
